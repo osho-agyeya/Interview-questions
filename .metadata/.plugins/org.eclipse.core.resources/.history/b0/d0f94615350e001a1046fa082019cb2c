@@ -1,0 +1,36 @@
+package leetcode;
+
+public class Edit_Distance {
+	
+	public int minDistance(String word1, String word2) {
+        int size1= word1.length();
+        int size2= word2.length();
+        
+        if(size1 == 0)
+            return size2;
+        if(size2 == 0)
+            return size1;
+        int[][] mat = new int[size1+1][size2+1];
+        
+        for(int i=0;i<=size1;i++)
+        {
+            mat[i][0]=i;
+        }
+        
+        for(int i=0;i<=size2;i++)
+        {
+            mat[0][i]=i;
+        }
+        
+        for(int i=1;i<=size1;i++)
+            for(int j=1;j<=size2;j++)
+            {
+                if(word1.charAt(i-1)==word2.charAt(j-1))
+                    mat[i][j] = mat[i-1][j-1];
+                else
+                    mat[i][j] = Math.min(Math.min(mat[i-1][j-1] +1,mat[i-1][j]+1),mat[i][j-1]+1) ;
+            }
+        return mat[size1][size2];
+    }
+
+}

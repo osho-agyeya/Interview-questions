@@ -1,0 +1,17 @@
+package leetcode;
+
+public class Reverse_the_String {
+	 public String reverseWords(String a) {
+        a=a.trim();
+        String arr[]=a.split("\\s+");
+        int le=arr.length;
+        String res="";
+        for (int i=le-1;i>=0;i--) {
+            res+=(arr[i]+" ");
+        }
+        res=res.trim();
+        return res;
+    }
+	
+
+}

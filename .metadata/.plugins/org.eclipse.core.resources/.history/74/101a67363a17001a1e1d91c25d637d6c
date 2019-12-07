@@ -1,0 +1,32 @@
+//done
+package leetcode;
+
+import main_solution.ListNode;
+
+public class Add_Two_Numbers {
+	
+	
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummyHead= new ListNode(0); //using dummy head is good
+        ListNode l1Travel=l1;
+        ListNode l2Travel=l2;
+        ListNode sumTravel=dummyHead;
+        int carry=0,sum=0;
+        while(l1Travel!=null || l2Travel!=null){
+            sum=((l1Travel!=null)?l1Travel.val:0)+((l2Travel!=null)?l2Travel.val:0)+carry;
+            carry=sum/10;
+            sum%=10;
+            sumTravel.next=new ListNode(sum);
+            sumTravel=sumTravel.next;
+            l1Travel=(l1Travel!=null)?l1Travel.next:l1Travel;
+            l2Travel=(l2Travel!=null)?l2Travel.next:l2Travel;
+        }
+        
+        sumTravel.next=(carry!=0)?(new ListNode(carry)):sumTravel.next;
+        
+                
+        return dummyHead.next;
+        
+    }
+
+}

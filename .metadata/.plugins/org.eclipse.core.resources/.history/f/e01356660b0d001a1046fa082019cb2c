@@ -1,0 +1,80 @@
+package ctci;
+
+import java.util.LinkedList;
+
+public class Animal_Shelter {
+	
+	/* An animal shelter holds only dogs and cats, and operates on a strictly "first in, first
+	 out" basis. People must adopt either the "oldest" (based on arrival time) of all animals
+	 at the shelter, or they can select whether they would prefer a dog or a cat (and will
+	 receive the oldest animal of that type). They cannot select which specific animal they
+	 would like. Create the data structures to maintain this system and implement operations
+	 such as enqueue, dequeueAny, dequeueDog and dequeueCat. You may
+	 use the built-in L inkedL ist data structure.*/
+	 
+	 LinkedList<Dog> dog;
+	 LinkedList<Cat> cat;
+	 int order = Integer.MIN_VALUE;
+	 
+	 public Animal_Shelter(){
+	 dog = new LinkedList<Dog>();
+	 cat = new LinkedList<Cat>();
+	 }
+	 public void enqueue(Dog inputDog){
+	 inputDog.setOrder(order);
+	 order++;
+	 dog.addLast(inputDog);
+	 }
+	 
+	 public void enqueue(Cat inputCat){
+	 inputCat.setOrder(order);
+	 order++;
+	 cat.addLast(inputCat);
+	 }
+	 
+	 public Dog dequeueDog(){
+	 
+	 if(dog.size() == 0){
+	 return null;
+	 }
+	 
+	 return dog.remove();
+	 }
+	 
+	 public Cat dequeueCat(){
+	 
+	 if(cat.size() == 0){
+	 return null;
+	 }
+	 
+	 return cat.remove();
+	 }
+	 
+	 public Animal dequeueAny(){
+	 
+	 if(dog.size() == 0 && cat.size() == 0){
+	 return null;
+	 }
+	 else if(dog.size() == 0){
+	 return cat.remove();
+	 }
+	 else if(cat.size() == 0){
+	 return dog.remove();
+	 }
+	 
+	 if(cat.peekFirst().getOrder() > dog.peekFirst().getOrder()){
+	 return cat.remove();
+	 }
+	 else{
+	 return dog.remove();
+	 }
+	 }
+	}
+
+public class Cat extends Animal{
+	 
+public Cat(){
+ super();
+ }
+}
+

@@ -1,0 +1,138 @@
+//doe
+package leetcode;
+
+public class Design_Linked_List {
+	
+	class Node {
+        Node prev, next;
+        int val;
+        Node(int val) { this.val = val; }
+    }
+
+    int size;
+    Node head, tail;
+    // Initialize your data structure here.
+    public Design_Linked_List() { }
+
+    // Get the value of the index-th node in the linked list. If the index is invalid, return -1.
+    public int get(int index) {
+        if(index < 0 || index >= size) return -1;
+        Node x = head;
+        int i = 0;
+        while(i < index && x != null) {
+            x = x.next;
+            i++;
+        }
+        return (i < index || x == null) ? -1 : x.val;
+    }
+
+    // Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
+    public void addAtHead(int val) {
+        if(isEmpty()) {
+            initHead(val);
+            return;
+        }
+        Node node = new Node(val);
+        link(node, head);
+        head = node;
+        size++;
+    }
+
+    // Append a node of value val to the last element of the linked list.
+    public void addAtTail(int val) {
+        if(isEmpty()) {
+            initHead(val);
+            return;
+        }
+        Node node = new Node(val);
+        link(tail, node);
+        tail = node;
+        size++;
+    }
+
+    // Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted.
+    public void addAtIndex(int index, int val) {
+        if(index > size) return;
+        if(index == size) {
+            addAtTail(val);
+            return;
+        }
+        //if negative add at head??
+        if(index <= 0) {
+            addAtHead(val);
+            return;
+        }
+
+        Node cur = search(index);
+        Node node = new Node(val);
+        link(cur.prev, node, cur);
+        size++;
+    }
+
+    // Delete the index-th node in the linked list, if the index is valid.
+    public void deleteAtIndex(int index) {
+        if(index >= size || index < 0) return;
+        if(index == 0) {
+            head = head.next;
+            size--;
+            return;
+        }
+
+        if(index == size - 1) {
+            tail = tail.prev;
+            tail.next = null;
+            size--;
+            return;
+        }
+
+        Node cur = search(index);
+        link(cur.prev, cur.next);
+        size--;
+
+    }
+
+    private boolean isEmpty() {
+        return size == 0;
+    }
+
+    private void initHead(int val) {
+        head = new Node(val);
+        tail = head;
+        size++;
+    }
+
+    private void link(Node a, Node b) {
+        a.next = b;
+        b.prev = a;
+    }
+
+    private void link(Node a, Node b, Node c) {
+        a.next = b;
+        b.prev = a;
+        b.next = c;
+        c.prev = b;
+    }
+
+    //add search from head and tail
+    private Node search(int index) {
+        Node cur = null;
+        if(index < size / 2) {
+            cur = head;
+            int i = 0;
+            while(i < index) {
+                cur = cur.next;
+                i++;
+            }
+        } else {
+            cur = tail;
+            int i = size - 1;
+            while(i > index) {
+                cur = cur.prev;
+                i--;
+            }
+        }
+        return cur;
+    }
+	
+
+}

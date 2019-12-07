@@ -1,0 +1,48 @@
+package leetcode;
+
+public class Recover_Binary_Search_Tree {
+	
+	public void recoverTree(TreeNode root) {
+        TreeNode[] candidates = null;
+        TreeNode prev = null;
+        
+        TreeNode p = root; ///Morris Begins///
+        while (p != null) {
+            if (p.left == null) {
+                candidates = checkSeq(prev, p, candidates); //visit p
+                prev = p; //visit p
+                p = p.right;
+            }
+            else { // p.left != null
+                TreeNode r = p.left;
+                while (r.right != null && r.right != p) r = r.right;
+                if (r.right == null) { // haven't traversed p's left subtree
+                    r.right = p;
+                    p = p.left;
+                } else { // have traversed all p's left subtree, time to go back to parent
+                    candidates = checkSeq(prev, p, candidates); //visit p
+                    prev = p; //visit p
+                    r.right = null;
+                    p = p.right;
+                }
+                
+            }
+        } ///Morris Ends///
+        
+        int t = candidates[0].val;
+        candidates[0].val = candidates[1].val;
+        candidates[1].val = t;
+    }
+    
+    private TreeNode[] checkSeq(TreeNode prev, TreeNode p, TreeNode[] candidates) {
+        if (prev == null) return candidates;
+        if (prev.val > p.val) {
+            if (candidates == null) //first occur
+                candidates = new TreeNode[]{prev, p};
+            else
+                candidates[1] = p; //second occur, update new candidate No.2
+        }
+        return candidates;
+    }
+
+}

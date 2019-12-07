@@ -1,0 +1,25 @@
+package interviewbit;
+
+public class NEXTGREATER {
+	
+	×
+class Solution:
+	# @param A : list of integers
+	# @return a list of integers
+	def nextGreater(self, a):
+	    n=len(a)
+	    li=[]
+	    for i in range(0,n):
+	        res=False
+	        ma=a[i]
+	        for j in range(i+1,n):
+	            if(a[j]>a[i]):
+	                ma=a[j]
+	                break
+	        if(ma==a[i]):
+	            li.append(-1)
+	        else:
+	            li.append(ma)
+	    return li
+
+}

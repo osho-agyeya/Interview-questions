@@ -1,0 +1,35 @@
+package interviewbit;
+
+import java.util.ArrayList;
+import java.util.PriorityQueue;
+
+public class Matrix_Median {
+	
+	public int findMedian(ArrayList<ArrayList<Integer>> A) {
+        if ( A == null || A.size() == 0 )
+            return 0;
+        
+        int N = A.size();
+        int M = A.get( 0 ).size();
+        int medIdx = N*M / 2;
+        
+        PriorityQueue<ArrayList<Integer>> queue = new PriorityQueue<>( N, (a1,a2)->Integer.compare( a1.get( 0 ), a2.get( 0 ) ));  
+        ;
+        
+        for ( int i = 0; i < N; i++ ) {
+            queue.offer( A.get( i ) );
+        }
+        
+        int idx = 0;
+        int num = 0;
+        while( idx <= medIdx ) {
+            ArrayList<Integer> row = queue.poll();
+            num = row.remove( 0 );
+            if ( row.size() > 0 )
+                queue.offer( row );
+            idx++;
+        }
+        return num;
+    }
+
+}

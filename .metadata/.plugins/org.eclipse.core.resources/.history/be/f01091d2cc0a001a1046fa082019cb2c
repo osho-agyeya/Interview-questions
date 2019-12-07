@@ -1,0 +1,12 @@
+Grep
+
+cat input | grep -o '[0-9]*'
+
+******************************
+
+Tenth Line
+
+cat input | head -n 10 | tail -n 1
+
+*************************
+

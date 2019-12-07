@@ -1,0 +1,41 @@
+package ctci;
+
+public class Circus_Tower {
+	
+	public static int highestTower(List<Pair<Integer>> data) {
+		 
+	    class HeightComparator implements Comparator<Pair<Integer>> {
+	        @Override
+	        public int compare(Pair<Integer> p1, Pair<Integer> p2) {
+	            if (!p1.getX().equals(p2.getX()))
+	                return p1.getX() - p2.getX();
+	            else {
+	                return p1.getY() - p2.getY();
+	            }
+	        }
+	    }
+	 
+	    Collections.sort(data, new HeightComparator());
+	    int count = 1;
+	    int max_count = -Integer.MAX_VALUE;
+	    int fromIndex = 0;
+	    boolean notchanged = true;
+	    while (fromIndex != data.size()) {
+	        Pair<Integer> base = data.get(fromIndex);
+	        for (int i = fromIndex; i < data.size() - 1; ++i) {
+	            Pair<Integer> item = data.get(i);
+	            if (item.getX() > base.getX() && item.getY() > base.getY()) {
+	                count++;
+	                base = item;
+	            } else if (notchanged) {
+	                fromIndex = i;
+	                notchanged = false;
+	            }
+	            if (count > max_count)
+	                max_count = count;
+	        }
+	    }
+	    return max_count;
+	}
+
+}

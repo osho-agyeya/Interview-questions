@@ -1,0 +1,89 @@
+//not done
+
+package interviewbit;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Simple_Queries {
+	
+ public static int MOD = (int) 1e9 + 7;
+ 
+    private int multiplyDivisors(int n) {
+        long result = 1;
+        int i;
+        for (i = 1; i * i < n; i++) {
+            if (n % i == 0)
+                result = (result * n) % MOD;
+        }
+        if (i * i == n) // perfect square
+            result = (result * i) % MOD;
+        return (int) result;
+    }
+    
+    private class Pair {
+        Pair(int n, int freq) {
+            this.prod = multiplyDivisors(n);
+            this.freq = freq;
+        }
+        Integer prod, freq;
+        Long sum;
+    }
+    
+    public ArrayList<Integer> solve(ArrayList<Integer> A, ArrayList<Integer> B) {
+        
+        Pair[] G = new Pair[A.size()];
+        int[] left = new int[A.size()];
+        int[] right = new int[A.size()];
+        for (int i = 0; i < A.size(); i++) {
+            int j = i - 1;
+            while (j >= 0 && A.get(j) <= A.get(i))
+                j -= left[j];
+            left[i] = i - j;
+        }
+        for (int i = A.size() - 1; i >= 0; i--) {
+            int j = i + 1;
+            while (j < A.size() && A.get(j) < A.get(i))
+                j += right[j];
+            right[i] = j - i;
+        }
+        for (int i = 0; i < A.size(); i++) {
+            G[i] = new Pair(A.get(i), left[i] * right[i]);
+        }
+        
+        // sort descending
+        Arrays.sort(G, new Comparator<Pair>() {
+            public int compare(Pair p1, Pair p2) {
+                return p2.prod.compareTo(p1.prod);
+            }
+        });
+ 
+        long sum = 0;
+        for (Pair p : G) {
+            p.sum = sum;
+            sum += p.freq;
+            //System.out.println(p.prod +" " + p.freq+" "+p.sum);
+        }
+ 
+        // answer queries
+        ArrayList<Integer> res = new ArrayList<>(B.size());
+        for (int i : B) {
+            int start = 0, stop = A.size() - 1;
+            while (start <= stop) {
+                int mid = (start + stop) / 2;
+                if (i <= G[mid].sum) {
+                    stop = mid - 1;
+                } else if (i > G[mid].sum + G[mid].freq) {
+                    start = mid + 1;
+                } else {
+                    res.add(G[mid].prod);
+                    break;
+                }
+            }
+        }
+        
+        return res;
+    }	
+
+}

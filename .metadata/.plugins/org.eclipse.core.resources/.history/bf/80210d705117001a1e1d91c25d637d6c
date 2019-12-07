@@ -1,0 +1,5 @@
+TIME,SPACE
+
+topological sort=O(V+E)
+DFS=O(V+E),O(V)
+BFS=O(V+E),O(V)

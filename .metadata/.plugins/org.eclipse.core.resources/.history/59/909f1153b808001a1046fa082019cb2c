@@ -1,0 +1,14 @@
+package interviewbit;
+
+public class Rearrange_Array {
+	
+	public void arrange(ArrayList<Integer> arr) {
+        int n=arr.size();
+        for (int i=0; i < n; i++)
+        arr.set(i,arr.get(i)+(arr.get(arr.get(i))%n)*n);
+    // Second Step: Divide all values by n
+    for (int i=0; i<n; i++)
+        arr.set(i,arr.get(i)/n);
+    }
+
+}

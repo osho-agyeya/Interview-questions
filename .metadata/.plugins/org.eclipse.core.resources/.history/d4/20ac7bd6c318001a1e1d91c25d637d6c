@@ -1,0 +1,16 @@
+//doe
+
+package leetcode;
+
+public class Single_Number {
+	
+	public int singleNumber(int[] A) {
+        int result = 0;
+    for (int i :A)
+    {
+		result ^=i;
+    }
+	return result;
+    }
+
+}

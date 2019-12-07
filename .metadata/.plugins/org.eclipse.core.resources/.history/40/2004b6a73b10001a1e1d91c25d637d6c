@@ -1,0 +1,28 @@
+package interviewbit;
+
+import java.util.ArrayDeque;
+
+import main_solution.ListNode;
+
+public class SUBTRACT {
+	
+	 public ListNode subtract(ListNode root) {
+	        if(root==null)  return null;
+	        ArrayDeque<ListNode> d=new ArrayDeque<>();
+	        ListNode temp=root;
+	        while(temp!=null){
+	            d.addLast(temp);
+	            temp=temp.next;
+	        }
+	        int len=d.size();
+	        int n=(int)Math.floor(len/2);
+	        for(int i=1;i<=n;i++){
+	            ListNode l=d.pollFirst();
+	            ListNode r=d.pollLast();
+	            l.val=r.val-l.val;
+	        }
+	        return root;
+	        
+	    }
+
+}

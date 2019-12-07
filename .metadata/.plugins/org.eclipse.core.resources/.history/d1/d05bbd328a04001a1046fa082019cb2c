@@ -1,0 +1,27 @@
+package leetcode;
+
+import java.util.Arrays;
+
+public class Wiggle_Sort_II {
+	
+	public void wiggleSort(int[] nums) {
+        int n = nums.length, m = (n + 1) >> 1;
+   int[] copy = Arrays.copyOf(nums, n);
+   Arrays.sort(copy);
+   /*
+   for (int i = m - 1, j = 0; i >= 0; i--, j += 2) nums[j] = copy[i];
+   for (int i = n - 1, j = 1; i >= m; i--, j += 2) nums[j] = copy[i];
+     */
+       
+       int k=n-1;
+   for(int odd_index=1;odd_index<n;odd_index+=2){
+       nums[odd_index]=copy[k--];
+   }
+       
+   for(int even_index=0;even_index<n;even_index+=2){
+       nums[even_index]=copy[k--];
+   }
+       
+   }
+
+}

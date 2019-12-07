@@ -1,0 +1,30 @@
+//doe
+/*
+ * 
+ */
+
+package interviewbit;
+
+import java.util.Stack;
+
+public class Redundant_Braces {
+	
+	public int braces(String a) {
+	    Stack<Character> stack = new Stack<Character>();
+	    for(int i = 0; i < a.length(); i++) {
+	        if(a.charAt(i) == '(' || a.charAt(i) == '+' || a.charAt(i) == '-' || a.charAt(i) == '*' || a.charAt(i) == '/') {
+	            stack.push(a.charAt(i));
+	        } else if (a.charAt(i) == ')') {
+	            boolean didPopSymbol = false;
+	            while(stack.peek() != '(') {
+	                didPopSymbol = true;
+	                stack.pop();	           
+	            }
+	            if(!didPopSymbol) return 1;
+	            stack.pop();
+	        }
+	    }
+	    return 0;
+	}
+
+}

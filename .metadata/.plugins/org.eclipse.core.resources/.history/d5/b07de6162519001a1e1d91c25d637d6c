@@ -1,0 +1,27 @@
+//doe
+
+package interviewbit;
+
+import java.util.ArrayList;
+
+public class PRETTYPRINT {
+	
+	 public ArrayList<ArrayList<Integer>> prettyPrint(int a) {
+        
+        ArrayList<ArrayList<Integer>> ar=new ArrayList<>();
+        int siz=2*a-1;
+        int ci=a-1,cj=a-1;
+        int l=0,r=siz-1,t=0,b=siz-1;
+        for (int i = 0; i <siz; i++) {
+            ArrayList<Integer> arr=new ArrayList<>();
+            for (int j = 0; j < siz; j++) {
+                arr.add((Math.max(Math.abs(i-ci), Math.abs(j-cj)))+1);
+            }
+            ar.add(arr);
+        }
+        return ar;
+        
+        
+    }
+
+}

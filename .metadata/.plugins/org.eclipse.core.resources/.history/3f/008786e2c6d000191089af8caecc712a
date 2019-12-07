@@ -1,0 +1,325 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		InputReader in = new InputReader(System.in);
+		OutputWriter op = new OutputWriter(System.out);
+		int t = in.ni();
+		while(t-->0){
+			String res="-1";
+			int n=in.ni();
+			char[]st= new char[n];
+			for(int i=0;i<n;i++){
+				st[i] = in.ns().charAt(0);
+				if(i!=0){
+					if(st[i]<st[i-1]){
+						res="";
+					}
+				}
+			}
+			if(res.equals("")){
+				int alld=0;
+				for(int i=n-2;i>=0;i--){
+					if(st[i]<st[i+1]){
+						alld=i;
+						for(int j=n-1;j>=0;j--){
+							if(st[j]>st[alld]){
+								char temp=st[j];
+								st[j]=st[alld];
+								st[alld]=temp;
+								break;
+							}
+						}
+						break;
+					}
+				}
+				String entire=new String(st);
+				res = entire.substring(0,alld+1);
+				char[] sorted=Arrays.copyOfRange(st, alld+1, n);
+				Arrays.sort(sorted);
+				res += new String(sorted);
+			}
+			System.out.println(res);
+		}
+	}
+
+
+
+	static class InputReader {
+
+		private final InputStream stream;
+		private final byte[] buf = new byte[8192];
+		private int curChar, snumChars;
+
+		public InputReader(InputStream st) {
+			this.stream = st;
+		}
+
+		public int read() {
+			if (snumChars == -1) {
+				throw new InputMismatchException();
+			}
+			if (curChar >= snumChars) {
+				curChar = 0;
+				try {
+					snumChars = stream.read(buf);
+				} catch (IOException e) {
+					throw new InputMismatchException();
+				}
+				if (snumChars <= 0) {
+					return -1;
+				}
+			}
+			return buf[curChar++];
+		}
+
+		public int ni() {
+			int c = read();
+			while (isSpaceChar(c)) {
+				c = read();
+			}
+			int sgn = 1;
+			if (c == '-') {
+				sgn = -1;
+				c = read();
+			}
+			int res = 0;
+			do {
+				res *= 10;
+				res += c - '0';
+				c = read();
+			} while (!isSpaceChar(c));
+			return res * sgn;
+		}
+
+		public long nl() {
+			int c = read();
+			while (isSpaceChar(c)) {
+				c = read();
+			}
+			int sgn = 1;
+			if (c == '-') {
+				sgn = -1;
+				c = read();
+			}
+			long res = 0;
+			do {
+				res *= 10;
+				res += c - '0';
+				c = read();
+			} while (!isSpaceChar(c));
+			return res * sgn;
+		}
+
+		public double nd() {
+			int c = read();
+			while (isSpaceChar(c)) {
+				c = read();
+			}
+			int sgn = 1;
+			if (c == '-') {
+				sgn = -1;
+				c = read();
+			}
+			double res = 0;
+			while (!isSpaceChar(c) && c != '.') {
+				if (c == 'e' || c == 'E') {
+					return res * Math.pow(10, ni());
+				}
+				if (c < '0' || c > '9') {
+					throw new InputMismatchException();
+				}
+				res *= 10;
+				res += c - '0';
+				c = read();
+			}
+			if (c == '.') {
+				c = read();
+				double m = 1;
+				while (!isSpaceChar(c)) {
+					if (c == 'e' || c == 'E') {
+						return res * Math.pow(10, ni());
+					}
+					if (c < '0' || c > '9') {
+						throw new InputMismatchException();
+					}
+					m /= 10;
+					res += (c - '0') * m;
+					c = read();
+				}
+			}
+			return res * sgn;
+		}
+
+		public String ns() { //single string
+			int c = read();
+			while (isSpaceChar(c)) {
+				c = read();
+			}
+			StringBuilder res = new StringBuilder();
+			do {
+				res.appendCodePoint(c);
+				c = read();
+			} while (!isSpaceChar(c));
+			return res.toString();
+		}
+
+		public String nli() { //one entire sentence
+			int c = read();
+			while (isSpaceChar(c)) {
+				c = read();
+			}
+			StringBuilder res = new StringBuilder();
+			do {
+				res.appendCodePoint(c);
+				c = read();
+			} while (!isEndOfLine(c));
+			return res.toString();
+		}
+
+		public boolean nb() {
+			return Boolean.parseBoolean(ns());
+		}
+
+		public int[] nia(int n) {
+			int a[] = new int[n];
+			for (int i = 0; i < n; i++) {
+				a[i] = ni();
+			}
+			return a;
+		}
+
+		public double[] nda(int n) {
+			double a[] = new double[n];
+			for (int i = 0; i < n; i++) {
+				a[i] = nd();
+			}
+			return a;
+		}
+
+		public long[] nla(int n) {
+			long a[] = new long[n];
+			for (int i = 0; i < n; i++) {
+				a[i] = nl();
+			}
+			return a;
+
+		}
+
+		public boolean[] nba(int n) {
+			boolean a[] = new boolean[n];
+			for (int i = 0; i < n; i++) {
+				a[i] = nb();
+			}
+			return a;
+		}
+
+		public String[] nsa(int n) {
+			String a[] = new String[n];
+			for (int i = 0; i < n; i++) {
+				a[i] = ns();
+			}
+			return a;
+		}
+
+		public String[] nlia(int n) {
+			String a[] = new String[n];
+			for (int i = 0; i < n; i++) {
+				a[i] = nli();
+			}
+			return a;
+		}
+
+		public int[][] nim(int m,int n){
+			int a[][]=new int[n][m];
+			for(int i=0;i<m;i++){
+				a[i]=nia(n);
+			}
+			return a;
+		}
+		public boolean isSpaceChar(int c) {
+			return c == ' ' || c == '\n' || c == '\r' || c == '\t' || c == -1;
+		}
+
+		private boolean isEndOfLine(int c) {
+			return c == '\n' || c == '\r' || c == -1;
+		}
+
+	}
+
+	static class OutputWriter {
+
+		private final PrintWriter writer;
+
+		public OutputWriter(OutputStream outputStream) {
+			writer = new PrintWriter(new BufferedWriter(new OutputStreamWriter(outputStream)));
+		}
+
+		public OutputWriter(Writer writer) {
+			this.writer = new PrintWriter(writer);
+		}
+
+		public void pt(Object object) {
+			writer.print(object);
+			writer.flush();
+		}
+
+		public void ptn(Object object) {
+			pt(object);
+			writer.println();
+			writer.flush();
+		}
+
+		public void pta(char ch, Object... objects) {
+			for (int i = 0; i < objects.length; i++) {
+				if (i != 0) {
+					writer.print(ch);
+				}
+				writer.print(objects[i]);
+			}
+			writer.println();
+			writer.flush();
+		}
+
+		public void pth(int[] arr) {
+			pta(' ', Arrays.stream(arr).boxed().toArray(Object[]::new));
+		}
+
+		public void pth(double[] arr){
+			pta(' ',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		}
+
+		public void pth(long[] arr){
+			pta(' ',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		}
+
+		public void ptv(int[] arr){
+			pta('\n',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		}
+
+		public void ptv(long[] arr){
+			pta('\n',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		}
+
+		public void ptv(double[] arr){
+			pta('\n',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		}
+
+		public void pim(int arr[][]){
+			for (int[] arr1 : arr) {
+				pth(arr1);
+			}
+		}
+
+		public void close() {
+			writer.close();
+		}
+
+		public void flush() {
+			writer.flush();
+		}
+	}
+
+}

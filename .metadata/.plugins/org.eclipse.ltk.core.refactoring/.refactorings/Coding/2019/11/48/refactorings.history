@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;interviewbit.N3_Repeat_Number.java&apos; to &apos;Majority_Element_II.java&apos;&#x0D;&#x0A;- Original project: &apos;Coding&apos;&#x0D;&#x0A;- Original element: &apos;interviewbit.N3_Repeat_Number.java&apos;&#x0D;&#x0A;- Renamed element: &apos;interviewbit.Majority_Element_II.java&apos;" description="Rename compilation unit &apos;N3_Repeat_Number.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;interviewbit{N3_Repeat_Number.java" name="Majority_Element_II.java" references="false" stamp="1574959551222" version="1.0"/>
+</session>

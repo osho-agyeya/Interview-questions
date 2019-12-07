@@ -1,0 +1,25 @@
+//done
+
+package interviewbit;
+
+import java.util.HashSet;
+
+public class Colorful_Number {
+	
+	public int colorful(int a) {
+        String A = Integer.toString(a);
+        HashSet<Integer> set = new HashSet<Integer>();
+        int prod = 0;
+        for(int i = 0; i < A.length(); i++) {
+            prod = 1;
+            for(int j = i; j < A.length(); j++ ){
+                prod *= A.charAt(j)-'0';   
+                if(set.contains(prod))
+                    return 0;
+                else set.add(prod);    
+            }
+        }
+        return 1; 
+    }
+
+}

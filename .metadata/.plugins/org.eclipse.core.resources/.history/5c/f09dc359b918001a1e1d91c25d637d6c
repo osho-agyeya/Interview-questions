@@ -1,0 +1,19 @@
+//doe
+package leetcode;
+
+public class Palindrome_Number {
+
+    public boolean isPalindrome(int x) {
+        if(x > Integer.MAX_VALUE || x <Integer.MIN_VALUE || x < 0) {
+            return false;
+        }
+        int palindrome = 0;
+        int realNumber = x;
+        while (realNumber > 0) {
+            palindrome = palindrome * 10 + realNumber % 10;
+            realNumber /= 10;
+        }
+        return palindrome == x;
+    }
+	
+}
