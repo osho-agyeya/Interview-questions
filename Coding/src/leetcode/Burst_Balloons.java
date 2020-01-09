@@ -39,7 +39,7 @@ public class Burst_Balloons {
 	        return dp[start][end];
 	    }
 	    int max = nums[start];
-	    for (int i = start; i <= end; i++) {
+	    for (int i = start; i <= end; i++) {  //i is the last balloon to be burst in the range start to end
 	        int val = maxCoins(nums, start, i - 1, dp) + 
 	                  get(nums, i) * get(nums, start - 1) * get(nums, end + 1) + 
 	                  maxCoins(nums, i + 1, end, dp);

@@ -54,9 +54,9 @@ public class Combination_Sum_II {
 	    else if(remain == 0) list.add(new ArrayList<>(tempList));
 	    else{
 	        for(int i = start; i < nums.length; i++){
-	            if(i > start && nums[i] == nums[i-1]) continue; // skip duplicates
+	            if(i > start && nums[i] == nums[i-1]) continue; // skip duplicates of form 122, 1`22
 	            tempList.add(nums[i]);
-	            backtrack(list, tempList, nums, remain - nums[i], i + 1);
+	            backtrack(list, tempList, nums, remain - nums[i], i + 1);  //because one number can be used only once
 	            tempList.remove(tempList.size() - 1); 
 	        }
 	    }

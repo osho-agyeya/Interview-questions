@@ -1,0 +1,29 @@
+package ninja;
+
+import java.util.Comparator;
+import java.util.TreeMap;
+
+import com.sun.java.util.jar.pack.ConstantPool.Entry;
+
+public class Get_Mode_Array_Updates {
+	
+	class Node{
+		int key;
+		int freq;
+		Node(int key,int freq){
+			this.key=key;
+			this.freq=freq;
+		}
+	}
+	public int[] getMode(int[] A, int[][] B) {
+		int n=A.length;
+		HashMap<Integer, > count= 
+				new TreeMap<Integer, Integer>((a,b)->{
+					a-b;
+				});
+		for(int i:A) {
+			count.put(i, count.getOrDefault(i, 0)+1);
+		}
+		
+    }
+}

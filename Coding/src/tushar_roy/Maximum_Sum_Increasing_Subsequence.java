@@ -20,8 +20,7 @@ public class Maximum_Sum_Increasing_Subsequence {
            in bottom up manner */
         for (i = 1; i < n; i++) 
             for (j = 0; j < i; j++) 
-                if (arr[i] > arr[j] && 
-                    msis[i] < msis[j] + arr[i]) 
+                if (arr[i] > arr[j] && msis[i] < msis[j] + arr[i]) 
                     msis[i] = msis[j] + arr[i]; 
   
         /* Pick maximum of all 

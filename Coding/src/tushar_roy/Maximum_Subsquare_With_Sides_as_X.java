@@ -3,86 +3,102 @@
  * Given a matrix of 0s and Xs. Find largest subsquare matrix in this matrix such that sides of that square matrix are entirely made of Xs.
  */
 
+
+/**
+ * Date 09/15/2014
+ * @author tusroy
+ * 
+ * Find maximum subsquare in a matrix made up of Xs and Os such that all four sides of subsquare are Xs. It does not matter what is inside
+ * the subsquare. All 4 sides should be made up entirely of Xs
+ * 
+ * e.g 
+ * 0 0 0 0 0 X         0,0  0,0  0,0  0,0  0,0  1,1
+ * 0 X 0 X X X         0,0  1,1  0,0  1,1  1,2  2,3 
+ * 0 X 0 X 0 X         0,0  2,1  0,0  2,1  0,0  3,1
+ * 0 X X X X X         0,0  3,1  1,2  3,3  1,4  4,5
+ * 0 0 0 0 0 0         0,0  0,0  0,0  0,0  0,0  0,0   
+ * 
+ * Output of above program should be 3
+ * 
+ * Solution
+ * Have another matrix which is capable of holding 2 values hori and ver. 
+ * Ver stores how far vertically you can see Xs. Hori stores how far horizontally you can see Xs.
+ * Once this matrix is build look for biggest subsquare by getting min of hori and ver at each point and checking
+ * if subsquare can be formed from value min to 1.
+ * 
+ * Test cases:
+ * Matrix entirely made up of Xs
+ * Matrix entirely made up of Os
+ * Matrix with Xs and Os but maximum subsquare is length 1
+ */
+
 package tushar_roy;
 
 public class Maximum_Subsquare_With_Sides_as_X {
 
-	 static int getMin(int x, int y) 
-	    { return (x < y) ? x : y; } 
-	      
-	    // Returns size of maximum 
-	    // size subsquare matrix 
-	    // surrounded by 'X' 
-	    static int findSubSquare(int mat[][],int N) 
-	    { 
-	    int max = 0; // Initialize result 
-	  
-	    // Initialize the left-top  
-	    // value in hor[][] and ver[][] 
-	    int hor[][] = new int[N][N]; 
-	    int ver[][] = new int[N][N]; 
-	    hor[0][0] = ver[0][0] = 'X'; 
-	  
-	    // Fill values in  
-	    // hor[][] and ver[][] 
-	    for (int i = 0; i < N; i++) 
-	    { 
-	        for (int j = 0; j < N; j++) 
-	        { 
-	            if (mat[i][j] == 'O') 
-	                ver[i][j] = hor[i][j] = 0; 
-	            else
-	            { 
-	                hor[i][j] = (j == 0) ? 1 :  
-	                hor[i][j - 1] + 1; 
-	                ver[i][j] = (i == 0) ? 1 :  
-	                ver[i - 1][j] + 1; 
-	            } 
-	        } 
-	    } 
-	  
-	    // Start from the rightmost- 
-	    // bottommost corner element  
-	    // and find the largest  
-	    // subsquare with the help  
-	    // of hor[][] and ver[][] 
-	    for (int i = N - 1; i >= 1; i--) 
-	    { 
-	        for (int j = N - 1; j >= 1; j--) 
-	        { 
-	            // Find smaller of values in  
-	            // hor[][] and ver[][] A Square  
-	            // can only be made by taking  
-	            // smaller value 
-	            int small = getMin(hor[i][j],  
-	                               ver[i][j]); 
-	  
-	            // At this point, we are sure  
-	            // that there is a right vertical 
-	            // line and bottom horizontal  
-	            // line of length at least 'small'. 
-	  
-	            // We found a bigger square  
-	            // if following conditions 
-	            // are met: 
-	            // 1)If side of square 
-	            //   is greater than max. 
-	            // 2)There is a left vertical 
-	            //   line of length >= 'small' 
-	            // 3)There is a top horizontal 
-	            //   line of length >= 'small' 
-	            while (small > max) 
-	            { 
-	                if (ver[i][j - small + 1] >= small && 
-	                    hor[i - small + 1][j] >= small) 
-	                { 
-	                    max = small; 
-	                } 
-	                small--; 
-	            } 
-	        } 
-	    } 
-	    return max; 
-	    }	
+
+    class Cell{
+        int ver;
+        int hori;
+    }
+    public int findSubSquare(char input[][]){
+        Cell T[][] = new Cell[input.length][input[0].length];
+        for(int i=0; i < T.length; i++){
+            for(int j=0; j < T[0].length; j++){
+                T[i][j] = new Cell();
+            }
+        }
+    
+        for(int i=0; i < input.length; i++){
+            for(int j=0; j < input[0].length; j++){
+                if(input[i][j] == 'X'){
+                    if(i == 0 && j == 0){
+                        T[i][j].hori = 1;
+                        T[i][j].ver = 1;
+                    }
+                    else if(i == 0){
+                        T[i][j].hori = T[i][j-1].hori + 1;
+                        T[i][j].ver = 1;
+                    }else if(j == 0){
+                        T[i][j].ver = T[i-1][j].ver +1;
+                        T[i][j].hori = 1;
+                    }else{
+                        T[i][j].hori = T[i][j-1].hori +1;
+                        T[i][j].ver = T[i-1][j].ver + 1;
+                    }
+                }
+            }
+        }
+        for(int i=0; i < T.length; i++){
+            for(int j=0; j < T[0].length; j++){
+                System.out.print(T[i][j].ver + "," + T[i][j].hori+ "  ");
+            }
+            System.out.println();
+        }
+        
+        //start iterating from bottom right corner and find min of hori or ver at every cell.
+        //If this is greater than 1 then see if you can find a number between this min and 1
+        //such that on left's ver and top's hori is greater greater than or equal to k.
+        int max = 1;
+        for(int i=T.length -1; i >=0 ; i--){
+            for(int j= T[0].length-1 ; j >=0; j--){
+                if(T[i][j].ver == 0 || T[i][j].ver == 1 || T[i][j].hori ==1 ){
+                    continue;
+                }
+                int min = Math.min(T[i][j].ver, T[i][j].hori);
+                int k = 0;
+                for(k=min; k > 1; k--){
+                    if(T[i][j-k+1].ver >= k && T[i-k+1][j].hori >= k){
+                        break;
+                    }
+                }
+                if(max < k){
+                    max = k;
+                }
+            }
+        }
+        
+        return max;
+    }
 	
 }

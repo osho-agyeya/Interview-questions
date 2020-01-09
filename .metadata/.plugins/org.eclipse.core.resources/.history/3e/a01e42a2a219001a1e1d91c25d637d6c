@@ -1,0 +1,14 @@
+package ninja;
+
+import java.util.TreeMap;
+
+public class Get_Mode_Array_Updates {
+	public int[] getMode(int[] A, int[][] B) {
+		int n=A.length;
+		TreeMap<Integer, Integer> count= new TreeMap<Integer, Integer>();
+		for(int i:A) {
+			count.put(i, count.getOrDefault(i, 0)+1);
+		}
+		
+    }
+}
