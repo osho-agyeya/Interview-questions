@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Min XOR value
 Asked in:  

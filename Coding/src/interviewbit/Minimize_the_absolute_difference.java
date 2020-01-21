@@ -1,4 +1,4 @@
-//done
+//ddone
 /*
  * Minimize the absolute difference
 Asked in:  

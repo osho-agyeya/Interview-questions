@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Given a number N, find all factors of N.
 

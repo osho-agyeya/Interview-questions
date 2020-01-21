@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Knight On Chess Board
 Asked in:  

@@ -1,4 +1,4 @@
-//done
+//ddone
 /*
  *You are given a string S, and you have to find all the amazing substrings of S.
 

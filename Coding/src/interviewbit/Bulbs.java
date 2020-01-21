@@ -1,4 +1,4 @@
-//done
+//ddone
 /*
  * Bulbs
 N light bulbs are connected by a wire.

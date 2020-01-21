@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Kth Smallest Element in the Array
 Find the kth smallest element in an unsorted array of non-negative integers.

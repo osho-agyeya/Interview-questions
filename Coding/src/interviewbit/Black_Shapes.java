@@ -1,4 +1,4 @@
-//done
+//ddone
 /*
  * Black Shapes
 Asked in:  
@@ -52,20 +52,26 @@ public class Black_Shapes {
         int rl=a.length;
         int cl=a[0].length();
         for(int i=0;i<rl;i++){
+            String s=a[i];
             for(int j=0;j<cl;j++){
-                if(dfs(a,i,j,rl,cl)>0)
+                char ch=s.charAt(j);
+                if(ch=='X'){
+                    dfs(a,i,j,rl,cl);
                     c++;
+                }
             }
         }
         return c;
-        
     }
     
-    public int dfs(String a[],int r,int c,int rl,int cl){
-        if(r>=rl || r<0 || c>=cl || c<0 || a[r].charAt(c)=='O')    return 0;
+    public void dfs(String a[],int r,int c,int rl,int cl){
+        if(r>=rl || r<0 || c>=cl || c<0 || a[r].charAt(c)!='X')  return;
         //a[r]=a[r].replace("X","O");
         a[r]=a[r].substring(0,c)+"O"+a[r].substring(c+1,cl);
-        return 1+dfs(a,r+1,c,rl,cl)+dfs(a,r-1,c,rl,cl)+dfs(a,r,c-1,rl,cl)+dfs(a,r,c+1,rl,cl);
-    }
+        dfs(a,r+1,c,rl,cl);
+        dfs(a,r-1,c,rl,cl);
+        dfs(a,r,c-1,rl,cl);
+        dfs(a,r,c+1,rl,cl);
+    }  
 	
 }
