@@ -1,11 +1,11 @@
-//doe
+//ddoe
 /*Pretty Json
 Asked in:  
 Facebook
 Microsoft
 Given a string A representating json object. Return an array of string denoting json object with proper indentaion.
 
-Rules for proper indentaion:
+Rules for proper indentation:
 
 Every inner brace should increase one indentation to the following lines.
 Every close brace should decrease one indentation to the same line and the following lines.

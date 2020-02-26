@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * This is the extension problem of Word Pattern I.
 

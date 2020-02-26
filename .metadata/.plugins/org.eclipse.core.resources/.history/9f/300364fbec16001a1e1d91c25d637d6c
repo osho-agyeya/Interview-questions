@@ -1,7 +1,0 @@
-package tushar_roy;
-//Time complexity is O(VE^2)
-import java.util.*;
-
-public class FordFulkerson {
-
-}

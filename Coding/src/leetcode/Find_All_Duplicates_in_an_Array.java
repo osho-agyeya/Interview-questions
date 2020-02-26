@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * 
  * Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.

@@ -1,4 +1,4 @@
-//done
+//ddone
 /*
  * 
  * Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.
@@ -42,6 +42,7 @@ public class Longest_Palindromic_Subsequence {
                 }else{
                     T[i][j] = Math.max(T[i + 1][j], T[i][j - 1]);
                 }
+                System.out.println(i+","+j+","+l);
             }
         }
         return T[0][str.length-1];

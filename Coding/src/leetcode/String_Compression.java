@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Given an array of characters, compress it in-place.
 

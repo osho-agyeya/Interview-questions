@@ -1,10 +1,10 @@
+//doe
 package ctci;
 
 public class Boolean_Evaluation {
 	
 	public static int calculateNumberOfWays(String operators, String operands){
         int numOperands = operands.length();
- 
  
         int[][] F = new int[numOperands][numOperands];
         int[][] T = new int [numOperands][numOperands];
@@ -38,11 +38,13 @@ public class Boolean_Evaluation {
                 }
             }
         }
+        
         for(int i=0; i<numOperands; i++){
             for(int j=0; j<numOperands; j++){
                 System.out.println("(" + i + "," + j + ") :"  + T[i][j]);
             }
         }
+        
         return T[0][numOperands-1];
     }
 

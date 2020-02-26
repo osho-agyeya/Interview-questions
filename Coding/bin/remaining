@@ -1,0 +1,1307 @@
+done till here:https://www.geeksforgeeks.org/tag/amazon/page/5/
+
+https://zety.com/
+
+https://www.geeksforgeeks.org/minimum-time-to-burn-a-tree-starting-from-a-leaf-node/
+
+Find the next greater element in an array:
+Find the next greater of next smaller  element in an array
+-Longest Palindromic String(Iterative and Recursive)
+-Longest Palindromic Subsequence
+-Find the maximum element for every window of size k.
+
+-Add one to a linked list ( Time Complexity: O(n), Space Complexity O(1))
+
+https://www.geeksforgeeks.org/bridge-in-a-graph/
+
+https://www.geeksforgeeks.org/number-of-ways-to-get-a-given-sum-with-n-number-of-m-faced-dices/
+-https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+-https://www.geeksforgeeks.org/merge-k-sorted-arrays-set-2-different-sized-arrays/
+Each node in a tree generally has utmost 1 parent and 2 children, in the given tree each node can have utmost 2 parents and 2 children. Each node had a value associated with it. I had to find the maximum sum that I can get by traversing from the root to the leaf most efficient manner. The values of each node can be negative too. I had to solve this in O(n).  To solve this I had used Dynamic Programming.
+
+Difference between ipv4 and ipv6 except for the length.
+What is memory virtualization?
+-https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/
+
+-https://www.geeksforgeeks.org/count-possible-paths-top-left-bottom-right-nxm-matrix/
+https://www.geeksforgeeks.org/vertical-sum-in-a-given-binary-tree/
+
+-Given a linked list, connect the first to last, last to second, second to second last and so forth.
+-https://www.geeksforgeeks.org/next-greater-element/
+https://www.geeksforgeeks.org/number-turns-reach-one-node-binary-tree/
+-https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
+
+Building heaps, merge sort, insertion sort, count inversions in an array
+What are ACID properties in a database?
+How to implement isolation in a database?
+What is thrashing?
+What is virtual memory?
+
+ Given a space separated string find the first substring whose reverse is present in the string. And string will end with $ sign.
+Chocolate distribution problem-There are N people standing in a row with
+ some count (1<=i<=N) number of chocolates in their hands. 
+ You have to select a range of people and take all their chocolates with the condition that
+  you should be able to distribute those chocolates equally among M boxes. 
+  Write a program to determine the maximum number of chocolates that can be placed in a box.
+
+https://www.geeksforgeeks.org/convert-an-arbitrary-binary-tree-to-a-tree-that-holds-children-sum-property/
+https://www.geeksforgeeks.org/maximum-path-sum-matrix/
+-https://www.geeksforgeeks.org/lru-cache-implementation/
+-https://www.geeksforgeeks.org/implement-a-dictionary-using-trie/
+-https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+
+-https://www.geeksforgeeks.org/merge-two-sorted-arrays-o1-extra-space/
+-https://www.geeksforgeeks.org/count-pairs-with-given-sum/ 
+
+-https://www.geeksforgeeks.org/dice-throw-dp-30/
+-Given a starting and ending time of events and only 1 event can take place at a time, print the maximum number of events that can take place. (Hint: Sort on the basis of start time and take a greedy approach)
+https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
+-https://www.geeksforgeeks.org/kth-largest-element-bst-using-constant-extra-space/
+https://www.geeksforgeeks.org/largest-subset-of-rectangles-such-that-no-rectangle-fit-in-any-other-rectangle/
+
+Given an array of R and C, where R represents a rabbit at that location and C represents a carrot at that location and an integer D, a rabbit can eat a maximum of 1 carrot within the range D. Output the maximum number of carrots that could be eaten.
+https://www.geeksforgeeks.org/number-of-palindromic-paths-in-a-matrix/
+
+-https://leetcode.com/problems/reverse-string-ii/
+-https://leetcode.com/problems/course-schedule/
+-https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
+ Given a array break the array into three sub-array by removing 2 elements of it, in such a way that all three sub-array have same sum. O(n) Time Complexity and O(1) space complexity.                                                                                  eg. A->[1, 1, 1, 4, 2, 1, 5, 3]   
+ 
+Given a string print the largest sub-string containing vowels in even counts.O(n)                                                                 eg. S-> aqwrteakjeaghev , answer->aqwrteakje  as it contain 2 ‘a’ and 2 ‘e’.                                Second in same question he want me to print all sub-string if multiple sub-strings are possible of same length
+https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
+ 
+design a algo for how to maintain server-load with load Balancer.(Not able to answer it basically he want to answer something like round robin type algorithm
+-Given a data made up of BST which is dynamic(i.e nodes keep on adding as the user enter new details) he want me to convert that BST to Complete tree.[Have a healthy discussion on it about 10-15 min i gave him solution with rotations like in AVL and ultimately at end he agreed with a solution consist of in-order which run on the Batch basis.].Then he told me to code the function which take tree as input and return root by changing it to complete tree.
+Second he asked for a given a number ‘n’, print how many valid parenthesis strings containing ‘(‘ or ‘)’ are possible of that length. I told its an application of Catalan Number then he want me to write a code to generate nth Catalan number without using formula basically he want me to write the Dynamic version of it. [https://www.geeksforgeeks.org/program-nth-catalan-number/]
+
+-Given a number in form of link list we have to add one to that number and update the link list  accordingly.         eg. 123 is store like 1->2->3  and adding 1 to 123 it become 124 so we have to update the list to 1->2->4.                 O(n) time and with O(1) extra space without reversing without recursion.
+Given a playlist of songs we have to shuffled that playlist.[Basically an application of https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/]
+
+-Given a binary tree, print the top view of the tree.
+-On to the question, he asked me to print the nth node from the last of the given linked list.
+
+-Given a set of strings and an input string. A string is valid only if it can be broken into non-overlapping sub-strings such that each of those sub-strings are available in the set. The question was somewhat similar to this. Since I am weak in strings I was not getting any good solution. I told him my approach and he told me take time and think about it. Watching me struggling with the solution, he started to ask me about my projects. I was not able to find a good solution. He then moved onto the next question.
+-Given a binary tree and two nodes, Node 1 and Node 2. Print the path from Node 1 to Node 2.
+
+-Infix to Postfix conversion
+-You are on the ground stair and you have to reach ‘Nth’ stair. At any stair, you can take at most ‘K’ steps. Find the total number of ways you can reach the Nth stair. int countWays(int N, int K)
+http://https//leetcode.com/problems/smallest-string-with-swaps/
+-Trapping rainwater problem
+https://www.geeksforgeeks.org/dynamic-programming-building-bridges/
+
+https://www.geeksforgeeks.org/eulers-totient-function/
+https://www.geeksforgeeks.org/counting-inversions/
+-https://www.geeksforgeeks.org/stock-buy-sell/
+Given a string and a pattern. Find the count of occurrences of pattern as sub sequence in the string(Non – overlapping)
+
+https://www.geeksforgeeks.org/connect-n-ropes-minimum-cost/
+-Return the number of steps to reach from a node to another in a directed unweighted graph.
+
+-https://www.geeksforgeeks.org/dice-throw-dp-30/
+-Given an unsigned 32 bit integer, find  a) leftmost signed bit b) rightmost signed bit c) the total number of signed bits.We have two return a character array containing a#b#c
+
+-https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/
+
+-Printing the maximum length increasing subsequence(length and subsequence both)
+He expected the optimized form but I could only write code for  O(n^2) approach. I just mentioned about Patience sorting algorithm which can solve this problem in O(N log N) time.
+
+-Given an array of n elements, it should satisfy the following property a < b > c < d > e < f > g 
+-https://www.geeksforgeeks.org/lru-cache-implementation/
+-https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/
+-https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/
+-Given a matrix of 0 and X, where 0 represents water and X represents land, find the maximum size of the continuous island. I told him that I would do this by using BFS.
+
+-Given a matrix each entry in box is an integer. find row having maximum sum.
+-Given a dice having m faces each numbered from 1…to ..m, the dice rolled n times. then find in how many ways a particular target sum T can be generated since ans is large we have to answer using modulo 1e9+7.
+
+-Given a one dimension array find two elements such difference b/w them is minimum.
+-Expanded question to two sorted array then to k sorted array
+-asked to write code for heapify. little discussion on build heap complexity [ got confused and not able to clearly explain him how complexity becomes O(n)]
+Asked about bst, lots of discussion on bst.
+-given a bst make it a balanced binary tree Such that its preorder traversal gives us sorted sequence. 
+ asked about dynamically growing sequential list, name them and discussed about various complexity of insert, remove random access in them.
+ asked me about dictionary how they are internally implemented.
+ he asked me to implement a full Hashtable class which should dynamically grow as no of keys increases and handle collisions.
+ Given a string of characters you can erase K consecutive occurring characters [though I misinterpreted it as more than K consecutive occurring characters which leads me to not come up with solution] . then what is minimum length we can get, note operation can applied recursively.
+ 
+ Mean, Mode & Median of an array.
+Find the number of inversions in an array.
+Min. Dice throw DP
+
+Write code to find the path from one node to another in a binary search tree. Did it well.
+Write code to heapify an array. OR Find the minimum number of modifications to sort an array where one modification means to increment or decrement an element by one.
+
+-https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/
+-https://www.geeksforgeeks.org/k-maximum-sum-combinations-two-arrays/
+
+-Count trailing zeroes in a factorial of a number
+A co-ordinate plane is given. On each point (x, y), there are x+y number of apples on it. A person is standing on (0, 0) and he wants to buy a square plot having N number of apples inside it (including the periphery). Return the value of perimeter of that square plot if value of N is given
+-https://www.geeksforgeeks.org/count-possible-paths-top-left-bottom-right-nxm-matrix/
+-Find inorder predecessor and successor of node in BST in which nodes also have a parent pointer alongwith left and right pointers.
+-https://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
+What is Deadlock?
+How deadlocks can be detected?
+Given a directed graph of process dependency, write a code to detect deadlock. (Solution: Cycle in Directed Graph)
+What are ACID properties in DBMS?
+Difference between TCP and UDP
+
+-https://www.geeksforgeeks.org/find-excel-column-name-given-number/
+-https://www.geeksforgeeks.org/optimal-strategy-for-a-game-dp-31/
+Detailed explanation of need and working of Virtual Memory in Operating System
+Overview of pages and page faults
+
+Projects and schema(you need to explain clearly about your projects and technologies you used. Latest Technologies might help you to grab their attention like ML)
+Simple queries on MongoDB(as it is on my resume)
+SQL Queries based on joins and Inner query(This part is little difficult you may get confused)
+Draw database schema of uber
+normalization and normal forms
+Try to normalize the given 2 tables to 3NF
+What is cloud computing and what are the advantages over a normal database
+oops and DBMS concepts(polymorphism, abstraction, savepoint, DML, DDL commands etc)
+Types of joins
+What is a distributed file system?
+lastly 2 simple coding questions(find the frequency of a number in a sorted array, implement binary search)
+
+Project and schema
+SQL queries harder than the previous round. They test your idea and efficiency of retrieving data using joins and inner queries
+Simple DBMS concepts
+2 simple coding questions(frequency of a number in an array, find the second largest number the given array)
+
+This round is to test our problem-solving ability.
+find mid element of a Linked List
+find merging point of 2 linked lists
+print right view of a binary search tree
+Time complexity matters
+Based on your performance your role will be decided
+For Software Development Engineer(SDE) you need to have good problem-solving skills. Prepare LL, Trees, DP, Graphs.
+For Data Engineer(DE) role prepare SQL queries and Database concepts as well as cloud computing and big data basics. You get to work on AWS as a DE.
+TR rounds may moy be in the same order for everyone.
+
+-Find all triplets with zero sum
+-Replace each node in binary tree with the sum of its inorder predecessor and successor
+
+To optimize the solution to best possible complexities.
+Write production-ready code, your implementation will be tested, you have to write a code that would run without any compilation error or runtime error if tested on a system, even a small mistake can lead to your rejection.
+
+-https://www.hackerrank.com/challenges/grid-walking/problem
+-https://www.geeksforgeeks.org/construct-a-binary-tree-from-parent-array-representation/
+
+-https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
+-https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-k-times/
+
+How C++ has evolved from C++ to C++17?
+What is diamond problem?
+How virtual keyword works?
+Questions about multi threading in C++.
+How C++ compiler works in detail.
+
+-Then he moved to core subject questions i.e., OS and DBMS, he gave me some scenarios and asked me how OS would behave, how it will handle all this, how semaphores will help, what is virtual memory, how does page replacement algorithms work. In DBMS he asked me about Indexing in detail, how actually indexing works in DBMS.
+
+Since my resume mentioned about Javascript and NoSQL, he asked my differences between NoSql and SQL databases, and when to use what.
+-https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
+
+Given a string with small letters convert the string into proper URL format considering the various constraints given. (like ru is always the domain extension and few other constraints)
+Given the 1D matrix of size k. Consider it as a 2D matrix of m rows and n columns(such that m*n=k) and return the sum of maxrow-sum and maximum-column sum.
+https://practice.geeksforgeeks.org/problems/minimum-platforms/0
+Given an array(size 365) of boolean values saying if a particular person is travelling on that day or not. The ticket schemes are given like for 1 day it costs Rs 2, for 7 days(continuous) it takes Rs 5 etc. We have to select the tickets in such a way that the total cost of all tickets is minimum for the whole travel. (somewhat similar to coin changing problem).
+
+-1. Reverse a LinkedList in the most efficient way. Can we reverse in 0(1) space complexity?
+-2. Check palindrome in a LinkedList say in 0(1) space complexity.
+-3. To find the maximum number of people in a party at any time given every person’s entry and exit time.
+-4. Given a 2D matrix containing 0 and 1 which are row-wise sorted, write the most efficient algorithm to return the maximum number of 1’s in a single row.
+5. A question similar to this painters partition problem. He wanted a dynamic programming solution of O(k*N^2) time complexity.
+6. Discussion on my project implementation.
+
+-You will be getting a stream of edges for a directed graph. You have to tell at what point the cycle is formed. (My approach was using Disjoint sets ). He asked if I can implement the same algorithm to the undirected graph also? He asked me to implement Disjoint sets algorithm and to make it efficient using union by rank and path compression. We discussed its time complexities.
+-Asked me about Ford-Fulkerson max flow algorithm. We discussed the applications, space and time complexities of the algorithm
+-There is a codeword to win the game and an input stream of characters is coming. When the input stream forms a codeword, the player wins. Find at what point a player wins. Basically it was substring search problem. I told my approach using Z algorithm and later we discussed the KMP algorithm.
+Some simple questions on OS like semaphores, threads, scheduling etc.
+2. Write code for recursive soln of DFS for an N-ary tree
+
+3. Write code for iterative soln of DFS for an N-ary tree.
+
+4. Write code for iterative soln of DFS for an N-ary tree without a stack.
+
+5. Write code for iterative soln of DFS for an N-ary tree without stack when parent pointer is given.
+
+-https://www.geeksforgeeks.org/find-triplets-array-whose-sum-equal-zero/
+-https://www.geeksforgeeks.org/sum-of-two-linked-lists/
+-https://www.geeksforgeeks.org/find-the-row-with-maximum-number-1s/
+-https://www.geeksforgeeks.org/merge-sort-for-linked-list/
+-https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+-https://www.geeksforgeeks.org/count-number-binary-strings-without-consecutive-1s/
+-find the element of linked list which is at the position squareroot(len(linkedlist))  in one iteration and the third question was on binary search
+
+-https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/
+-finding the first number which is common between two linked lists
+-he first question was given a playlist of songa you have to randomise the list and play every song once until all the songs in the playlist are done. the second question was https://www.geeksforgeeks.org/sort-a-stack-using-recursion/ and last question was finding the first missing number given the starting value and the sorted list
+
+-Quicksort a linked list
+-Find the intersection point of two linked lists (they may have loops)
+-https://www.geeksforgeeks.org/find-minimum-changes-required-in-an-array-for-it-to-contain-k-distinct-elements/
+-Given a chemical compound, find the numbers of each atom in it.
+
+Given the quad tree representation of 2 images, construct the quad tree for the image formed by superimposing these 2 images.
+-https://www.geeksforgeeks.org/count-ways-reach-nth-stair/
+
+-https://www.geeksforgeeks.org/kth-largest-element-in-bst-when-modification-to-bst-is-not-allowed/
+-https://www.geeksforgeeks.org/lru-cache-implementation/
+
+-https://www.geeksforgeeks.org/detect-cycle-in-a-graph/
+-https://www.geeksforgeeks.org/first-negative-integer-every-window-size-k/
+-https://www.geeksforgeeks.org/submatrix-sum-queries/
+
+-https://www.geeksforgeeks.org/water-drop-problem/
+-https://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/
+-https://www.geeksforgeeks.org/print-longest-leaf-leaf-path-binary-tree/
+-https://www.geeksforgeeks.org/merge-sort-for-linked-list/
+-Given that to prepare a certain ingredient we may require another ingredient i.e.
+To prepare ingredient A we require ingredient B.(A -> B)
+To prepare ingredient B we require ingredient C.(B -> C)
+To prepare ingredient C we require ingredient A.(C -> A)
+
+-https://www.geeksforgeeks.org/array-rotation/
+-Find minimum distance between source and destination in a matrix. See this post for details
+-Print Binary tree in vertical order. See this post for details.
+-Search element in array having special property.
+-Special property of an array is each element of it is either +1 or -1 to the previous element. The solution should have time complexity less than linear search.
+
+-Find 5 most frequent words from the given string. I found this post for a given question but I told hashmap approach to the interviewer and he said this is not the most efficient approach as string can be very big so iterating it twice is not good solution. In the end, I couldn’t figure out an alternative so he asked me to write a code for the initial solution only.
+-Reverse a linked list in k blocks. see this post. I was aware of the question so I told him approach. He asked me to write code for the same. couldn’t complete it due to time constraint.
+
+-Given a string input in the format “num1+num2=num3”. One of the numbers will be given as ‘X’ (eg: “5+X=9”). Return the value of X.
+-Given a string input in the format “ar ar2” (eg: “9 27”) which are 2nd and 3rd numbers in Geometric progression. Given n, return nth value of that Geometric progression.
+
+-Find the missing number in an array where the numbers are consecutive and but in an unsorted manner.
+-Find the intersection point of 2 linked lists.
+-Print right view of the binary tree.
+-Given a lake starting at 0, ending at 1 and list of drops in the pairs (x, r) where x is the point that the drop falls on the lake and r is the radius of the ripple caused in the lake due to that drop. Find the minimum number of drops required to cover the entire lake with ripples.
+
+Given an expression in the form of a string “A+B=C”, where any two of A, B, and C were given, you had to find out the value of the third variable.
+=Given a matrix, calculate the row with maxSum, and column with maxSum.
+
+
+-Given a n by n matrix, rotate each layer of the matrix by one element clockwise, so:  [ 1 2 3, 4 5 6,   7 8 9 ] should become [ 4  1  2, 7  5  3, 8  9  6 ]. This is to be done in constant space.
+-Given a linked list, find Kth node from its end in one single traversal.
+-Given a linux cd command like “a/b/c/./d/../e”, you have to find the resulting directory, or report error if any.
+
+-Given a Binary Tree, convert it into a doubly linked list without using extra space.
+-Given an array of strings, group all the anagrams together.
+
+-Linearise a 2D linked list in one traversal and without using extra space. Each node would have a right and down pointers. The down pointer may or may not point to a non NULL node.
+-Check whether two nodes in a Binary Tree are cousins or not in one single pass.
+-Which sorting algorithm would be appropriate to sort a line of almirahs according to their height so that my effort is minimum. (Selection sort)
+
+Given an infinite stream of incoming strings with their timestamps, print a string only if it has not been printed in the last 10 seconds. A map based approach would not work because it can potentially grow to an infinite size with so many strings.
+So, if the timestamp-string pairs were as follows:
+1 – foo
+3 – bar
+6 – foo
+11 – bar
+13 – foo
+
+-Print the top view of a binary tree
+
+Print the characters which occur more than (or) equal to the value specified sequentially
+Input:
+zazazbgh
+2
+Output:
+zzzaa
+Print the maximum prefix
+Input:
+3
+gee, geeks for, geeks for gee
+Output:
+gee
+Remove the element which is less than the next element;
+cycle 1: 2<6; so remove 2; result: [4 6 10]
+cycle 2: 4<6; so remove 4; result [6 10]
+Input:
+4 2 6 10
+2
+Output:
+6 10
+Asked to print the pattern by user-defined input.
+Input:
+5
+Output:
+*********
+b*******b
+bb*****bb
+bbb***bbb
+bbbb*bbbb
+
+-https://www.geeksforgeeks.org/print-all-neigbour-nodes-within-distance-k/
+
+
+-1.Print binary tree vertically.
+-2.Given matrix of “#”, “&”, source “S”, destinations “D”, calculate minimum number of steps required to go from Source to Destination. Can only move in four directions(up, down, right, left)
+
+-1.Given ‘N’ houses find number of ways to paint it with ‘K’ different color such that no two adjacent houses have same color.
+
+https://www.geeksforgeeks.org/ways-to-paint-n-paintings-such-that-adjacent-paintings-dont-have-same-colors/
+
+-2.Sliding Window Problem.Given array of N elements and integer ‘K’ find minimum and maximum in each window of length ‘K’.
+
+https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+
+-Knight Tour Problem with infinite Grid and obstructions in the path
+
+1.What did you learn from your current organization.
+
+2.Situation where you get a higher Priority task.
+
+3.What is the toughest challenge that you have faced ?
+
+-Check whether the given tree is complete binary tree
+
+-Count trailing zeroes in factorial of a number
+-Find the minimum height of Binary Tree for a given inorder and level order traversals
+
+-Find the square root of number up to 3 precision
+-Design queue using stack
+
+-Clone a Linked List with next and random pointer
+-Minimum Heap tree
+What is Polymorphism,
+Explain real-life case of Function overloading and overriding
+-What are virtual destructor and a private constructor
+
+-https://www.geeksforgeeks.org/rank-element-stream/
+-https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/
+
+You have M identical ropes and N identical weights. You want to do an experiment to determine the strength S of the identical ropes, by testing how many weights can be held by one single rope. The strength S of the ropes is defined as:
+1) If a rope breaks with the first weight, S=0;
+2) If a rope can hold n weights and breaks at n+1 weights, S=n;
+3) If a rope can hold all N weights, S=N.
+In one test (“test” means to check if one rope can hold an amount of weights), if the rope breaks, you have to take another rope to continue the experiment; if the rope does not break, it can be used for the next test with no problem. If you used up all the ropes but still cannot determine the strength S of the ropes, the experiment fails.
+Please write a C/C++ program that, given M and N (M and N are both integers, M>=1, N>=1), calculates the minimum number of tests T needed to guarantee you can determine S. Try to optimize the time complexity of your program, and explain:
+1) What kind of “tricks” you have used to optimize the time complexity?
+2) What is the time complexity without these “tricks” and what is the time complexity with these “tricks”?
+Hint 1: If you have limited number of ropes, you don’t dare to take the risk. For example, if M=1, your only choice is to increase the weights one by one, from 1 to N, to make sure you can determine S in the worst case. In this case, T=N.
+Hint 2: If you have lots of ropes, binary search is obviously helpful to calculate the minimum T efficiently.
+Example 1: M=1, N=20
+Command: calc_n_tests 1 20
+Output: 20
+Example 2: M=2, N=5
+Command: calc_n_tests 2 5
+Output: 3
+
+-a. Given a Binary Tree, find the sum of all leaf nodes which are at the maximum depths in the tree.
+-b. Find all occurrences of a given word in a matrix of characters by traversing in all 8 directions (https://www.geeksforgeeks.org/find-all-occurrences-of-the-word-in-a-matrix/)
+-c. Given an unsorted array, find a triplet, whose sum is K.
+After this there were few design rounds for sde2 candidates, to which I didn’t appear.
+
+Round 2: F2F
+
+
+
+-a. Given an unsorted array, find the Kth smallest element in the array.
+-b. Given a matrix, rotate by 90 degree anti-clockwise (inplace)
+
+Round 3: F2F
+
+-a. Given a sorted doubly linkedlist, find triplets, whose sum is K (without extra space ofcourse)
+-b. Given 2 Binary Trees, check if one Binary Tree is a SubTree of the other
+
+Round 4: F2F
+
+-a. Project specifics, with open source contributions(stackoverflow) discussions
+-b. given few scenarios, asked to figure out the approach to solve with few algorithms
+-c. Questions related to Amazon Leadership Principles (be prepared with real-time good examples in the past)
+
+Round 5: F2F
+
+-a. Find two numbers in a BST, whose sum is K (using two pointers on the tree itself) (also asked if I can do without using stack i.e, Morris Traversal explanation only)
+-b. Given a Binary Tree, find the last level upto which the tree is a Full Binary Tree and return that level
+
+(In all these rounds, working code was needed and it should cover all the edge cases)
+(You have to speak out loud to make them understand your thought process)
+
+
+-Find next greater number with same sets of digits
+https://www.geeksforgeeks.org/find-next-greater-number-set-digits/
+-Maximize the number of 1s by flipping a subarray
+-Find minimum operations required to make an array sorted: https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-sort-an-array-set-2/
+
+-Find the sum of all nodes present in each level and finally the print the product of all sums found at each level
+-Find row having maximum number of one in 2D sorted binary array                                                                    https://www.geeksforgeeks.org/find-the-row-with-maximum-number-1s/
+
+What is the difference between master and transaction table
+What is a cursor, trigger in the database, stored procedure, ACID property
+How to improve database performance (indexing in the database)
+ JSON and difference between HTTP and HTTPS
+
+-Print all nodes which are at K distance from a particular node                                                                  https://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree/
+-What is thrashing, page fault, System call, kernel
+-Memory allocation technique, paging, segmentation.
+-How a big size program can be efficiently loaded onto RAM and virtual memory concept.
+
+-https://www.geeksforgeeks.org/trapping-rain-water/
+
+-Reverse a linked list
+-2. Find maximum from all the subarrays of size K
+Try to write the optimised solution and give in as much detail as possible by writing comments. I even mentioned the complexity of both the codes. There were around 100 people and they filtered out around 65-70% of the people after this round.
+-https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+
+-The question was to find the right view of the tree 
+
+We have a company where unique alias has to be allotted to all the employees and an alias is the smallest unique prefix of the employees’ name. Here, same alias cannot be given more than once say for 6 Tanyas, alias would be T, Ta, Tan, Tany, Tanya, Tanya_2 respectively and for the last Tanya since the complete name has been taken before so the alias would be the name appended by the number of times the alias has been repeated. I suggested the use of Tries with storing the count for every alias that is allotted and he asked me to return the alias for every new employee who comes.
+Find the maximum length of subarray where the product of array elements = the LCM of those elements. I suggested him the use of GCD here because the GCD would be 1 for the elements that satisfy this condition. He gave me a range so the final solution that I proposed was to store unique prime factors of all the numbers before and then find the range in a single traversal, keeping track of the start and end.
+
+How does a server respond to a client’s request and how is the connection established. Then I was asked questions around cryptography and the Digital Signature algorithm. He then asked me why Amazon and why not the other companies that you have offers with.
+
+This round was a bar raiser round so they asked easy technical questions and was focused on principle based skills as well. He started off with asking the condition of a tree being balanced and then asking the code for it. Then he asked me for code to check if an array is a subarray of other array. He didn’t want the usage of extra space. He asked me about the sorting algorithms that I know of and pointers about each. Then he asked me about deadlock and how can it be resolved using code. Then another interviewer joined and they asked about situation where I faced deadlock and how I overcame that. I was asked about situations where I took the ownership and stuff like these. Remember their principles and build your answers around them. This round lasted for around 40 minutes.
+
+Find Mean, Median, Mode from an array.
+Rearrange array such that summation of difference between consecutive pairs is minimum, and return that summation.
+https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
+https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/
+https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/
+Rotate Matrix Inplace
+He explained me what interface is and asked me why, when and where do we use it? We discussed on it in detail giving practical examples.
+How would you implement printf() function?
+What is pass by value and pass by reference in Java?
+He explained me public, private, protected. Asked why, when and where do we use it? I explained it by giving practical examples and giving several class definitions.
+We moved to database part. He explained me what Normalisation is, and again asked me why, when and where do we use it. I explained it again giving examples, and he was really happy with it.
+Explain ACID properties. I explained it in detail. When I said that NoSQL databases didn’t have this properties. He asked whether I know about NoSQL, I said yes. Then we did discussion on SQL vs NoSQL.
+What do you understand by unstructured data? Why NoSQL for those kind of data?
+He asked to do trade-off between SQL and NoSQL using practical examples. Why, when and where will you use SQL and not NoSQL and vice versa. I gave him satisfactory answer. He was happy with it.
+He then asked me to time-space complexity analysis on Quick Sort, Merge Sort. Asked me when worst, best and average case arises, asked me to give example.
+What do you understand by balanced BST? Why it is used?
+He then asked can we do better than Binary Search in searching in an array. I gave him several approaches: HashMap, Ternary Search, Binary Search started from left
+
+https://www.geeksforgeeks.org/connect-nodes-at-same-level/
+
+Rotate a matrix by 90 degrees.
+Longest increasing subsequence.
+
+If a number is written on a paper and that paper is rotated by 180 degrees, will the number remain the same?
+Merge two sorted arrays to get a resultant sorted array. Sub questions were to get the resultant array into increasing as well as decreasing order.
+
+If there are files that are dependent on each other and I need to compile them. In what order should they be executed that all of them would get successfully compiled? This was basically topological sort.
+2x+3y+7z = n –> Find all possible combinations of x, y, z such that they satisfy above equation. I had suggested two approaches but he wanted the solution of lesser complexity. The optimized solution is obtained by dynamic programming. I couldn’t answer it using DP.
+
+Given a linked list reverse every node at even places. Eg
+Given list - 1-2-3-4-5
+Output list - 1-4-3-2-5
+Don’t remember, but somewhat based a tree. It was an easy question.
+
+Given a tree find a way to serialize and deserialize it back.
+Another tree-based question
+What is Cache? Difference b/w cache and hashmap.
+
+Zig zag level order traversal of a tree.
+BST question. convert given array to BST.
+Project discussion and questions around it like why MongoDB and not Elasticsearch or DynamoDB
+
+Why do you want to join Amazon?
+The most challenging project you did until now?
+What would you do in case of conflict on your recommended design with someone else?
+DS question based on the tree.
+
+Explain the previous project.
+difference b/w Mongo vs Mysql. – In this, he kept going on deep, one after another. So, better you are prepared at your best.
+Multithreading. Concept of mutex, semaphore.
+Write a program to add 2 large numbers. Handle negative also.
+
+Given an array and a number. We have to find the maximum sum of two numbers from an array which is less than the given number.
+https://www.geeksforgeeks.org/program-round-robin-scheduling-set-1/
+
+Given 2 N-ary trees, check if they are mirror of each other or not.
+Given 2-D array of characters, check the given words are there in the array or not. (crossword type.)
+
+Given an array find the inversion count.
+Postfix evaluation.
+
+Given an array which is rotated n times from left or right, find the largest element of the array. (Expected time complexity O(log N ))
+The interviewer asked this Q in typical Fashion, basically, the Q was similar to finding the min element in a given stream of numbers.
+
+https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/
+https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list/
+https://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree/
+
+To print all nodes which are at a distance of given range [a, b]
+Modular exponentiation.
+A simple dynamic programming Q(I don’t remember the actual Q)
+Implementing queue from 2 stacks and vice versa.
+Merge sort, quick sort, heap sort
+
+What is dangling pointer?
+Reference variable VS pointer.
+Garbage collector, memory leak.
+Virtual function and polymorphism.
+verflow and underflow etc…
+
+Given a Linked list find if there is a loop in it, if yes find the starting point of the loop and also the total nodes that are outside the loop
+https://www.geeksforgeeks.org/pair-with-largest-sum-which-is-less-than-k-in-the-array/
+https://www.geeksforgeeks.org/program-round-robin-scheduling-set-1/
+One question was “What is cache memory, which data structure would you use to implement it?”.
+Given an array of integers and a number K, find the number of distinct integers in every contigious subsequence of size K.
+Given an array of Zeros (0) and Ones (1), find the maximum number of ones that can obtained in a contininous fashion if you are allowed to switch one zero to a one.  https://practice.geeksforgeeks.org/problems/maximize-number-of-1s/0. An easier reproduction of the same problem where M=1
+
+
+The first question was an easy one , which required us to search in a 2D Array(matrix) and return the co-ordinates of desired value as a pair.
+
+In the second question , I was given a grid consisting of 0, 1 and exactly one 9.The task was to find whether 9 is reachable from (0, 0) co-ordinate by only travelling along the cells containing 1.I solved it using DFS approach , BFS or recursion can also be used
+
+https://www.geeksforgeeks.org/find-the-maximum-element-in-an-array-which-is-first-increasing-and-then-decreasing/
+https://techdevguide.withgoogle.com/resources/compress-decompression/
+https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/
+
+https://www.geeksforgeeks.org/round-robin-scheduling-with-different-arrival-times/https://www.geeksforgeeks.org/round-robin-scheduling-with-different-arrival-times/
+https://www.geeksforgeeks.org/check-if-two-nodes-are-cousins-in-a-binary-tree-set-2/
+Given a sorted array where all elements are repeated twice and only one element is present once. You are required to find that unique element.
+In a 2D array of integer, 2 denotes wall, 1 denotes zombie and 0 denotes human. Next day zombies turn adjacent human beings into zombies. A zombie is adjacent to the human one block above, below, left and right. Zombie cannot cross a wall.
+Find out how many days does it take to infect all human. If some human never get infected, return -1
+
+https://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/
+The second problem was based on Round Robin Scheduling. Given n processes, their arrival times and burst times, it was required to calculate the average waiting time using Round Robin scheduling.        The Round Robin scheduling was not explained in great detail in the problem, hence a lot of students failed to solve the problem. I was well aware with the working of Round Robin scheduling, so I             was able to solve both the problems and thus made it to the interviews
+Operating Systems and asked me about the various page replacement algorithms
+
+ https://leetcode.com/problems/lru-cache/
+ Then he asked me about cycle detection in a directed graph. I had to implement its working code on paper.
+
+Then I was asked to implement the code for https://leetcode.com/problems/best-time-to-buy-and-sell-stock/.
+
+
+Given a matrix sorted in row-wise and column-wise manner, check whether given element exists in the matrix. Hint: Use binary search for every row. Time Complexity O(nlogn).
+Find average waiting time of given processes executed in Round-Robin manner with given time quantum. https://www.geeksforgeeks.org/round-robin-scheduling-with-different-arrival-times/
+Given an array of number of coins in different houses, find the maximum sum you can obtain by adding equal amount of coins from a sub-array. Hint: https://www.geeksforgeeks.org/the-stock-span-problem/
+Given an array and a value k, you have to find maximum in all different sub-arrays of size k. Hint: https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+In CN he asked me to explain everything that happens in the background after you click on a link.
+
+
+In OS he asked me everything about Paging, from its need to all the concepts related to it.
+
+In DBMS he asked me about ACID properties along with examples.
+
+Then he asked me about OOPS concept
+
+It was a easy question to reverse a string taken k length at a time. i.e. Input: String=”amazoninterview”, k=5   Output: “ozamaetninweivr”
+It was a basic graph problem. click here
+
+first question was to count the number of set bits in a given range (a, b). the question was really easy and i was able to do it in time complexity O(n*log(d)) and space complexity O(1). and he was satisfied with the answer.
+
+second question was, there is an infinite grid in first quadrant and a sequence of coordinate of first quadrant in particular order and one can move in all 8 directions from a point in grid . you have to calculate the minimum number of steps to reach the last indexed coordinate of sequence following the same order as sequence. At first i explained BFS approach but he told to reduce the time complexity and then i was able to do it in O(n).(explanation: move to an intermediate node diagonally and then take the manhattan distance).
+
+infinite grid problem
+
+There are 3 sorted arrays({A1, A2, A3}) and you have to computer number of triplet {i, j, k} such that {i, j, k} belongs to {A1, A2, A3} respectively and i<j<k. and he asked to write code clearly and should not fail for any edge case. and i was able to do it in linear time Complexity and without any extra space. and he was satisfied with my answer. and again we discussed about company for approx 5-10 minutes.
+
+Operating System: There is a game which requires 4GB RAM memory and i have a system with 2GB RAM. Then which concept the system will use to run the game.
+
+Computer Network: How any url is processed in details like how it find DNS server etc.
+
+DBMS: which properties RDBMS should follow? then what is normalization and denormalization and why we need it explain with example.
+
+Then He asked, There is a tree having node values as ‘T’ and ‘F’ only. write a function which should return the largest subtree having equal number of ‘T’ and ‘F’ nodes. I was able to do it in O(n) time complexity and O(1) space complexity and he was satisfied with answer.
+
+after that he asked There is a sorted array in which except one element all elements have a duplicate number. write program to find unique element from array .First I told him XOr approach and checking next number if it is equal or not all in O(n) approach. then i told him O(log(n)) approach using binary search and then he was satisfied with answer.
+
+then after, He told to reduce the complexity of searching in linked list by using any data structure or changing the node structure. at first i told him to use hash map but there can be duplicate data so he rejected this approach. Then after i was able to give 2 approaches .by using array of pointers which maintains middle element in every go of binary search and by using skip lists.
+
+hen he asked to find the number of nodes in linked list which is outside of loop of linked list. He wanted to know the floyd algorithm and asked why it is correct and give arithmetical expression for this and then he asked to write code.
+
+
+Again He asked question from linked list. There is a linked list having an extra pointer random pointer which points to any random node of linked list. And you have to clone the linked list. At first i was able to do it in O(n) space complexity but he asked for O(1) space complexity. then i was able to do it without using any extra space.
+
+1.you have a string and you have to replace every character with the character 3 place ahead(like a->d, z ->c, ….)
+2.related to array, I don’t remember it but it was very easy to implement.
+
+Given an array of integers. If the number a and its negation -a both present in the array then print it.
+ex:if {10, 5, 0, 9, -10, 7, -5} is given then print 10, 5.   
+
+ LRU implementation :
+ 
+ Merge k sorted array
+ 
+ 1. Some SQL queries (related to nested query) and sharding.
+
+2. What is BST and how to check that the given binary tree is BST or not.
+ I told him the postorder approach using minimum and maximum range. He then asked me what would happen if the left most node is equal to INT_MIN and right most node is equal to INT_MAX then what will you do !? 
+
+3. Sum of a given range
+ I explained him 2 approach and he wanted me to code for both of them. 
+a) Segment tree(O(Logn))
+
+https:www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
+
+
+b) Square root decomposition (O(sqrt(n)))
+
+-https:www.geeksforgeeks.org/sqrt-square-root-decomposition-technique-set-1-introduction/
+
+4.Which graph traversal method is better and why.
+
+5. Spiral traversal of a binary tree but the direction of traversal should be-down to up manner and start traversing from bottom right node.         
+I used 3 stacks and coded it. After that he asked me to try out some examples.
+
+Tell me something about your hobbies and interest.
+
+2.A matrix m is given. you are standing on the given position m[x][y] and there are k numbers of delivery boys with there position given.If the m[i][j]=0 that means this path is blocked. You can move in 4 directions, now you have to find the nearest delivery guy and return its position.
+I told him an approach using Backtracking . He asked me to reduce the complexity then I explained and wrote the program using BFS. He asked me to check my code with some examples.
+
+3.Heavy Light Decomposition
+I explained him and wrote the code.
+link – https://www.geeksforgeeks.org/heavy-light-decomposition-set-1-introduction/
+
+4.Deadlock necessary conditions with examples.
+
+5.There are 2 processors in a system and each having a process.when the process have 2 threads, it takes 4 ms to complete 4 task. How much time it will take if the process have single thread.
+       First, I was confused then he explained me the question again. I told him the answer with the appropriate reason but I was not sure.
+
+6.He said me that this is the first time he is taking interview of an ECE student. And asked me questions on microprocessor and RAM internal architecture.
+
+
+Fourth technical round:
+1.Asked me about my internship project.
+
+2.Why we use RNN and what is the difference between RNN and CNN.
+
+3. Question based on system design. 
+I said that it was not in my syllabus because my branch is ECE then he told me to use any data structure.I used hash map and DBMS for storing the data.He asked me to write the code.
+
+4.Given a stream of characters. Print all the characters, not repeated in last 10 ms.   
+ I used dequeue of size 10 to implement it. 
+
+5. Implement Round Robin process scheduling. 
+It can easily be done using Queue data structure.
+
+6.Why Amazon?
+
+A program to find the number of trailing zeroes for the factorial of a given number.
+2. A co-ordinate plane was given. On each point (x, y) there are x+y number of apples on it. A person is standing on (0, 0) and he wants to buy a square plot having N number of apples inside it (including the periphery). Question was to return the value of perimeter of that square plot given N.
+
+1) Given infix equation in string, return the value of expression Ex.  (2+3)*5  will return   30   2) find mean median mod of a given array
+https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/
+I was asked to return true if two given string having edit distance equal to or less than 1 otherwise false.
+https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
+https://www.geeksforgeeks.org/print-longest-leaf-leaf-path-binary-tree/
+
+This question was little bit hard. The question was that there is a mad scientist who has various solution.I was given an array that contains the volume of each solution. The scientist can mix any two adjacent solution. let’s say two adjacent solution having volume a and b then the resultant solution will produce smoke volume of (a*b) and liquid of (a+b) %100. Now i was asked to find a way such that all over smoke produced is minimum.               Hint: Use same approach as chain multiplication.
+Last question of this round was to convert a source string to target string such that at any time you can change only one alphabet of the string and resultant string (at each alteration) must be present in a dictionary which was provided at the beginning.I had to find the minimum number of alteration. I gave him a bfs approach.
+
+I was asked to print to node of a binary tree in reverse zig zag order.
+The second question was to tell number of islands present. 1 represents land while 0 represents water in the given matrix. adjecent 1’s comes under single islands. https://www.geeksforgeeks.org/find-number-of-islands/
+After that they asked a nested sql query. and then asked about types of join in dbms(inner and outer).
+
+I was given two strings one contains only alphabets and another contains alphabets, dot(.) and star(*). dot represents any one character and a star can represent any number of alphabets including 0 also. and I had to check whether both string match or not.
+At last we talked about my project, he asked what i had  done during my internship, and what challenges i faced during that.
+Then he asked some question on Operation System including demand paging and thrashing.
+
+LCS
+Some String implementation question
+Dice Throw Problem
+Roots of quadratic equation..
+
+https://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree/
+ https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/
+ 
+ Find the LCA (Least Common ancestor) of nodes having maximum depth in a given rooted tree . He asked about the approach, complexity and data structure to use . In between, he asked some common questions like time and space complexity of dfs, bfs, dijkstra (in terms of E and V ) .
+ In the last 15 min, he asked me to implement queue using two stacks.
+ 
+ https://www.geeksforgeeks.org/perfect-sum-problem-print-subsets-given-sum/
+Given a list of string  and a prefix . He asked to print all the strings in the list  having that prefix . He asked what data structure to use, time and space complexity of it . He basically wanted to see  implementation of operations on trie  .
+https://www.geeksforgeeks.org/given-sorted-array-number-x-find-pair-array-whose-sum-closest-x/
+
+Give an example of an occasion where you’ve done a thing that was very hard for you .
+  How did you handle shortcomings in your project .
+  Compare your project with the current existing technology or project in real world scenario .
+  He asked questions related to my project like why did you chose this technology, alternatives of the technology, difference between vertical and horizontal scaling, etc .
+  
+  Given a package and a list of packages associated with it (Means the package is dependent on those list of packages ) . Now, you’re given a package name, let’s say A, print all the packages in sequence that you need to install in order to install package A .  This was basically an implementation of Topological Sort . He was more interested in the approach and then asked me to code it up on editor .
+  
+ 1) Given a string of form a+b=c where one among a.b.c is replaced by x. find x.
+2) A=1, B=2, C=3…Z=26. Find possible decoding of the given digits sequence.
+https://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
+https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
+https://www.geeksforgeeks.org/stepping-numbers/
+
+1) Minimize the transactions needed to balance money between friends. Per transaction may not
+be equally distributed among all i.e. it is possible only few people are involved in that
+transaction not all. (More like Simplify debts of splitwise app)
+2) Min and Max heap. With diagrams and proper illustration of extracting and inserting.
+3) Heapify the min heap
+4) Insertion in min heap
+
+1) N-ary tree. Create its mirror tree
+2) N-ary tree with all positive keys. Find maximum sum path in whole tree. (If you think correctly it
+will start from some leaf node and will end at other leaf node since all keys are positive)
+3) Producer consumer problem discussion. Semaphore, mutex, wait and signal. Then told me to
+write code for it using wait() and signal() for both producer and consumer (General code not in
+cpp or java)
+4) Discussion over distributed systems. N-producers N-consumer problem in distributed systems.
+No. of mutex variables required to solve N-producers N-consumer problem? (ans: 1)
+
+Round 4:
+1) Project Discussion (20 mins)
+2) Singleton class. Its uses. Real world practical use. How to make a class singleton class. Code it.
+3) Set right siblings of nodes. I told level order traversal. But he insisted for optimization. Told him
+O(1) space complexity sol, He was satisfied.
+
+Connect nodes at same level using constant extra space
+
+
+
+4) Length of longest palindrome substring.
+
+Longest Palindromic Substring | Set 2
+
+1.you have a string and you have to replace every character with the character 3 place ahead(like a->d, z ->c, ….)
+2.related to array, I don’t remember it but it was very easy to implement.
+
+1. Tell me something about yourself.
+2. Tell me something not on your resume.
+3. Given an array of integers.If the number a and its negation -a both present in the array then print it.
+ex: if {10, 5, 0, 9, -10, 7, -5} is given then print 10, 5.
+At first I told him the linear search approach then binary search approach but, I was using the extra space. So, he told me to reduce it to O(1). I explained him my modified approach and coded it.
+4. LRU implementation
+I told him an approach having time complexity of O(size of frame).He was not happy with my approach.
+then I tried to think in a different manner and came to a solution where I used pointers and unordered_map to reduce its complexity to    O(1) and finally coded it.
+5. Merge k sorted array
+
+I explained him and wrote Min Heap based solution. He was impressed and then asked me the complexity.
+
+Second technical round:
+1. Some SQL queries (related to nested query) and sharding
+2. What is BST and how to check that the given binary tree is BST or not.
+I told him the postorder approach using minimum and maximum range. He then asked me what would happen if the left most node is equal   to INT_MIN and right  most node is equal to INT_MAX then what will you do.
+3. Sum of a given range
+I explained him 2 approach and he wanted me to code for both of them
+a) Segment tree(O(Logn))
+b) Square root decomposition (O(sqrt(n)))
+4.Which graph traversal method is better and why.
+5. Spiral traversal of a binary tree but the direction of traversal should be-down to up manner and start traversing from bottom right node. I used 3      stacks and coded it. After that he asked me to try out some examples.
+
+Third technical round:
+1.Tell me something about your hobbies and interest.
+2.A matrix m is given. you are standing on the given position m[x][y] and there are k numbers of delivery boys with there positions given.
+If the m[i][j]=0  that means this path is blocked.You can move in 4 directions, now you have to find the nearest delivery guy and return its position.
+I told him an approach using Backtracking . He asked me to reduce the complexity then I expained and wrote the program using BFS.
+He asked me to dry run the code.
+3. Heavy Light Decomposition
+I explained him and wrote the code.
+link – https://www.geeksforgeeks.org/heavy-light-decomposition-set-1-introduction/
+4. Deadlock necessary  conditions with examples.
+5. There are 2 processors in a system and each having a process.when the process have 2 threads, it takes 4 ms to complete 4 task. How much time it will take if the process have single thread.
+First, I was confused then he explained me the question again. I told him the answer with the appropriate reason but I was not sure.
+6.He said me that this is the first time he is taking interview of an ECE student. And asked me questions on microprocessor and RAM internal     architecture.
+
+Fourth technical round:
+1.Asked me about my internship project.
+2.Why we use RNN and what is the difference between RNN and CNN.
+3.Question based on system design.I said that it was not in my syllabus because my branch is ECE then he told me to use any data structure.I used hash map and DBMS for storing the data.He asked me to write the code.
+4.Given a stream of characters. Print all the charaters, not repeated in last 10 ms. I used dequeue of size 10 to implement it.
+5. Implement Round Robin process scheduling.It can easily be done using Queue data structure.
+6.Why Amazon?
+
+-1) Find next greater number with same set of digits. If next greater element does not exist print “-1”.
+
+Input: n=327698
+
+output: 327869
+
+https://www.geeksforgeeks.org/find-next-greater-number-set-digits/
+
+-2) Given array of  elements with zero and one only, you can do following operation at-most one time.
+
+operation: flip all elements from i to j index where i<=j.
+
+Now you need to print maximum number of one in array after doing these operation.
+
+Input:
+
+n=6
+
+1 0 0 1 0 0
+
+
+Output: 5
+
+-3) Given array and integer k you need to tell that whether array can be sorted or not after following operation any number of times.
+
+operation: you can swap (i) index element with (i+k) index element any number of times.
+
+Print the sorted array if the array can be sorted by doing the above operation or print “-1”.
+
+Input1:
+
+n=8 k=2
+
+1 2 7 8 3 4 5 6
+
+Output1:
+
+1 2 3 4 5 6 7 8
+
+Input2:
+
+n=8 k=2
+
+1 4 5 6 7 8 2 3
+
+Output2: -1
+
+ 
+
+Round 1:
+
+1) Tell me about your self.
+
+2) Given binary tree, complete path is defined as root to leaf. The sum of all nodes on that path is defined as sum of that path. Given number K you need to remove the nodes in binary tree which don’t lie in any path with sum>=K.
+
+The function was given with root of binary tree and K you need to return the root after removing the nodes which don’t lie in any path with sum>=K.
+
+Input:
+
+K=8
+
+
+
+
+ 
+
+ 
+
+Output:
+
+
+
+ 
+
+https://www.geeksforgeeks.org/remove-all-nodes-which-lie-on-a-path-having-sum-less-than-k/
+
+3) Given rotated sorted array find the minimum element in the array.
+
+Input:
+
+n=8
+
+7 8 1 2 3 4 5 6
+
+Output: 1
+
+https://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/
+
+ 
+
+Round 2 (Managerial round over video call):
+
+1) Tell me about yourself.
+
+2) Current role in the company.
+
+3) Project you liked the most worked in the corporate life.
+
+4) Time when you are given task and you are not able to complete on your own and take help of other colleague.
+
+5) Time when you have received  critical feedback from your manager and how did you improve it?
+
+
+6) Extra work you have done in the previous company apart from your regular work.
+
+7) Which was the most critical task in your work in previous company and how did you manage that?
+
+ 
+
+Round 3:
+
+1) Tell me about yourself.
+
+2) Stream of customer ID and product ID are arriving continuously. Now there will be query at any moment of time. You need to answer the query.
+
+Query: Given product ID, number of the product with this product ID sold to customer.
+
+Input:
+
+Current Entry:
+
+pID      cID
+
+1          499
+
+3          421
+
+1          645
+
+1          989
+
+2          424
+
+Query: pID=1
+
+Output: 3
+
+How will you space optimised this problem?
+
+3) Number is arriving in the stream and the fixed K is given in the starting of Input. The below query can be asked at any moment of time. You need to answer the query.
+
+Query: find K th maximum element in current stream.
+
+Input:
+
+K=3
+
+Current Stream: 8 7 1 2 4 5 9
+
+Output at the moment: 7
+
+https://www.geeksforgeeks.org/kth-largest-element-in-a-stream/
+
+4) In the binary tree leaf’s left and right node will not be null. one leaf’s right node will be connected to node which is next leaf in the in order traversal. and the leaf’s left node will be connected to previous leaf according to in order. First leaf’s left will be the last leaf in the in order traversal and last leaf’s right node is connected to first leaf in the in order traversal.
+
+You need to print in order traversal.
+
+Expected Time Complexity: O(n)
+
+Expected Space Complexity: O(1)
+
+Input:
+
+
+
+
+ 
+
+Output:
+
+4 2 6 5 7 1 8 3 9 10
+
+5) Write the optimised code for LRU Cache.
+
+Size of LRU cache will be given in the input.
+
+6) What is polymorphism?
+
+ 
+
+Round 4 (Bar Raiser round over video call):
+
+1) Tell me about yourself.
+
+2) Check If one BST is subtree of another BST.
+
+Function will be given with root1 and root2 as parameter of BST-1 and BST-2 and will return true if second BST is subtree of first BST or return false.
+
+Note: Elements can be repeated. BST was created with all less or equal element will go to left child of node and greater element will be on the right child of the node.
+
+Input:
+
+
+
+ 
+
+Output: true.
+
+Coding Questions:
+1.Minimum number of jumps to reach end ( https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/ )
+Solved in O(n) time complexity.
+2. Count Inversions in an array ( https://www.geeksforgeeks.org/counting-inversions/ )
+Solved using Merge Sort in O(nlogn) time complexity.
+
+MCQ’s :
+Questions on Trees(BST), Output Prediction of given Codes(Codes are given in C, C++  Languages).
+
+In my case, I have solved both the coding questions with all test cases passed.
+
+Round 1:
+
+Introduction of both of us.
+
+1.Asked about what Data Structure to implement HashMap other than bst, bbst, Heaps, Arrays.
+Told about bst, bbst approaches and mentioned that I know implementation of these data structure approaches only, then he moved to next question.
+2.Detect cycle in an undirected graph ( https://www.geeksforgeeks.org/detect-cycle-undirected-graph/ )
+3.Find the first circular tour that visits all petrol pumps ( https://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/ )
+4.Maximum Path Sum in a Binary Tree ( https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/ )
+5.Reduce the string by removing K consecutive identical characters ( https://www.geeksforgeeks.org/reduce-the-string-by-removing-k-consecutive-identical-characters/ )
+
+For Question 3, 4 I had mentioned to interviewer that I already know the solution for those questions, so for that questions he only asked to explain logic to solve them without writing code.
+
+For Question 2, 5 needed to write neat production code with all edge cases handled properly.
+
+Round 2:
+
+Introduction of both of us.
+
+
+1.Efficient search in an array where difference between adjacent is 1 ( https://www.geeksforgeeks.org/efficient-search-in-an-array-where-difference-between-adjacent-is-1/ )
+2.Asked to specify about all Normal Forms and why normal forms are used (DBMS).
+3.Asked to specify process synchronization concept and ways to handle it and also asked to mention all the process scheduling algorithms.
+4. LRU Cache Implementation ( https://www.geeksforgeeks.org/lru-cache-implementation/ )
+
+For Question 1, 4 have to write neat production code with all edge cases handled properly.
+
+Round 3:
+
+Introduction of both of us.
+
+1.In an n-array tree where each node can have an apple represented as 0(apple not present) or 1(apple present), then needed to find out path with maximum number of apples. Asked to optimize both time and space complexity.
+Solved using Diameter of a Binary Tree technique with some modifications.
+
+2. Given a bench with n seats and few people sitting, tell the seat number each time when a new person goes to sit on the bench such that his distance from others is maximum ( https://www.careercup.com/question?id=5385816814125056 ). Here he extended this question by specifying that I need to find k such positions for k persons to sit. Needed to solve in optimal way.
+Solved this using Heap Concept.
+
+3.Asked about Producer-Consumer problem in Operating System and the asked to write a neat code for both producer and consumer solving their synchronization problem using Synchronization Mechanism without busy waiting. And also asked to extend the code to work in distributed environment.
+
+For Question 1, 2, 3 have to write neat production code with all edge cases handled properly.
+
+Bar Raiser Round:
+
+Introduction of both of us.
+
+
+1.Check for Majority Element in a sorted array ( https://www.geeksforgeeks.org/check-for-majority-element-in-a-sorted-array/ )
+Solved using Binary Search in O(logn) time.
+2.Asked what happens when we enter a URL and how we are able to reach a site (Expected to explain about Domain Name System Concept).
+
+For Question 1 have to write neat production code with all edge cases handled properly.
+
+Note: For all the questions optimal solution is expected, hints are given if stuck to derive optimal solution. Similarly, for all the questions asked in interview they mentioned to write neat production code with all edge cases handled properly.
+
+Round 1:It was coding test in which two coding question and 28 mcq related to data structure and C++.There were different set of papers in my case one coding question is convert infix to prefix and another is find mean, median and sum in array.After this round 33 select for interview.
+
+Round 2:It was first interview round in which interviewer first discussed related to project then asked two question.It was problem solving round.
+
+1.Generate two number from given digit of array b/w 0 to 9 such that if length of array is even then number of digit in each number should be equal if odd the digit difference b/w number should be 1.Use count sort  and in this case some edge case missed so detect that edge case(like 1000 in this 10, 0 digit is not equal but length of array is even).Write code on pan and paper.
+
+
+
+2.Detect Cycle in Directed graph.Write code on pan and paper.
+
+Round 3:It was second Interview round she asked me three question related to data structure.
+
+1.Search in infinite array First i told the binary search using fix upper limit as power of 2 and increment it.Then Interviewer asked me 2^1000 and 2^1001 there is huge diffrence b/w them so can you do it in efficient manner.I came with fix upper limit as multiple of 2. Interviewer was satisfied with my approach.She said write code on pan and paper.
+
+2.Find the intresection point in linked list direct from gfg .I told solution and she was satisfied.
+
+3.It was related to min heap and write code on pan and paper.I told solution and she was satisfied and said that we will come back for next round.
+
+Round 4:He asked me three problem
+
+1.Find Majority element in an array.I first told take map then he said extra space is not allowed.I gave second approach using sorting but he said do in o(n).Then I told efficient solution in o(n) because i already discussed that code with my friend.He was satisfied and said Nice.But he said have you done it before i said yes i have done it before 2-3 month then he was happy.
+
+2.related to binary tree find maximum sum path i have done it using recursion.
+
+3.circular patrol pump i told approach and then he said ok.
+
+After this he discussed related to some topic deadlock, semaphore, mutex, critical section, ACID property.etc.
+
+Round 5:4 student were select for this round.It was HR round in this he asked some question related to project and then asked np-complete problem, max heapify code, scc(strongly connected component).
+
+Throw dice problem. https://www.geeksforgeeks.org/dice-throw-dp-30/amp/
+Evaluation of postfix expression. https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/
+Round 2:
+
+This round lasted for 60 minutes. It was a F2F round and the interviewer was nice. He asked me two problems.
+
+there are n staircases and a person has to go to nth stair he can take any number of steps based on his age, for eg. if his age is 5 then he can take 1 step, or 2 steps or 3 steps or 4 steps or 5 steps. I gave the solution and then he asked for complexity and then asked me to optimize it.
+There is a graph, we can go from one node to other node either for free or for a cost(that cost is the same for each path). Find the path which connects the source to destination with min cost. I answered it but my approach was not good enough so he helped me out for the same.
+At last, he asked me to code the solution for both the question.
+
+Round 3:
+
+This round was again F2F and lasted for 75 min.
+
+The interviewer asked me a few ques about OS. and then two coding questions.
+
+print the path between two nodes of the Binary Tree. I gave the approach but was unable to code.
+how will you find a k largest elements in a file(containing integers) of the size of 1 GB.
+Round 4:
+
+This round was F2F and lasted for 60 min.
+
+The interviewer asked me 1 ques. https://www.geeksforgeeks.org/print-a-given-matrix-in-spiral-form/
+
+I gave him approach and then he asked me to code it. I was unable to it.
+
+
+Then he asked me that I have any question for him so I asked a few ques.
+
+ 
+
+After this HR round was there but I was not selected for it.
+
+It was a nice experience.
+
+Round 1:(Online Assessment – 2 hours)
+
+The online assessment consist of 4 parts.In first part we have to debug 7 codes in 15 minutes.The second part comprised of 24 logical reasoning question which had to be done in 35 minutes.The third part consists of 2 coding questions that had to be done in 70 minutes.The debugging part and the logical reasoning questions were very easy.
+
+The 2 coding questions were
+
+
+
+1: https://www.geeksforgeeks.org/pair-with-largest-sum-which-is-less-than-k-in-the-array/ . I have done it in O(nlogn) by first sorting the array then using binary search.The solutions with O(n^2) time complexity were also accepted.
+
+2: https://www.geeksforgeeks.org/program-round-robin-scheduling-set-1/ .The second question was to find out the average waiting time of processes in Round Robin scheduling.It can easily be done using Queue data structure.
+
+In the fourth part we were given some questions on work ethics which were to be answered honestly and carried a weightage.Some students who had done both the coding questions and had not answered these questions carefully were not shortlisted for the next round and the students who had answered this part carefully and had done only one coding question were shortlisted.
+
+The online round was very easy and I had done both the coding questions .
+
+Out of around 250 students 52 were shortlisted for next round.
+
+Round 2:(Face to Face interview – 1 hour)
+
+This round begins with a brief discussion on my project and the interviewer asked about the algorithms that i have used in it.He then asked me 2 coding questions
+
+1:  https://techdevguide.withgoogle.com/resources/compress-decompression/ .The question was to decompress the compressed string.I solved it using a stack of strings.He then asked me to code my approach on paper so that all corner cases are covered.He then gave me 2 or 3 test cases and asked me to dry run my code on these test cases.He was very impressed by my approach.
+
+2: https://www.geeksforgeeks.org/topological-sorting/ .He then asks me another question which was an application of topological sorting in Directed Acyclic Graph and asked me to code topological sort algorithm on paper.
+
+He then asked me whether I have an interest in Computer Networking or not.I said that CN is not one of my favourite subjects and my favourite subjects are OS and DBMS.He then start asking questions from OS and DBMS.
+
+
+He asked the data structures that are used in DBMS, indexing concept in DBMS, insertion in B trees, ACID properties and the difference between thread and process in OS.He was satisfied by all of my answers as I had prepared all of core CS subjects for the interview.
+
+Usually Amazon SDE-2 interviews happens in 2 days schedule. On the 1st day there will be 3 rounds (PS/DS and design rounds). If the feedback is good you then will be called for remaining 2 rounds which are Manager and Bar raiser.
+
+In my case date of joining was very close in some other org, so all 5 rounds happened on one day.
+
+
+
+Round 1 PS/DS:
+Q1.
+Given a binary tree you have to print endmost node in zig zag fashion.
+Example:
+
+1
+/     \
+2        3
+/     \    /    \
+4     5   6    7
+\
+8
+
+Output should be : 1, 3, 4, 8
+Soln: Level Order traversal using node count approach and using flag to decide which node end you have to print (leftmost or rightmost)
+
+Q2. Given snake and ladder board you have to find minimum no. of move required to reach end of board.
+Soln: BFS (link https://www.geeksforgeeks.org/snake-ladder-problem-2/)
+
+Round 2: PS/DS
+
+Q1) Given following piece of code and two int arrays A & B of equal size n, explain what is it doing.
+
+ans = 0;
+for(int i=0;i<n;i++)
+for(int j=0;j<n;j++)
+for(int k=0;k<n;k++){
+
+if(A[i]!=B[i] && A[j] ! = B[k] && A[k]!=B[k]){ ans = max(ans, A[i] + A[j] + A[k]);}
+
+}
+
+Sol’n: Basically this code is finding max sum triplet from A array such that value in those indexes of B array  is different.
+
+
+Next he asked me to re write this code with better time complexity.
+
+Q2.  Given a binary tree, find path in the tree such that the sum of nodes in path is equal to given K. Path can start from any nodes and can end on any nodes.
+
+1
+/     \
+2          3
+/     \    /    \
+4     5   6    7
+\
+8
+
+Example : for k = 10, there will be 2 paths: 1->3-> 6 and 3->7
+
+Use following concept:
+https://www.geeksforgeeks.org/find-subarray-with-given-sum/
+
+https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/
+
+Round 3: Design
+
+Design Dominoes website. This was mainly focused on High level design and you have to mention all the major components like Delivery tracking system, User Signup/Login flow, Fulfillment service etc.
+You have to describe complete flow of a order until its delivery to customer.
+Interviewer also asked me to write schema details for few entities.
+
+Round 4: Manager
+
+In the first of half of this round we mostly discussed about my work experience and role which is played in my current team.
+In the second half he asked me to design Job management system where user submits a job and specify the time its should run just like Airflow app.
+
+
+Round 5: Bar raiser
+This one was mostly discussion oriented to judge on the basis of Amazon leadership principles. You have to mention few scenarios about your work and how you have applied those leadership principles.
+
+1. Inversion count in the array
+
+
+
+2. Postfix evaluation (handle negative number also)
+
+3. Mean median mode in array
+
+4. Dice throw puzzle(DP)
+
+5.Roots of quadratic equation
+
+6.Linear equation in one variable
+
+7.Longest common subsequence
+
+8.Evaluate Infix operation (handle negative number also)
+
+MCQ’s were difficult and required deep knowledge of DSA and C C++.
+
+Out of around 350 students 53 were called for interview.
+
+ 
+
+Round 1:
+
+Interview lasted for 25 minutes and had a detailed discussion on 2 questions. He directly started with a coding question.
+
+given a string encode it. Eg. aaabb -> a3b2
+there are n person with their height and weight given. You have to select maximum number of person that can stand in a queue with condition that height and weight of person in queue will always be less or equal to next person.you have to return persons not the count. (LIS)
+This round went well and I was immediately called for next round.
+
+Round 2: 
+
+This round lasted for 30 minutes.
+
+Given k arrays of size n each. You have to select one number from each of them such that the difference between them is minimum. Initially, the question was for 3 arrays, I told him the solution quickly then he changed 3 to k.
+Implent AVL.
+a question on designing a data structure I don’t remember. I used hash for that. He asked me about hash worst time complexity, ideas to improve it.
+A question on trie.
+median of running stream of integers.
+Given an array of n integers ranging from 1-n-2, in which every integer comes once and two integer comes twice, find both of them.
+I had to write code for every question. This interview also went well and I was called for next round immediately.
+
+Round 3:
+
+This round went for 90minutes. This was different from previous two. It was more of a discussion round.
+
+Project discussion.
+Range Sum query with update. I told him prefix sum. He wanted better approach. I told him segment tree.
+He then asked range update in best optimised way. I told him Lazy propogation.  I had to write code for segment tree with lazy propogation.
+1 hour discussion on networks. (I told him I haven’t revised but he kept on asking)
+This round also went well. In networks he provided some input whenever I needed. Since it was late my next round was scheduled next day.
+
+Round 4(Bar raiser)
+
+
+This round went for approx 1 hour.
+
+Wildcard Pattern Matching. I discussed all corner cases and base cases along with recurrence relation. He asked me to write code in bottom up dp. He was really happy with my solution.
+ Design a data structure for running stream of string. You have to print a word if it has not come within 10 second else ignore it. You have to manage memory in most optimal way. I discussed the various approach using trie, hash, lru. When I told him my solution with queue and hash, He was surprised an told me that he didn’t thought of that solution. He asked me to code it.
+project discussion.
+oops- How abstract class is implemented by compiler. When I told him the solution he said awesome.
+
+
+
+
+
+ 
+ 
+
+
+
+

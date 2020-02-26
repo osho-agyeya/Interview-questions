@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item key="dialogHeight" value="934"/>
-		<item key="dialogWidth" value="680"/>
+		<item key="dialogHeight" value="-1"/>
+		<item key="dialogWidth" value="-1"/>
 		<list key="orderedElements">
-			<item value="org.eclipse.egit.ui.RepositoriesToggleBranchHierarchy"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textEntries">
-			<item value="3"/>
 		</list>
 		<list key="textArray">
-			<item value="bra"/>
-			<item value="t"/>
-			<item value="branch rep"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
@@ -23,5 +17,12 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="-186"/>
+		<item key="DIALOG_Y_ORIGIN" value="-277"/>
+		<item key="DIALOG_WIDTH" value="930"/>
+		<item key="DIALOG_HEIGHT" value="978"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

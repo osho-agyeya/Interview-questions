@@ -1,4 +1,4 @@
-//done
+//ddone
 /*
  * Wave Array
 Asked in:  

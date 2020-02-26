@@ -1,8 +1,0 @@
-package ninja;
-
-public class Get_Mode_Array_Updates {
-	public int[] getMode(int[] A, int[][] B) {
-		int n=A.length;
-		
-    }
-}

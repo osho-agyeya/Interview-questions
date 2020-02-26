@@ -1,4 +1,4 @@
-//done
+//ddone
 /*
  * Painter's Partition Problem
 Asked in:  

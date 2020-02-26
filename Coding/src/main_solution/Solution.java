@@ -12,9 +12,18 @@ public class Solution {
 		InputReader ii=new InputReader(System.in);;
 		OutputWriter pp=new OutputWriter(System.out);
 		
-		Repeating_Sub_Sequence o= new Repeating_Sub_Sequence();
-		pp.ptn(o.LCS("XMJYAUZ","MZJAWXU"));
+		//Longest_Palindromic_Subsequence o= new Longest_Palindromic_Subsequence();
+		//pp.ptn(o.fourSum(new int[] {1, 0, -1, 0, -2, 2}, 0).toString());
+		//o.longestPalindromeSubseq("cbbd");
 		
+		for(int i=0;i<=5;i++) {
+			System.out.println(i);
+			System.out.println(-i);
+			System.out.println(i & -i);
+			System.out.println(i += (i & -i));
+			System.out.println("**********");
+			
+		}
 		
 		
 		

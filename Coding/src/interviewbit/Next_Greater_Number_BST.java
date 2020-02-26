@@ -1,24 +1,24 @@
-//doe
+//ddoe
 /*
- * NEXTGREATER
-Given an array, find the next greater element G[i] for every element A[i] in the array. The Next greater Element for an element A[i] is the first greater element on the right side of A[i] in array.
-More formally,
-
-G[i] for an element A[i] = an element A[j] such that 
-    j is minimum possible AND 
-    j > i AND
-    A[j] > A[i]
-Elements for which no greater element exist, consider next greater element as -1.
+ * Given a BST node, return the node which has value just greater than the given node.
 
 Example:
 
-Input : A : [4, 5, 2, 10]
-Output : [5, 10, 10, -1]
+Given the tree
 
-Example 2:
+               100
+              /   \
+            98    102
+           /  \
+         96    99
+          \
+           97
+Given 97, you should return the node corresponding to 98 as thats the value just greater than 97 in the tree.
+If there are no successor in the tree ( the value is the largest in the tree, return NULL).
 
-Input : A : [3, 2, 1]
-Output : [-1, -1, -1]
+Using recursion is not allowed.
+
+Assume that the value is always present in the tree.
  */
 
 package interviewbit;

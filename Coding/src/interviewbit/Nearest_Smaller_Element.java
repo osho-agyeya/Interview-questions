@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Nearest Smaller Element
 Asked in:  

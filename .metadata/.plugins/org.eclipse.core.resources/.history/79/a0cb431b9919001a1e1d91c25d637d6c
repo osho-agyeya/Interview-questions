@@ -1,9 +1,0 @@
-package ninja;
-
-public class Build_Identical_Trees {
-public int cntMatrix(TreeNode A, TreeNode B) {
-        
-        
-    }
-
-}

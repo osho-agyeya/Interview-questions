@@ -1,4 +1,4 @@
-//doe
+//ddoe
 
 /*
  * Given a set of distinct integers, nums, return all possible subsets (the power set).
@@ -31,7 +31,7 @@ public class Subsets {
     List<List<Integer>> list = new ArrayList<>();
     backtrack(list, new ArrayList<>(), nums, 0);
     return list;
-}
+    }
 
 private void backtrack(List<List<Integer>> list , List<Integer> tempList, int [] nums, int start){
     list.add(new ArrayList<>(tempList));

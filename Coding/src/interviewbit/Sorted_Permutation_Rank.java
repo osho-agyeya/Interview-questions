@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Sorted Permutation Rank
 Asked in:  

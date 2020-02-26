@@ -1,4 +1,4 @@
-//done
+//ddone
 //t=nlogn + 
 //s=nCk x k
 
@@ -64,11 +64,14 @@ public class _4Sum {
                 List<List<Integer>> temp = kSum(nums, i + 1, k - 1, target - nums[i]);
                 for(List<Integer> t : temp) {
                    t.add(0, nums[i]);
-                }                    
+                }    
+                //System.out.println(temp.toString());
                 res.addAll(temp);
             }
         }
         return res;
     }
+    
+    
 
 }

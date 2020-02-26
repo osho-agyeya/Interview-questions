@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Repeating Sub-Sequence
 Asked in:  

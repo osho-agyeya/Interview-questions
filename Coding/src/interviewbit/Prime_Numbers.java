@@ -1,4 +1,4 @@
-//doe
+//ddoe
 /*
  * Prime Sum
 Asked in:  
