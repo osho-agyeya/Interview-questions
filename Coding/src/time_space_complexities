@@ -1,4 +1,4 @@
-//ddoe
+//done
 
 TIME,SPACE
 
@@ -11,3 +11,20 @@ JARVIS MARCH(GIFT WRAPPING)=O(NXH) OR WORST IS O(N^2),O(N)
 KMP=O(M+N),O(N)
 TRIE=O(LENGTH OF WORD),O(n*m)
 FORD FULKERSON:O(VE^2)
+
+access: array=1, trees=log n ; otherwise n
+search: trees=log n; else n
+insertion: stack queue linked list=1;tree=log n;otherwise n
+deletion: stack queue linked list=1;tree=log n;otherwise n
+kd tree is exception
+
+
+sorting:t,s
+quicksort:n2,log n
+mergesort:nlogn ,n
+heapsort:nlogn, 1
+bubble,insertion,selection:n2,1
+shell sort: n(logn)2, 1
+bucket:n2,n
+radix:nk,n+k
+counting:n+k,k

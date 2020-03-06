@@ -1,4 +1,4 @@
-//ddone
+//done
 /*
  * Write a program to find the nth super ugly number.
 

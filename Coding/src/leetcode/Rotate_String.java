@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * We are given two strings, A and B.
 

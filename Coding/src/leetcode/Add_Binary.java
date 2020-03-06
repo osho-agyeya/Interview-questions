@@ -1,4 +1,4 @@
-//ddone
+//done
 //t=max(a,b)
 //s=1
 

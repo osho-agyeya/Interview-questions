@@ -1,4 +1,4 @@
-//doe
+//done
 /*
  * Power Of Two Integers
 Asked in:  

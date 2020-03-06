@@ -1,4 +1,4 @@
-//ddone
+//done
 //t=nlogn + 
 //s=nCk x k
 

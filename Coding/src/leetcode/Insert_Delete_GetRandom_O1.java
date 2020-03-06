@@ -1,4 +1,4 @@
-//ddoe
+//done
 
 
 /*
@@ -69,6 +69,7 @@ public class Insert_Delete_GetRandom_O1 {
 		map.put(list.get(position),position);
 		list.remove(list.size()-1);
 		return map.remove(val) != null;
+		
 	}
 
 	public int getRandom() {

@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * Matrix Chain Multiplication
 Given an array of integers A representing chain of 2-D matices such that the dimensions of ith matrix is
@@ -54,6 +54,7 @@ public class Matrix_Chain_Multiplication {
 	            for(int i=0,j=i+l-1; j <arr.length-1; i++,j++){
 	                temp[i][j] = Integer.MAX_VALUE;
 	                for(int k=0; k < l-1; k++){
+	                	System.out.println(l+","+i+","+j+","+k);
 	                    q = temp[i][i+k] + temp[i+k+1][j] + arr[i]*arr[i+k+1]*arr[j+1];
 	                    if(q < temp[i][j]){
 	                        temp[i][j] = q;

@@ -1,4 +1,4 @@
-//ddone
+//done
 /*
  * Colorful Number
 Asked in:  

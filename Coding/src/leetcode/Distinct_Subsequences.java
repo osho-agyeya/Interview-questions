@@ -1,4 +1,4 @@
-//ddoe
+//done
 
 /*
  * 
@@ -64,7 +64,7 @@ public class Distinct_Subsequences {
 					//dp[i-1][j-1]: take s[i-2] 
 					dp[i][j] = dp[i-1][j] + dp[i-1][j-1];
 				else 
-					dp[i][j] = dp[i-1][j];
+					dp[i][j] = dp[i-1][j];//important
 			}
 		}		
 		return dp[s.length()][t.length()];

@@ -1,4 +1,4 @@
-//ddoe
+//done
 
 /*
  * 
@@ -32,6 +32,7 @@ public class Combinations {
 		combine(combs, new ArrayList<Integer>(), 1, n, k);
 		return combs;
 	}
+	
 	public void combine(List<List<Integer>> combs, List<Integer> comb, int start, int n, int k) {
 		if(k==0) {
 			combs.add(new ArrayList<Integer>(comb));

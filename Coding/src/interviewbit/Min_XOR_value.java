@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * Min XOR value
 Asked in:  

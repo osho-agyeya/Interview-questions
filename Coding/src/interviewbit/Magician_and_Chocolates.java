@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * Magician and Chocolates
 Given N bags, each bag contains Ai chocolates. There is a kid and a magician. In one unit of time, kid chooses a random bag i, eats Ai chocolates, then the magician fills the ith bag with floor(Ai/2) chocolates.

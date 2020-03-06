@@ -1,6 +1,4 @@
-
-
-//ddoe
+//done
 
 /*t=len(answer)
  * 

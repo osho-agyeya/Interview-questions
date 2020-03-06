@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * Kth Manhattan Distance Neighbourhood
 Asked in:  

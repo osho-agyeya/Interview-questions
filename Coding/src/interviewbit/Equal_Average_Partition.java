@@ -1,4 +1,4 @@
-//ddone
+//done
 /*
  *Equal Average Partition
 Asked in:  

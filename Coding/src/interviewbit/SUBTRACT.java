@@ -1,4 +1,4 @@
-//ddone
+//done
 /*
  * SUBTRACT
 Given a singly linked list, modify the value of first half nodes such that :

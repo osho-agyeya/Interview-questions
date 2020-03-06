@@ -1,4 +1,4 @@
-//ddone
+//done
 /*
  * 
  * Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -22,17 +22,15 @@ You can assume that you can always reach the last index.
 package leetcode;
 
 public class Jump_Game_II {
-public int jump(int[] A) {
-    int sc = 0;
-    int e = 0;
-    int max = 0;
-    for(int i=0; i<A.length-1; i++) {
-        max = Math.max(max, i+A[i]);
-        if( i == e ) {
-            sc++;
-            e = max;
-        } 
-    }
-    return sc;
-}
+	public int jump(int[] A) {
+		int jumps = 0, curEnd = 0, curFarthest = 0;
+		for (int i = 0; i < A.length - 1; i++) {
+			curFarthest = Math.max(curFarthest, i + A[i]);
+			if (i == curEnd) {
+				jumps++;
+				curEnd = curFarthest;
+			}
+		}
+		return jumps;
+	}
 }

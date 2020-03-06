@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * Given a pattern and a string str, find if str follows the same pattern.
 
@@ -38,6 +38,7 @@ public class Word_Pattern {
 	    HashMap<String, Character> hm2 = new HashMap<String, Character>();
 	    for(int i=0; i<pattern.length(); ++i) {
 	        if(hm1.containsKey(pattern.charAt(i))) {
+	        	
 	            if(!hm1.get(pattern.charAt(i)).equals(strs[i])) return false;
 	        }
 	        else {

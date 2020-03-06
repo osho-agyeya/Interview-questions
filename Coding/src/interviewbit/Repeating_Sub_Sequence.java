@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * Repeating Sub-Sequence
 Asked in:  

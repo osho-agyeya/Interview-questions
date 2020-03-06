@@ -1,4 +1,4 @@
-//ddoe
+//done
 package ctci;
 
 public class Magic_Index {

@@ -1,4 +1,4 @@
-//ddoe
+//done
 
 /*
  * 
@@ -41,7 +41,7 @@ public class Group_Anagrams {
             tempList.add(s);
             map.put(key,tempList);
         }
-        return new LinkedList<>(map.values());
+        return new LinkedList<>(map.values()); //nice way
     }
 	
 	
