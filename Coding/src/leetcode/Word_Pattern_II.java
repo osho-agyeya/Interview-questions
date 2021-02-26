@@ -21,7 +21,7 @@ public class Word_Pattern_II {
 	        return true;
 	    if(pattern.length()==0)
 	        return false;
-	 
+
 	    HashMap<Character, String> map = new HashMap<Character, String>();
 	 
 	    return helper(pattern, str, 0, 0, map);

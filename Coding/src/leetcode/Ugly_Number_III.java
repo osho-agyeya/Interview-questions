@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * Write a program to find the n-th ugly number.
 

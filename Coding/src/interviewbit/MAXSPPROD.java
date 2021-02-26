@@ -1,4 +1,4 @@
-//ddoe
+//done
 /*
  * MAXSPPROD
 You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following:<ul>

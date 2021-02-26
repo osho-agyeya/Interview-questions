@@ -1,0 +1,31 @@
+Problems with Java for Competitive Programming
+JUNE 22, 2018 ~ ANONYMOUS
+Many of you who used to do competitive programming in Java might sometimes wonder that why a particular logic is working fine in C or C++ while the same logic gives TLE or RunTime Error(usually it is TLE). Well this is due to internal implementation of functions and classes in Java. To avoid these things you should keep in mind few things :
+
+Use Fast I/O
+When input or output is very huge it is pretty much possible that if you are getting TLE it is due to using Scanner class for input and System.out.print() for output.  Well for input it is advised to use BufferedReader class or make your own class for taking input. While for output you can use PrintWriter class.
+
+Use StringBuffer/StringBuilder
+Whenever you need to deal with strings it is advised to use StringBuffer or StringBuilder classes. When you need to print a big string using String class can give TLE while using other two classes can avoid TLE. Also when you need to append or modify strings frequently you should avoid using String class. This is due to internal implementations in classes.
+
+Use Wrapper class for Array
+Whenever you need to sort a large array it is advised to use wrapper class array such as Integer or Long classes rather than primitive datatype array because sorting technique used in primitive datatype array is quick sort which in worst case can have complexity of O(n²) and hence can give TLE. While sorting technique used in wrapper class array is merge sort which have complexity of O(nlogn).
+
+Increase Stack size
+Whenever your program might go in deep recursion or dfs you might get RunTime Error. This is due to StackOverFlow Error. As stack size of Java is very low, hence, either you should avoid deep recursion and use iteration or increase stack size dynamically. This can be done by implementing Runnable in your defined class and making and starting a  new thread in main function which calls overrided function run(). The syntax is
+
+          Thread(ThreadGroup group, Runnable target, String name, long stackSize)
+
+Initialization of Array
+The complexity to initialize an array of primitive datatype in Java is O(n) because of setting the default value to 0. Hence, you should avoid initializing a big array inside a loop.
+
+For more details read the manual/document provided on oracle site and google for blogs and quora answers.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+for dp 3 things: how to represent a state, what parameters,element of choice(mutually exclusive and exhaustive) for next member
+
+a2oj ladders are there
+
+complete codechef certification material(first complete this) and go for certification, also hackerrank, competitions only codeforces,codechef and leetcode
+

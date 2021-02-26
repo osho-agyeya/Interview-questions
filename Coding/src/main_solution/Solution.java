@@ -4,10 +4,11 @@ import java.io.*;
 import leetcode.*;
 import java.util.*;
 
-import interviewbit.Repeating_Sub_Sequence;
-
 public class Solution {
 	
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		InputReader ii=new InputReader(System.in);;
 		OutputWriter pp=new OutputWriter(System.out);
@@ -16,20 +17,66 @@ public class Solution {
 		//pp.ptn(o.fourSum(new int[] {1, 0, -1, 0, -2, 2}, 0).toString());
 		//o.longestPalindromeSubseq("cbbd");
 		
-		for(int i=0;i<=5;i++) {
-			System.out.println(i);
-			System.out.println(-i);
-			System.out.println(i & -i);
-			System.out.println(i += (i & -i));
-			System.out.println("**********");
-			
-		}
-		
-		
-		
+		pp.ptn(solution(0,1));
 		
 		
 	}
+		
+		
+
+
+	static class Coordinate {
+        int x, y;
+        
+        public Coordinate(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+    
+    }
+
+    public static int solution(int src, int dest) {
+        //Your code here
+        int x1=src/8;
+        int y1=src%8;
+        int x2=dest/8;
+        int y2=dest%8;
+        int[] dx = {-1, -2, -1, -2, 1, 2, 1, 2};
+        int[] dy = {-2, -1, 2, 1, -2, -1, 2, 1};
+        boolean[][] isVisited = new boolean[8][8];
+        Queue<Coordinate> queue = new LinkedList<Coordinate>();
+        queue.add(new Coordinate(x1, y1));
+        isVisited[x1][y1] = true;
+        int moveCount = 0;
+        while (!queue.isEmpty()) {
+            int nodesAtCurrentBreadth = queue.size();
+            for (int count = 0; count < nodesAtCurrentBreadth; count++) {
+                Coordinate currPos = queue.remove();
+                if (currPos.x == x2 && currPos.y == y2) {
+                    return moveCount;
+                }
+                for (int i = 0; i < dx.length; i++) {
+                    if (isValid(currPos.x + dx[i], currPos.y + dy[i]) && isVisited[currPos.x + dx[i]][currPos.y + dy[i]] == false) {
+                        queue.add(new Coordinate(currPos.x + dx[i], currPos.y + dy[i]));
+                        isVisited[currPos.x + dx[i]][currPos.y + dy[i]] = true;
+                    }
+                }                
+            }
+            moveCount++;
+        }
+        return moveCount;
+        
+    }
+    
+    public static boolean isValid(int x, int y) {
+        if (x < 0 || y < 0 || x > 7 || y > 7) {
+            return false;
+        }
+        
+        return true;
+    }
+		
+	
 		
 	static class InputReader {
 
