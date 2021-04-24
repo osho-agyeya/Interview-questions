@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Min Steps in Infinite Grid
 Asked in:  

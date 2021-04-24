@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Nearest Smaller Element
 Asked in:  

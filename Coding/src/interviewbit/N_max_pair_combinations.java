@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * N max pair combinations
 Asked in:  

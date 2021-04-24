@@ -1,21 +1,24 @@
-//done
+//completed
 /*
- * Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.
+Given two integer arrays nums1 and nums2, return the maximum length of a subarray that appears in both arrays.
+
+ 
 
 Example 1:
 
-Input:
-A: [1,2,3,2,1]
-B: [3,2,1,4,7]
+Input: nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7]
 Output: 3
-Explanation: 
-The repeated subarray with maximum length is [3, 2, 1].
+Explanation: The repeated subarray with maximum length is [3,2,1].
+Example 2:
+
+Input: nums1 = [0,0,0,0,0], nums2 = [0,0,0,0,0]
+Output: 5
  
 
-Note:
+Constraints:
 
-1 <= len(A), len(B) <= 1000
-0 <= A[i], B[i] < 100
+1 <= nums1.length, nums2.length <= 1000
+0 <= nums1[i], nums2[i] <= 100
  * 
  */
 

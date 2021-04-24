@@ -1,30 +1,27 @@
-//done
+//completed
 /*
  * 
- * 
- * Find the length of the longest substring T of a given string (consists of lowercase letters only) such that every character in T appears no less than k times.
+Given a string s and an integer k, return the length of the longest substring of s such that the frequency of each character in this substring is greater than or equal to k.
+
+ 
 
 Example 1:
 
-Input:
-s = "aaabb", k = 3
-
-Output:
-3
-
-The longest substring is "aaa", as 'a' is repeated 3 times.
+Input: s = "aaabb", k = 3
+Output: 3
+Explanation: The longest substring is "aaa", as 'a' is repeated 3 times.
 Example 2:
 
-Input:
-s = "ababbc", k = 2
+Input: s = "ababbc", k = 2
+Output: 5
+Explanation: The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated 3 times.
+ 
 
-Output:
-5
+Constraints:
 
-The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated 3 times.
- * 
- * 
- * 
+1 <= s.length <= 104
+s consists of only lowercase English letters.
+1 <= k <= 105
  * 
  */
 package leetcode;

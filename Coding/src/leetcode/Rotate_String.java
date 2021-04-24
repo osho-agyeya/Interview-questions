@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * We are given two strings, A and B.
 

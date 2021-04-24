@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  *Equal Average Partition
 Asked in:  

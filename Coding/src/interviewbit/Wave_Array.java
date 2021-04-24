@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Wave Array
 Asked in:  

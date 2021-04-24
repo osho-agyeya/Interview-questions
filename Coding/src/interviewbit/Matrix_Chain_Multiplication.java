@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Matrix Chain Multiplication
 Given an array of integers A representing chain of 2-D matices such that the dimensions of ith matrix is

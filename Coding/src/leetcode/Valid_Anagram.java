@@ -1,6 +1,8 @@
-//done
+//completed
 /*
- * Given two strings s and t , write a function to determine if t is an anagram of s.
+ * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+ 
 
 Example 1:
 
@@ -10,11 +12,15 @@ Example 2:
 
 Input: s = "rat", t = "car"
 Output: false
-Note:
-You may assume the string contains only lowercase alphabets.
+ 
 
-Follow up:
-What if the inputs contain unicode characters? How would you adapt your solution to such case?
+Constraints:
+
+1 <= s.length, t.length <= 5 * 104
+s and t consist of lowercase English letters.
+ 
+
+Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
  */
 package leetcode;
 

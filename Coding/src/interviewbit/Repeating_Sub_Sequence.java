@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Repeating Sub-Sequence
 Asked in:  

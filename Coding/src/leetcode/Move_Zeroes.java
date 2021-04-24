@@ -1,17 +1,29 @@
-//done
+//completed
 
 /*
- * Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
-Example:
+Note that you must do this in-place without making a copy of the array.
 
-Input: [0,1,0,3,12]
+ 
+
+Example 1:
+
+Input: nums = [0,1,0,3,12]
 Output: [1,3,12,0,0]
-Note:
+Example 2:
 
-You must do this in-place without making a copy of the array.
-Minimize the total number of operations.
- * 
+Input: nums = [0]
+Output: [0]
+ 
+
+Constraints:
+
+1 <= nums.length <= 104
+-231 <= nums[i] <= 231 - 1
+ 
+
+Follow up: Could you minimize the total number of operations done?
  */
 
 package leetcode;

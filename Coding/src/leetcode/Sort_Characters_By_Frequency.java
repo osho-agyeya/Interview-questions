@@ -1,3 +1,4 @@
+//completed
 package leetcode;
 
 import java.util.HashMap;
@@ -5,41 +6,34 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 /*
- * Given a string, sort it in decreasing order based on the frequency of characters.
+ * Given a string s, sort it in decreasing order based on the frequency of characters, and return the sorted string.
+
+ 
 
 Example 1:
 
-Input:
-"tree"
-
-Output:
-"eert"
-
-Explanation:
-'e' appears twice while 'r' and 't' both appear once.
+Input: s = "tree"
+Output: "eert"
+Explanation: 'e' appears twice while 'r' and 't' both appear once.
 So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
 Example 2:
 
-Input:
-"cccaaa"
-
-Output:
-"cccaaa"
-
-Explanation:
-Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.
+Input: s = "cccaaa"
+Output: "aaaccc"
+Explanation: Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.
 Note that "cacaca" is incorrect, as the same characters must be together.
 Example 3:
 
-Input:
-"Aabb"
-
-Output:
-"bbAa"
-
-Explanation:
-"bbaA" is also a valid answer, but "Aabb" is incorrect.
+Input: s = "Aabb"
+Output: "bbAa"
+Explanation: "bbaA" is also a valid answer, but "Aabb" is incorrect.
 Note that 'A' and 'a' are treated as two different characters.
+ 
+
+Constraints:
+
+1 <= s.length <= 5 * 105
+s consists of English letters and digits.
  * 
  * 
  */

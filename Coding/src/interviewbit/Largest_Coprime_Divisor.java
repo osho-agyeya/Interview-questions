@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Largest Coprime Divisor
 You are given two positive numbers A and B. You need to find the maximum valued integer X such that:

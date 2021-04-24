@@ -1,22 +1,32 @@
-//done
+//completed
 /*
- * Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
+Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.
 
-You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
+The first node is considered odd, and the second node is even, and so on.
+
+Note that the relative order inside both the even and odd groups should remain as it was in the input.
+
+ 
 
 Example 1:
 
-Input: 1->2->3->4->5->NULL
-Output: 1->3->5->2->4->NULL
+
+Input: head = [1,2,3,4,5]
+Output: [1,3,5,2,4]
 Example 2:
 
-Input: 2->1->3->5->6->4->7->NULL
-Output: 2->3->6->7->1->5->4->NULL
-Note:
 
-The relative order inside both the even and odd groups should remain as it was in the input.
-The first node is considered odd, the second node even and so on ...
- * 
+Input: head = [2,1,3,5,6,4,7]
+Output: [2,3,6,7,1,5,4]
+ 
+
+Constraints:
+
+The number of nodes in the linked list is in the range [0, 104].
+-106 <= Node.val <= 106
+ 
+
+Follow up: Could you solve it in O(1) space complexity and O(nodes) time complexity? 
  * 
  */
 

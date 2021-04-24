@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Intersection Of Sorted Arrays
 Asked in:  

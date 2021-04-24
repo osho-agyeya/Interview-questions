@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Distinct Numbers in Window
 Asked in:  

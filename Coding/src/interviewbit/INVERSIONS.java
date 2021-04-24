@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * INVERSIONS
 Given an array A, count the number of inversions in the array.

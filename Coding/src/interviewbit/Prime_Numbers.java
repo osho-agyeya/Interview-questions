@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Prime Sum
 Asked in:  

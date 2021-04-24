@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Largest area of rectangle with permutations
 Asked in:  

@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Coins in a Line
 There are A coins (Assume A is even) in a line.

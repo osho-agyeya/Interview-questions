@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Colorful Number
 Asked in:  

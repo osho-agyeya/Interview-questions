@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Knight On Chess Board
 Asked in:  

@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Smallest sequence with given Primes
 Asked in:  

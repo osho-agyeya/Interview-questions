@@ -1,20 +1,41 @@
-//done
+//completed
 
 /*
  * 
- * Given a non-empty 2D matrix matrix and an integer k, find the max sum of a rectangle in the matrix such that its sum is no larger than k.
+Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 
-Example:
+ 
 
-Input: matrix = [[1,0,1],[0,-2,3]], k = 2
-Output: 2 
-Explanation: Because the sum of rectangle [[0, 1], [-2, 3]] is 2,
-             and 2 is the max number no larger than k (k = 2).
-Note:
+Example 1:
 
-The rectangle inside the matrix must have an area > 0.
-What if the number of rows is much larger than the number of columns?
- * 
+
+Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+Output: 6
+Explanation: The maximal rectangle is shown in the above picture.
+Example 2:
+
+Input: matrix = []
+Output: 0
+Example 3:
+
+Input: matrix = [["0"]]
+Output: 0
+Example 4:
+
+Input: matrix = [["1"]]
+Output: 1
+Example 5:
+
+Input: matrix = [["0","0"]]
+Output: 0
+ 
+
+Constraints:
+
+rows == matrix.length
+cols == matrix[i].length
+0 <= row, cols <= 200
+matrix[i][j] is '0' or '1'.
  */
 package leetcode;
 

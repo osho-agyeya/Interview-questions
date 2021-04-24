@@ -1,4 +1,4 @@
-//done
+//completed
 
 TIME,SPACE
 
@@ -6,11 +6,12 @@ topological sort=O(V+E)
 DFS=O(V+E),O(V)
 BFS=O(V+E),O(V)
 DIJKSTRA=O(E+VLOGV),
-BELLMAN FORD=O(VE),O(V)
+BELLMAN FORD=O(VE),O(V) = Single Source Shortest Path (works with -ve weights & find -ve weight cycles)
 JARVIS MARCH(GIFT WRAPPING)=O(NXH) OR WORST IS O(N^2),O(N)
 KMP=O(M+N),O(N)
 TRIE=O(LENGTH OF WORD),O(n*m)
 FORD FULKERSON:O(VE^2)
+Floyd–Warshall algorithm:O(N^3), O(N^2)(Network delay time)
 
 access: array=1, trees=log n ; otherwise n
 search: trees=log n; else n

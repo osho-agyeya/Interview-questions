@@ -1,31 +1,42 @@
-//done
+//completed
 
 /*T=N
  * 
- * Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
 
 For example:
 
-    1 -> A
-    2 -> B
-    3 -> C
-    ...
-    26 -> Z
-    27 -> AA
-    28 -> AB 
-    ...
+A -> 1
+B -> 2
+C -> 3
+...
+Z -> 26
+AA -> 27
+AB -> 28 
+...
+ 
+
 Example 1:
 
-Input: 1
+Input: columnNumber = 1
 Output: "A"
 Example 2:
 
-Input: 28
+Input: columnNumber = 28
 Output: "AB"
 Example 3:
 
-Input: 701
+Input: columnNumber = 701
 Output: "ZY"
+Example 4:
+
+Input: columnNumber = 2147483647
+Output: "FXSHRXW"
+ 
+
+Constraints:
+
+1 <= columnNumber <= 231 - 1
  * 
  * 
  */

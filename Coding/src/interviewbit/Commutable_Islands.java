@@ -1,4 +1,4 @@
-//done
+//completed
 
 //this is using kruskal's algorithm
 /*

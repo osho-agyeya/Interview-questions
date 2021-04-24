@@ -1,21 +1,30 @@
-//done
+//completed
 
 /*
  * 
  * 
- * Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
-Find all the elements of [1, n] inclusive that do not appear in this array.
+ 
 
-Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+Example 1:
 
-Example:
+Input: nums = [4,3,2,7,8,2,3,1]
+Output: [5,6]
+Example 2:
 
-Input:
-[4,3,2,7,8,2,3,1]
+Input: nums = [1,1]
+Output: [2]
+ 
 
-Output:
-[5,6]
+Constraints:
+
+n == nums.length
+1 <= n <= 105
+1 <= nums[i] <= n
+ 
+
+Follow up: Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
  * 
  */
 package leetcode;

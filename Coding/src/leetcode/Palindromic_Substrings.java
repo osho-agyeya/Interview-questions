@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Given a string, your task is to count how many palindromic substrings in this string.
 

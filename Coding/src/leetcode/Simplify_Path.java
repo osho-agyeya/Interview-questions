@@ -1,40 +1,45 @@
-//done
+//completed
 /*
- * Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path.
+ * Given a string path, which is an absolute path (starting with a slash '/') to a file or directory in a Unix-style file system, convert it to the simplified canonical path.
+s
+In a Unix-style file system, a period '.' refers to the current directory, a double period '..' refers to the directory up a level, and any multiple consecutive slashes (i.e. '//') are treated as a single slash '/'. For this problem, any other format of periods such as '...' are treated as file/directory names.
 
-In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level. For more information, see: Absolute path vs relative path in Linux/Unix
+The canonical path should have the following format:
 
-Note that the returned canonical path must always begin with a slash /, and there must be only a single slash / between two directory names. The last directory name (if it exists) must not end with a trailing /. Also, the canonical path must be the shortest string representing the absolute path.
+The path starts with a single slash '/'.
+Any two directories are separated by a single slash '/'.
+The path does not end with a trailing '/'.
+The path only contains the directories on the path from the root directory to the target file or directory (i.e., no period '.' or double period '..')
+Return the simplified canonical path.
 
  
 
 Example 1:
 
-Input: "/home/"
+Input: path = "/home/"
 Output: "/home"
 Explanation: Note that there is no trailing slash after the last directory name.
 Example 2:
 
-Input: "/../"
+Input: path = "/../"
 Output: "/"
 Explanation: Going one level up from the root directory is a no-op, as the root level is the highest level you can go.
 Example 3:
 
-Input: "/home//foo/"
+Input: path = "/home//foo/"
 Output: "/home/foo"
 Explanation: In the canonical path, multiple consecutive slashes are replaced by a single one.
 Example 4:
 
-Input: "/a/./b/../../c/"
+Input: path = "/a/./b/../../c/"
 Output: "/c"
-Example 5:
+ 
 
-Input: "/a/../../b/../c//.//"
-Output: "/c"
-Example 6:
+Constraints:
 
-Input: "/a//b////c/d//././/.."
-Output: "/a/b/c"
+1 <= path.length <= 3000
+path consists of English letters, digits, period '.', slash '/' or '_'.
+path is a valid absolute Unix path.
  */
 package leetcode;
 

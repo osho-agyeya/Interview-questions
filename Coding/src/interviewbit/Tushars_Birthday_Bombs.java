@@ -1,4 +1,4 @@
-//ddoe
+//completed
 /*
  * It’s Tushar’s birthday today and he has N friends.
 

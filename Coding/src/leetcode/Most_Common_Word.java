@@ -5,19 +5,17 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/*
+/*completed
  * 
- * Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words.  It is guaranteed there is at least one word that isn't banned, and that the answer is unique.
+Given a string paragraph and a string array of the banned words banned, return the most frequent word that is not banned. It is guaranteed there is at least one word that is not banned, and that the answer is unique.
 
-Words in the list of banned words are given in lowercase, and free of punctuation.  Words in the paragraph are not case sensitive.  The answer is in lowercase.
+The words in paragraph are case-insensitive and the answer should be returned in lowercase.
 
  
 
-Example:
+Example 1:
 
-Input: 
-paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
-banned = ["hit"]
+Input: paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.", banned = ["hit"]
 Output: "ball"
 Explanation: 
 "hit" occurs 3 times, but it is a banned word.
@@ -25,18 +23,19 @@ Explanation:
 Note that words in the paragraph are not case sensitive,
 that punctuation is ignored (even if adjacent to words, such as "ball,"), 
 and that "hit" isn't the answer even though it occurs more because it is banned.
+Example 2:
+
+Input: paragraph = "a.", banned = []
+Output: "a"
  
 
-Note:
+Constraints:
 
-1 <= paragraph.length <= 1000.
-0 <= banned.length <= 100.
-1 <= banned[i].length <= 10.
-The answer is unique, and written in lowercase (even if its occurrences in paragraph may have uppercase symbols, and even if it is a proper noun.)
-paragraph only consists of letters, spaces, or the punctuation symbols !?',;.
-There are no hyphens or hyphenated words.
-Words only consist of letters, never apostrophes or other punctuation symbols.
- * 
+1 <= paragraph.length <= 1000
+paragraph consists of English letters, space ' ', or one of the symbols: "!?',;.".
+0 <= banned.length <= 100
+1 <= banned[i].length <= 10
+banned[i] consists of only lowercase English letters. 
  */
 
 

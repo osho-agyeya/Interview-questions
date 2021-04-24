@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Shortest Unique Prefix
 Asked in:  

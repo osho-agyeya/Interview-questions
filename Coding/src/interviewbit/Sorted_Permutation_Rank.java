@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Sorted Permutation Rank
 Asked in:  

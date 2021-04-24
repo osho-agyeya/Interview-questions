@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Min XOR value
 Asked in:  

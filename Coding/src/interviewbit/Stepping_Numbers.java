@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Stepping Numbers
 Asked in:  

@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * NUMRANGE
 Given an array of non negative integers A, and a range (B, C),

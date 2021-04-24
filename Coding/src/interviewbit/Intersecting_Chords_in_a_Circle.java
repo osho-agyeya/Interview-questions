@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Intersecting Chords in a Circle
 Given a number A, return number of ways you can draw A chords in a circle with 2 x A points such that no 2 chords intersect.

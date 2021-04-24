@@ -1,4 +1,4 @@
-//done
+//completed
 /*
  * Minimize the absolute difference
 Asked in:  

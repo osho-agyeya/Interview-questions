@@ -1,27 +1,28 @@
-//done
+//completed
 /*
- * Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+ * Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
 
-For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
-
-    1
-   / \
-  2   2
- / \ / \
-3  4 4  3
  
 
-But the following [1,2,2,null,3,null,3] is not:
+Example 1:
 
-    1
-   / \
-  2   2
-   \   \
-   3    3
+
+Input: root = [1,2,2,3,4,4,3]
+Output: true
+Example 2:
+
+
+Input: root = [1,2,2,null,3,null,3]
+Output: false
  
 
-Note:
-Bonus points if you could solve it both recursively and iteratively.
+Constraints:
+
+The number of nodes in the tree is in the range [1, 1000].
+-100 <= Node.val <= 100
+ 
+
+Follow up: Could you solve it both recursively and iteratively?
  */
 
 package leetcode;

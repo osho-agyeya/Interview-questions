@@ -1,22 +1,32 @@
-//done
+//completed
 /*
- * Write a program to find the nth super ugly number.
+ * A super ugly number is a positive integer whose prime factors are in the array primes.
 
-Super ugly numbers are positive numbers whose all prime factors are in the given prime list primes of size k.
+Given an integer n and an array of integers primes, return the nth super ugly number.
 
-Example:
+The nth super ugly number is guaranteed to fit in a 32-bit signed integer.
+
+ 
+
+Example 1:
 
 Input: n = 12, primes = [2,7,13,19]
-Output: 32 
-Explanation: [1,2,4,7,8,13,14,16,19,26,28,32] is the sequence of the first 12 
-             super ugly numbers given primes = [2,7,13,19] of size 4.
-Note:
+Output: 32
+Explanation: [1,2,4,7,8,13,14,16,19,26,28,32] is the sequence of the first 12 super ugly numbers given primes = [2,7,13,19].
+Example 2:
 
-1 is a super ugly number for any given primes.
-The given numbers in primes are in ascending order.
-0 < k ≤ 100, 0 < n ≤ 106, 0 < primes[i] < 1000.
-The nth super ugly number is guaranteed to fit in a 32-bit signed integer.
- */
+Input: n = 1, primes = [2,3,5]
+Output: 1
+Explanation: 1 has no prime factors, therefore all of its prime factors are in the array primes = [2,3,5].
+ 
+
+Constraints:
+
+1 <= n <= 106
+1 <= primes.length <= 100
+2 <= primes[i] <= 1000
+primes[i] is guaranteed to be a prime number.
+All the values of primes are unique and sorted in ascending order. */
 package leetcode;
 
 public class Super_Ugly_Number {
