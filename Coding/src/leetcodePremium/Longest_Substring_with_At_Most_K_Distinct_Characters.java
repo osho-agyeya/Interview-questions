@@ -1,12 +1,11 @@
 //completed
 /*
  * 
+ * this can be done for k=2(Question no. 159 leetcode premium)
  * 
- * 
- * 
- * Given a string, find the longest substring that contains only two unique characters. For example, given "abcbbbbcccbdddadacb", the longest substring that contains 2 unique character is "bcbbbbcccb".
- * 
- * 
+Given a string, find the length of the longest substring T that contains at most k distinct characters. 
+For example, Given s = “eceba” and k = 2, 
+T is "ece" which its length is 3. 
  * 
  * 
  * 

@@ -24,6 +24,8 @@ For more details read the manual/document provided on oracle site and google for
 --------------------------------------------------------------------------------------------------------------------------------
 
 for dp 3 things: how to represent a state, what parameters,element of choice(mutually exclusive and exhaustive) for next member
+dp questions are mostly optimisation(Find minimum or maximum problems)
+
 
 a2oj ladders are there
 

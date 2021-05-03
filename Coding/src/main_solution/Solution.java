@@ -17,64 +17,33 @@ public class Solution {
 		//pp.ptn(o.fourSum(new int[] {1, 0, -1, 0, -2, 2}, 0).toString());
 		//o.longestPalindromeSubseq("cbbd");
 		
-		pp.ptn(solution(0,1));
+		 Scanner s = new Scanner(System.in);
+	        int N = s.nextInt();
+	        int num[]= new int[N];
+	        for(int i=0;i<N;i++){
+	            num[i]=s.nextInt();
+	        }
+
+	        int nge[] = new int[N];
+
+	        Stack<Integer> st = new Stack<>();
+	        for (int i = N - 1; i >= 0; i--)
+	        {
+	            if (!st.empty())
+	            {
+	                while (!st.empty() && st.peek() <= num[i])
+	                {
+	                    st.pop();
+	                }
+	            }
+	            nge[i] = st.empty() ? num[i] : st.peek();
+	            st.push(num[i]);
+	        }
+	        for (int i : nge)
+	            System.out.print(i+" ");
 		
 		
 	}
-		
-		
-
-
-	static class Coordinate {
-        int x, y;
-        
-        public Coordinate(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    
-    }
-
-    public static int solution(int src, int dest) {
-        //Your code here
-        int x1=src/8;
-        int y1=src%8;
-        int x2=dest/8;
-        int y2=dest%8;
-        int[] dx = {-1, -2, -1, -2, 1, 2, 1, 2};
-        int[] dy = {-2, -1, 2, 1, -2, -1, 2, 1};
-        boolean[][] isVisited = new boolean[8][8];
-        Queue<Coordinate> queue = new LinkedList<Coordinate>();
-        queue.add(new Coordinate(x1, y1));
-        isVisited[x1][y1] = true;
-        int moveCount = 0;
-        while (!queue.isEmpty()) {
-            int nodesAtCurrentBreadth = queue.size();
-            for (int count = 0; count < nodesAtCurrentBreadth; count++) {
-                Coordinate currPos = queue.remove();
-                if (currPos.x == x2 && currPos.y == y2) {
-                    return moveCount;
-                }
-                for (int i = 0; i < dx.length; i++) {
-                    if (isValid(currPos.x + dx[i], currPos.y + dy[i]) && isVisited[currPos.x + dx[i]][currPos.y + dy[i]] == false) {
-                        queue.add(new Coordinate(currPos.x + dx[i], currPos.y + dy[i]));
-                        isVisited[currPos.x + dx[i]][currPos.y + dy[i]] = true;
-                    }
-                }                
-            }
-            moveCount++;
-        }
-        return moveCount;
-        
-    }
-    
-    public static boolean isValid(int x, int y) {
-        if (x < 0 || y < 0 || x > 7 || y > 7) {
-            return false;
-        }
-        
-        return true;
-    }
 		
 	
 		
