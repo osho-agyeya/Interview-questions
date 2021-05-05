@@ -17,4 +17,5 @@ package leetcodePremium;
 
 public class Minimum_Unique_Word_Abbreviation {
 
+		
 }
