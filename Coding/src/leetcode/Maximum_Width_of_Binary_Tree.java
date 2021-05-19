@@ -1,4 +1,4 @@
-/*
+/* completed
 
 Given a binary tree, write a function to get the maximum width of the given tree. The maximum width of a tree is the maximum width among all levels.
 

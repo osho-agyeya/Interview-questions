@@ -17,31 +17,6 @@ public class Solution {
 		//pp.ptn(o.fourSum(new int[] {1, 0, -1, 0, -2, 2}, 0).toString());
 		//o.longestPalindromeSubseq("cbbd");
 		
-		 Scanner s = new Scanner(System.in);
-	        int N = s.nextInt();
-	        int num[]= new int[N];
-	        for(int i=0;i<N;i++){
-	            num[i]=s.nextInt();
-	        }
-
-	        int nge[] = new int[N];
-
-	        Stack<Integer> st = new Stack<>();
-	        for (int i = N - 1; i >= 0; i--)
-	        {
-	            if (!st.empty())
-	            {
-	                while (!st.empty() && st.peek() <= num[i])
-	                {
-	                    st.pop();
-	                }
-	            }
-	            nge[i] = st.empty() ? num[i] : st.peek();
-	            st.push(num[i]);
-	        }
-	        for (int i : nge)
-	            System.out.print(i+" ");
-		
 		
 	}
 		

@@ -11,13 +11,15 @@ JARVIS MARCH(GIFT WRAPPING)=O(NXH) OR WORST IS O(N^2),O(N)
 KMP=O(M+N),O(N)
 TRIE=O(LENGTH OF WORD),O(n*m)
 FORD FULKERSON:O(VE^2)
-Floyd–Warshall algorithm:O(N^3), O(N^2)(Network delay time)
+Floyd–Warshall algorithm:O(N^3), O(N^2)(Network delay time)(all pair shortest path)
 
 access: array=1, trees=log n ; otherwise n
 search: trees=log n; else n
 insertion: stack queue linked list=1;tree=log n;otherwise n
 deletion: stack queue linked list=1;tree=log n;otherwise n
 kd tree is exception
+
+treemap in java: all in log n time
 
 
 sorting:t,s

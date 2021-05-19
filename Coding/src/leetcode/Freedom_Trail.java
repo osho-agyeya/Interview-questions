@@ -41,4 +41,35 @@ package leetcode;
 public class Freedom_Trail {
 	
 
+	public int findRotateSteps(String ring, String key) {
+        Map<String,Integer> map = new HashMap();
+        return dfs(ring, key, 0, map);
+ }
+ 
+ public int dfs(String ring, String key, int index, Map<String,Integer> map){
+     if(index == key.length()){
+         return 0;
+     }
+ 
+     char c = key.charAt(index);
+     String hashKey = ring + index;
+     if(map.containsKey(hashKey)) return map.get(hashKey);
+     
+     int minSteps = Integer.MAX_VALUE;
+         int firstIndex = ring.indexOf(c);
+ int lastIndex = ring.lastIndexOf(c);
+     for(int i : new int[]{firstIndex, lastIndex}){
+         if(ring.charAt(i) == c){
+             String s = ring.substring(i, ring.length()) + ring.substring(0, i);
+             int steps = 1 + Math.min(i, ring.length() - i);
+             steps += dfs(s, key, index + 1, map);
+             minSteps = Math.min(minSteps, steps);
+         }
+     }
+     
+     map.put(hashKey, minSteps);
+     
+     return minSteps;
+ }
+	
 }

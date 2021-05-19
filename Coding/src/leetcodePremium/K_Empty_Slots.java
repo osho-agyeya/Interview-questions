@@ -30,5 +30,37 @@ The given array will be in the range [1, 20000].
 package leetcodePremium;
 
 public class K_Empty_Slots {
+	
+    static int kSlots(int[] a, int k) {
+        int[] days = new int[a.length + 1];
+        
+        for(int i=0; i<a.length; i++) {
+            days[a[i]] = i+1;
+        }
+        
+        int res = Integer.MAX_VALUE;
+        
+        for(int i=1; i< days.length-k-1; i++){
+            int l = days[i];
+            int r = days[i+k+1];
+            
+            int max = Math.max(l, r);
+            int min = Math.min(l, r);
+            
+            boolean flag = true;
+            for(int j=1; j<=k; j++){
+                if(days[i + j]<max){
+                    flag = false;
+                    break;
+                }
+            }
+        
+            if(flag && max<res){
+                res = max;
+            }
+        }
+    
+        return res == Integer.MAX_VALUE ? -1 : res;
+    }
 
 }
