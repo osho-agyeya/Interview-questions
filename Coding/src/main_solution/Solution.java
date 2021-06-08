@@ -3,25 +3,51 @@ package main_solution;
 import java.io.*;
 import leetcode.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Solution {
-	
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		InputReader ii=new InputReader(System.in);;
-		OutputWriter pp=new OutputWriter(System.out);
+		InputReader ii = new InputReader(System.in);
+		;
+		OutputWriter pp = new OutputWriter(System.out);
+
+		// Longest_Palindromic_Subsequence o= new Longest_Palindromic_Subsequence();
+		// pp.ptn(o.fourSum(new int[] {1, 0, -1, 0, -2, 2}, 0).toString());
+		// o.longestPalindromeSubseq("cbbd");
+		// pp.ptn(garden(new int[] {1, 2, 1, 4, 2, 5}, 6));
+		pp.ptn("1234".substring(1,1));
 		
-		//Longest_Palindromic_Subsequence o= new Longest_Palindromic_Subsequence();
-		//pp.ptn(o.fourSum(new int[] {1, 0, -1, 0, -2, 2}, 0).toString());
-		//o.longestPalindromeSubseq("cbbd");
-		
-		
+
 	}
-		
-	
-		
+
+	static int garden(int arr[], int N) {
+		List<Integer> arrl = Arrays.stream(arr).boxed().collect(Collectors.toCollection(ArrayList::new));
+		if (isPleasant(arrl, N))
+			return 0;
+		int c = 0;
+		for (int i = 0; i < N; i++) {
+			arrl.remove(i);
+			if (isPleasant(arrl, N - 1))
+				c++;
+			arrl.add(i, arr[i]);
+		}
+		return (c == 0) ? -1 : c;
+
+	}
+
+	static boolean isPleasant(List<Integer> arr, int N) {
+		for (int i = 1; i < N - 1; i++) {
+			if ((arr.get(i - 1) <= arr.get(i) && arr.get(i) <= arr.get(i + 1))
+					|| (arr.get(i - 1) >= arr.get(i) && arr.get(i) >= arr.get(i + 1)))
+				return false;
+		}
+		return true;
+	}
+
 	static class InputReader {
 
 		private final InputStream stream;
@@ -140,7 +166,7 @@ public class Solution {
 		/*
 		 * next single string
 		 */
-		public String ns() { //single string
+		public String ns() { // single string
 			int c = read();
 			while (isSpaceChar(c)) {
 				c = read();
@@ -156,7 +182,7 @@ public class Solution {
 		/*
 		 * next entire sentences or group of lines
 		 */
-		public String nli() { //one entire sentence
+		public String nli() { // one entire sentence
 			int c = read();
 			while (isSpaceChar(c)) {
 				c = read();
@@ -246,14 +272,14 @@ public class Solution {
 		/*
 		 * next integer matrix
 		 */
-		public int[][] nim(int m,int n){
-			int a[][]=new int[n][m];
-			for(int i=0;i<m;i++){
-				a[i]=nia(n);
+		public int[][] nim(int m, int n) {
+			int a[][] = new int[n][m];
+			for (int i = 0; i < m; i++) {
+				a[i] = nia(n);
 			}
 			return a;
 		}
-		
+
 		public boolean isSpaceChar(int c) {
 			return c == ' ' || c == '\n' || c == '\r' || c == '\t' || c == -1;
 		}
@@ -293,7 +319,6 @@ public class Solution {
 			writer.flush();
 		}
 
-		
 		public void pta(char ch, Object... objects) {
 			for (int i = 0; i < objects.length; i++) {
 				if (i != 0) {
@@ -315,42 +340,42 @@ public class Solution {
 		/*
 		 * print horizontally double array
 		 */
-		public void pth(double[] arr){
-			pta(' ',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		public void pth(double[] arr) {
+			pta(' ', Arrays.stream(arr).boxed().toArray(Object[]::new));
 		}
 
 		/*
 		 * print horizontally long array
 		 */
-		public void pth(long[] arr){
-			pta(' ',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		public void pth(long[] arr) {
+			pta(' ', Arrays.stream(arr).boxed().toArray(Object[]::new));
 		}
 
 		/*
 		 * print vertically integer array
 		 */
-		public void ptv(int[] arr){
-			pta('\n',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		public void ptv(int[] arr) {
+			pta('\n', Arrays.stream(arr).boxed().toArray(Object[]::new));
 		}
 
 		/*
 		 * print vertically long array
 		 */
-		public void ptv(long[] arr){
-			pta('\n',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		public void ptv(long[] arr) {
+			pta('\n', Arrays.stream(arr).boxed().toArray(Object[]::new));
 		}
 
 		/*
 		 * print vertically double array
 		 */
-		public void ptv(double[] arr){
-			pta('\n',Arrays.stream(arr).boxed().toArray(Object[]::new));
+		public void ptv(double[] arr) {
+			pta('\n', Arrays.stream(arr).boxed().toArray(Object[]::new));
 		}
 
 		/*
 		 * print integer matrix
 		 */
-		public void pim(int arr[][]){
+		public void pim(int arr[][]) {
 			for (int[] arr1 : arr) {
 				pth(arr1);
 			}

@@ -1,4 +1,4 @@
-//completed
+//completedd
 //t=nlogn + 
 //s=nCk x k
 
@@ -62,8 +62,10 @@ public class _4Sum {
                     left++;
                     right--;
                 } else if (sum < target) { //move left
+                	while(left < right && nums[left] == nums[left + 1]) left++;
                     left++;
                 } else { //move right
+                	while(left < right && nums[right] == nums[right - 1]) right--;
                     right--;
                 }
             }

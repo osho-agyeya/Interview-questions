@@ -1,4 +1,4 @@
-/*
+/*completedd
  * Given an integer k, return the minimum number of Fibonacci numbers whose sum is equal to k. The same Fibonacci number can be used multiple times.
 
 The Fibonacci numbers are defined as:
@@ -35,30 +35,28 @@ Constraints:
 package leetcode;
 
 public class _1414 {
-	public int findMinFibonacciNumbers(int A) {
-        ArrayList<Integer> fibs = new ArrayList<>();
-       fibs.add(0);
-       fibs.add(1);
-       fibs.add(1);
-       int lastVal = 1;
-       while (lastVal < A){
-           fibs.add(fibs.get(fibs.size()-1) +fibs.get(fibs.size()-2));
-           lastVal = fibs.get(fibs.size()-1);
-       }
-       int count = 0;
-       for (int i = fibs.size()-1; i >=0 ; i--) {
-           while (A >= fibs.get(i)) {
-               A-=fibs.get(i);
-               count++;
-               if(A == 0) {
-                   return count;
-               }
-           }
-           if(A == 0) {
-               return count;
-           }
-       }
-       return count;
+	public int findMinFibonacciNumbers(int k) {
+        int a = 1;
+        int b = 1;
+        int c;
+        while (b < k) {
+            c = a;
+            a = b;
+            b = c + b;
+        }
+        
+        int cnt = 0;
+        while (k != 0) {
+        	if (k >= b) {
+        		k = k - b;
+        		++cnt;
+        	}
+            
+            c = a;
+            a = b - a;
+            b = c;
+        }
+        return cnt;
+
    }
-}
 }

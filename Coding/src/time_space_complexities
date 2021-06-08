@@ -12,6 +12,7 @@ KMP=O(M+N),O(N)
 TRIE=O(LENGTH OF WORD),O(n*m)
 FORD FULKERSON:O(VE^2)
 Floyd–Warshall algorithm:O(N^3), O(N^2)(Network delay time)(all pair shortest path)
+kosaraju=O(V+E) strongly connected component in directed graph
 
 access: array=1, trees=log n ; otherwise n
 search: trees=log n; else n

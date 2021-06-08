@@ -1,4 +1,4 @@
-//completed
+//completedd
 
 
 //t=max(l1,l2)
@@ -45,25 +45,21 @@ public class Add_Two_Numbers {
 	
 	
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode dummyHead= new ListNode(0); //using dummy head is good
-        ListNode l1Travel=l1;
-        ListNode l2Travel=l2;
-        ListNode sumTravel=dummyHead;
-        int carry=0,sum=0;
-        while(l1Travel!=null || l2Travel!=null){
-            sum=((l1Travel!=null)?l1Travel.val:0)+((l2Travel!=null)?l2Travel.val:0)+carry;
-            carry=sum/10;
-            sum%=10;
-            sumTravel.next=new ListNode(sum);
-            sumTravel=sumTravel.next;
-            l1Travel=(l1Travel!=null)?l1Travel.next:l1Travel;
-            l2Travel=(l2Travel!=null)?l2Travel.next:l2Travel;
-        }
-        
-        sumTravel.next=(carry!=0)?(new ListNode(carry)):sumTravel.next;
-        
-                
-        return dummyHead.next;
+    	 ListNode prev = new ListNode(0);
+         ListNode head = prev;
+         int carry = 0;
+         while (l1 != null || l2 != null || carry != 0) {
+             ListNode cur = new ListNode(0);
+             int sum = ((l2 == null) ? 0 : l2.val) + ((l1 == null) ? 0 : l1.val) + carry;
+             cur.val = sum % 10;
+             carry = sum / 10;
+             prev.next = cur;
+             prev = cur;
+             
+             l1 = (l1 == null) ? l1 : l1.next;
+             l2 = (l2 == null) ? l2 : l2.next;
+         }
+         return head.next;
         
     }
 

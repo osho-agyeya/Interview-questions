@@ -1,4 +1,4 @@
-//completed
+//completedd
 //t=nlogn+ n^2
 //s=n^3
 
@@ -45,7 +45,8 @@ public class _3Sum {
         Arrays.sort(num);
     List<List<Integer>> res = new LinkedList<>(); 
     for (int i = 0; i < num.length-2; i++) {
-        if (i == 0 || (i > 0 && num[i] != num[i-1])) {
+    	if (num[i] > 0) break;
+        if (i == 0 || (num[i] != num[i-1])) {
             int lo = i+1, hi = num.length-1, sum = 0 - num[i];
             while (lo < hi) {
                 if (num[lo] + num[hi] == sum) {
@@ -53,8 +54,16 @@ public class _3Sum {
                     while (lo < hi && num[lo] == num[lo+1]) lo++;
                     while (lo < hi && num[hi] == num[hi-1]) hi--;
                     lo++; hi--;
-                } else if (num[lo] + num[hi] < sum) lo++;
-                else hi--;
+                } else if (num[lo] + num[hi] < sum) {
+                    // improve: skip duplicates
+                    while (lo < hi && num[lo] == num[lo+1]) lo++;
+                    lo++;
+                }
+                else {
+                    // improve: skip duplicates
+                    while (lo < hi && num[hi] == num[hi-1]) hi--;
+                    hi--;
+                }
            }
         }
     }

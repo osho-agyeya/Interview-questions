@@ -36,4 +36,18 @@ public class Shortest_Palindrome {
     }
     return new StringBuilder(s.substring(end+1)).reverse().toString() + s;
 }
+ 
+ /* for palindrome by appending to end
+  *  public String shortestPalindrome(String s) {
+     int start = 0, j = s.length() - 1, i = start; char chs[] = s.toCharArray();
+    while(i < j) {
+         if (chs[i] == chs[j]) {
+             i++; j--;
+         } else { 
+             j = s.length() - 1; start++; i = start;
+         }
+    }
+    return s+ new StringBuilder(s.substring(0,start)).reverse().toString();
+}
+  */
 }
