@@ -19,8 +19,22 @@ public class Solution {
 		// pp.ptn(o.fourSum(new int[] {1, 0, -1, 0, -2, 2}, 0).toString());
 		// o.longestPalindromeSubseq("cbbd");
 		// pp.ptn(garden(new int[] {1, 2, 1, 4, 2, 5}, 6));
-		pp.ptn("1234".substring(1,1));
+		//pp.ptn("1234".substring(1,1));
+		Set<int[]> s = new HashSet<>();
+		int[] a= {1,2};
+		s.add(a);
+		for(int k[]:s)	pp.ptn(Arrays.toString(k));
+		pp.ptn("*");
+		pp.ptn(Arrays.toString(a));
 		
+		pp.ptn("***************");
+		
+		a[0]=3;
+		a[1]=4;
+		
+		for(int k[]:s)	pp.ptn(Arrays.toString(k));
+		pp.ptn("*");
+		pp.ptn(Arrays.toString(a));
 
 	}
 

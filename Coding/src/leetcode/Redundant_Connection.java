@@ -41,6 +41,7 @@ package leetcode;
 import java.util.*;
 public class Redundant_Connection {
 	 public int[] findRedundantConnection(int[][] edges) {
+		 //also for cycle in undirected graph
 	        int[] parent = new int[2001];
 	        for (int i = 0; i < parent.length; i++) parent[i] = i;
 	        

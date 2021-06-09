@@ -34,7 +34,7 @@ Constraints:
 
 package leetcode;
 
-public class _1414 {
+public class Find_the_Minimum_Number_of_Fibonacci_Numbers_Whose_Sum_Is_K {
 	public int findMinFibonacciNumbers(int k) {
         int a = 1;
         int b = 1;
