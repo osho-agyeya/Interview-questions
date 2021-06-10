@@ -1,4 +1,4 @@
-//completed
+//completedd
 /*
  * 
 Given an array A of integers, return the length of the longest arithmetic subsequence in A.
@@ -38,17 +38,17 @@ package leetcode;
 
 import java.util.HashMap;
 
-public class Longest_Arithmetic_Sequence {
+public class Longest_Arithmetic_Subsequence {
 	
 	 public int longestArithSeqLength(int[] A) {
         int res = 2, n = A.length;
         HashMap<Integer, Integer>[] dp = new HashMap[n];
-        for (int j = 0; j < A.length; j++) {
-            dp[j] = new HashMap<>();
-            for (int i = 0; i < j; i++) {
-                int d = A[j] - A[i];
-                dp[j].put(d, dp[i].getOrDefault(d, 1) + 1);
-                res = Math.max(res, dp[j].get(d));
+        for (int i = 0; i < A.length; i++) {
+            dp[i] = new HashMap<>();
+            for (int j = 0; j < i; j++) {
+                int d = A[i] - A[j];
+                dp[i].put(d, dp[j].getOrDefault(d, 1) + 1);
+                res = Math.max(res, dp[i].get(d));
             }
         }
         return res;

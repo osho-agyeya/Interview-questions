@@ -1,11 +1,8 @@
-//completed
-
+//completedd
 
 /*
  * 
-Given an integer array nums, return the maximum result of nums[i] XOR nums[j], where 0 ≤ i ≤ j < n.
-
-Follow up: Could you do this in O(n) runtime?
+Given an integer array nums, return the maximum result of nums[i] XOR nums[j], where 0 <= i <= j < n.
 
  
 
@@ -34,15 +31,32 @@ Output: 127
 
 Constraints:
 
-1 <= nums.length <= 2 * 104
+1 <= nums.length <= 2 * 105
 0 <= nums[i] <= 231 - 1
  */
 package leetcode;
 
-import main_solution.TreeNode;
-
 public class Maximum_XOR_of_Two_Numbers_in_an_Array {
 	
+	
+	 public int findMaximumXOR(int[] nums) {
+	        int max = 0, mask = 0;
+	        for(int i = 31; i >= 0; i--){
+	            mask = mask | (1 << i);
+	            Set<Integer> set = new HashSet<>();
+	            for(int num : nums){
+	                set.add(num & mask);
+	            }
+	            int tmp = max | (1 << i);
+	            for(int prefix : set){
+	                if(set.contains(tmp ^ prefix)) {
+	                    max = tmp;
+	                    break;
+	                }
+	            }
+	        }
+	        return max;
+	    }
 
 	
 }

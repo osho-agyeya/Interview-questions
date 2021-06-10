@@ -1,4 +1,4 @@
-//completed
+//completedd
 /*
 Check whether the original sequence org can be uniquely reconstructed from the sequences in seqs. The org sequence is a permutation of the integers from 1 to n, with 1 ≤ n ≤ 104. Reconstruction means building a shortest common supersequence of the sequences in seqs (i.e., a shortest sequence so that all sequences in seqs are subsequences of it). Determine whether there is only one sequence that can be reconstructed from seqs and it is the org sequence.
 Example 1: 
@@ -45,6 +45,35 @@ package leetcodePremium;
 
 public class Sequence_Reconstruction {
 	
-	
+	public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {
+        HashMap<Integer, Integer> index = new HashMap<Integer, Integer>();
+        boolean[] checked = new boolean[org.length];
+        for (int i = 0; i < org.length; i ++) {
+            index.put(org[i], i);
+        }
+        boolean hasChecked = false;
+        int toCheck = org.length - 1;
+        for (List<Integer> seq:seqs) {
+            for (int i = 0; i < seq.size(); i ++) {
+                hasChecked = true;
+                int curr = seq.get(i);
+                if (curr <= 0 || curr > org.length) {
+                    return false;
+                }
+                if (i == 0) {
+                    continue;
+                }
+                int pre = seq.get(i - 1);
+                if (index.get(pre) >= index.get(curr)) {
+                    return false;
+                }
+                if (checked[index.get(curr)] == false && index.get(pre) == index.get(curr) - 1) {
+                    checked[index.get(curr)] = true;
+                    toCheck --;
+                }
+            }
+        }
+        return toCheck == 0 && hasChecked;
+    }
 
 }

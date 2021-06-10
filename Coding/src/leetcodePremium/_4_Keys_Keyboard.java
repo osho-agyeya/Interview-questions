@@ -1,4 +1,4 @@
-/*
+/*completedd
  * Imagine you have a special keyboard with the following keys: 
 Key 1: (A): Print one 'A' on screen.
 Key 2: (Ctrl-A): Select the whole screen.
@@ -30,6 +30,19 @@ package leetcodePremium;
 
 public class _4_Keys_Keyboard {
 	
-	
+	public int maxA(int N) {
+        int[] dp = new int[N + 1];
+        dp[1] = 1;
+         
+        for (int i = 2; i <= N; i++) {
+            for (int j = 1; j < i - 2; j++) {
+                dp[i] = Math.max(dp[i], dp[j] * (i - j - 1));
+            }
+             
+            dp[i] = Math.max(dp[i], dp[i - 1] + 1);
+        }
+         
+        return dp[N];
+    }
 
 }
