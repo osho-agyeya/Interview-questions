@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* over, mn, 1
  * 
 Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path.
 
@@ -30,6 +28,25 @@ n == grid[i].length
 package leetcode;
 
 public class Minimum_Path_Sum {
+	
+	/*
+	 * 
+	 * Approach 4: Dynamic Programming (Without Extra Space)
+Algorithm
+
+This approach is same as Approach 2, with a slight difference. Instead of using another dpdp matrix. We can store the minimum sums in the original matrix itself, since we need not retain the original matrix here. Thus, the governing equation now becomes:
+
+\mathrm{grid}(i, j)=\mathrm{grid}(i,j)+\min \big(\mathrm{grid}(i+1,j), \mathrm{grid}(i,j+1)\big)grid(i,j)=grid(i,j)+min(grid(i+1,j),grid(i,j+1))
+
+
+Complexity Analysis
+
+Time complexity : O(mn)O(mn). We traverse the entire matrix once.
+
+Space complexity : O(1)O(1). No extra space is used.
+	 * 
+	 */
+	
 	public int minPathSum(int[][] grid) {
     	int m = grid.length;// row
 int n = grid[0].length; // column

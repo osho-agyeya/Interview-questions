@@ -1,10 +1,4 @@
-//completedd
-//t=nlogn+ n^2
-//s=n^3
-
-
-
-/*
+/* over, nlogn+n^2, n
  * 
  * Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 
@@ -43,7 +37,7 @@ public class _3Sum {
 	
 	public List<List<Integer>> threeSum(int[] num) {
         Arrays.sort(num);
-    List<List<Integer>> res = new LinkedList<>(); 
+        Set<List<Integer>> res = new HashSet<>();
     for (int i = 0; i < num.length-2; i++) {
     	if (num[i] > 0) break;
         if (i == 0 || (num[i] != num[i-1])) {
@@ -67,7 +61,7 @@ public class _3Sum {
            }
         }
     }
-    return res;
+    return new ArrayList<>(res);
     }
 
 }

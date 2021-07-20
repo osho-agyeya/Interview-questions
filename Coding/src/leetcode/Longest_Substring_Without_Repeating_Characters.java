@@ -1,9 +1,6 @@
-//completed
-
-/*
+/* over, n, m(size of charset)
  * 
  * Given a string, find the length of the longest substring without repeating characters.
-Given a string s, find the length of the longest substring without repeating characters.
 
  
 
@@ -44,30 +41,28 @@ import java.util.*;
 
 public class Longest_Substring_Without_Repeating_Characters {
 	
-	public int lengthOfLongestSubstring(String s) {
-        int size=s.length();
-        if(size<=1)
-            return size;
-        int start=0;
-        int stop=1;
-        int ans=1;
+	 public int lengthOfLongestSubstring(String s) {
+	        Integer[] chars = new Integer[128];
 
-        Map<Character, Integer> freq=new HashMap<>();
-                freq.put(s.charAt(0),1);
-        while(start<size && stop<size && start<=stop){  
-            char startC=s.charAt(start);
-            char stopC=s.charAt(stop);
-            int freqStop=freq.getOrDefault(stopC,0);
-            if(freqStop==0){                
-                freq.put(stopC,1);
-                ans=Math.max(ans,stop-start+1);
-                stop++;
-            }else {
-                freq.put(startC,freq.get(startC)-1);
-                start++;      
-            }
-        }
-        return ans;    
-    }
+	        int left = 0;
+	        int right = 0;
+
+	        int res = 0;
+	        while (right < s.length()) {
+	            char r = s.charAt(right);
+
+	            Integer index = chars[r];
+	            if (index != null && index >= left && index < right) {
+	                left = index + 1;
+	            }
+
+	            res = Math.max(res, right - left + 1);
+
+	            chars[r] = right;
+	            right++;
+	        }
+
+	        return res;
+	    }
 
 }

@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* over, n, d
  * 
  * 
  * 
@@ -50,42 +48,60 @@ import main_solution.TreeNode;
  * }
  */
 class Binary_Tree_Right_Side_View {
-     public List<Integer> rightSideView(TreeNode root) {
-        Map<Integer, Integer> rightmostValueAtDepth = new HashMap<Integer, Integer>();
-        int max_depth = -1;
+	
+	/*
+	 * Approach 3: BFS: One Queue + Level Size Measurements
+Instead of using the sentinel, we could write down the length of the current level.
 
-        /* These two Queues are always synchronized, providing an implicit
-         * association values with the same offset on each Queue. */
-        Queue<TreeNode> nodeQueue = new LinkedList<TreeNode>();
-        Queue<Integer> depthQueue = new LinkedList<Integer>();
-        nodeQueue.add(root);
-        depthQueue.add(0);
+diff
 
-        while (!nodeQueue.isEmpty()) {
-            TreeNode node = nodeQueue.remove();
-            int depth = depthQueue.remove();
+Algorithm
 
-            if (node != null) {
-                max_depth = Math.max(max_depth, depth);
+Initiate the list of the right side view rightside.
 
-                /* The last node that we encounter at a particular depth contains
-                * the correct value, so the correct value is never overwritten. */
-                rightmostValueAtDepth.put(depth, node.val);
+Initiate the queue by adding a root.
 
-                nodeQueue.add(node.left);
-                nodeQueue.add(node.right);
-                depthQueue.add(depth+1);
-                depthQueue.add(depth+1);
-            }
-        }
+While the queue is not empty:
 
-        /* Construct the solution based on the values that we end up with at the
-         * end. */
-        List<Integer> rightView = new ArrayList<Integer>();
-        for (int depth = 0; depth <= max_depth; depth++) {
-            rightView.add(rightmostValueAtDepth.get(depth));
-        }
+Write down the length of the current level: levelLength = queue.size().
 
-        return rightView;
-    }
+Iterate over i from 0 to level_length - 1:
+
+Pop the current node from the queue: node = queue.poll().
+
+If i == levelLength - 1, then it's the last node in the current level, push it to rightsize list.
+
+Add first left and then right child node into the queue.
+
+Return rightside.
+	 * 
+	 */
+	
+	 public List<Integer> rightSideView(TreeNode root) {
+	        if (root == null) return new ArrayList<Integer>();
+	        
+	        ArrayDeque<TreeNode> queue = new ArrayDeque(){{ offer(root); }};
+	        List<Integer> rightside = new ArrayList();
+	        
+	        while (!queue.isEmpty()) {
+	            int levelLength = queue.size();
+
+	            for(int i = 0; i < levelLength; ++i) {
+	                TreeNode node = queue.poll();
+	                // if it's the rightmost element
+	                if (i == levelLength - 1) {
+	                    rightside.add(node.val);    
+	                }
+
+	                // add child nodes in the queue
+	                if (node.left != null) {
+	                    queue.offer(node.left);    
+	                }
+	                if (node.right != null) {
+	                    queue.offer(node.right);
+	                }
+	            }
+	        }
+	        return rightside;
+	    }
 }

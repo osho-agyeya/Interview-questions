@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* over, log n 
  * 
  * 
  * 

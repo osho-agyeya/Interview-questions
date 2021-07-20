@@ -1,6 +1,4 @@
-//completed
-
-/*T=O(N)
+/* over, n, n
  *
  * 
  * 
@@ -59,6 +57,12 @@ import java.util.Map;
 import main_solution.Node;
 
 public class Copy_List_with_Random_Pointer {
+	
+	/*
+	 * 
+	 * 
+	 * 
+	 */
 	
 	public Node copyRandomList(Node head) {
         if (head == null) return null;

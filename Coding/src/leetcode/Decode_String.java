@@ -1,6 +1,4 @@
-//completed
-
-/*t=len(answer)
+/* over, maxKxn, n
  * 
  * 
  * 
@@ -42,6 +40,41 @@ All the integers in s are in the range [1, 300].
 package leetcode;
 
 public class Decode_String {
+	
+	
+	/*
+	 * Approach 3: Using Recursion
+Intuition
+
+In the previous approach, we implemented an external stack to keep the track of each character traversed. Ideally, a stack is required when we have nested encoded string in the form k[string k[string]].
+
+Using this intuition, we could start by building k and string and recursively decode for each nested substring. The recursion uses an internal call stack to store the previous state. Let's understand the algorithm in detail.
+
+Algorithm
+
+Build result while next character is letter (a-z) and build the number k while next character is a digit (0-9) by iterating over string s.
+Ignore the next [ character and recursively find the nested decodedString.
+Decode the current pattern k[decodedString] and append it to the result.
+Return the current result.
+The above steps are repeated recursively for each pattern until the entire string s is traversed.
+
+Base Condition: We must define a base condition that must be satisfied to backtrack from the recursive call. In this case, we would backtrack and return the result when we have traversed the string s or the next character is ] and there is no nested substring.
+
+Thanks to @bluedawnstar for suggesting the solution.
+
+Implementation
+
+
+Complexity Analysis
+
+Assume, nn is the length of the string ss.
+
+Time Complexity: \mathcal{O}(\text{maxK} \cdot n)O(maxK⋅n) as in Approach 2
+
+Space Complexity: \mathcal{O}(n)O(n). This is the space used to store the internal call stack used for recursion. As we are recursively decoding each nested pattern, the maximum depth of recursive call stack would not be more than nn
+	 * 
+	 * 
+	 */
 	
 private int i = 0;
     

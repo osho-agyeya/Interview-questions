@@ -1,5 +1,4 @@
-//completed
-/*
+/* over, n, n 
  * 
 Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
 
@@ -46,6 +45,72 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Insert_Interval {
+	
+	/*
+	 * 
+	 * Approach 1: Greedy.
+Greedy algorithms
+
+Greedy problems usually look like "Find minimum number of something to do something" or "Find maximum number of something to fit in some conditions", and typically propose an unsorted input.
+
+The idea of greedy algorithm is to pick the locally optimal move at each step, that will lead to the globally optimal solution.
+
+The standard solution has \mathcal{O}(N \log N)O(NlogN) time complexity and consists of two parts:
+
+Figure out how to sort the input data (\mathcal{O}(N \log N)O(NlogN) time). That could be done directly by a sorting or indirectly by a heap usage. Typically sort is better than the heap usage because of gain in space.
+
+Parse the sorted input to have a solution (\mathcal{O}(N)O(N) time).
+
+Please notice that in case of well-sorted input one doesn't need the first part and the greedy solution could have \mathcal{O}(N)O(N) time complexity, here is an example.
+
+How to prove that your greedy algorithm provides globally optimal solution?
+
+Usually you could use the proof by contradiction.
+
+Intuition
+
+Here we have an example of a greedy problem with a well-sorted input, and hence the algorithm time complexity should be \mathcal{O}(N)O(N).
+
+Let's consider the following intervals
+
+bla
+
+The straightforward one-pass strategy could be implemented in three steps.
+
+1 . Add to the output all the intervals starting before newInterval.
+
+bla
+
+2 . Add to the output newInterval, merge it with the last added interval if needed.
+
+bla
+
+3 . Add the next intervals one by one, merge if needed.
+
+bla
+
+Basically, the same strategy as here, with an additional care to add the new interval in its proper position in order not to destroy the well-sorted input.
+
+Algorithm
+
+Here is the algorithm :
+
+Add to the output all the intervals starting before newInterval.
+
+Add to the output newInterval. Merge it with the last added interval if newInterval starts before the last added interval.
+
+Add the next intervals one by one. Merge with the last added interval if the current interval starts before the last added interval.
+
+Implementation
+
+
+Complexity Analysis
+
+Time complexity : \mathcal{O}(N)O(N) since it's one pass along the input array.
+
+Space complexity : \mathcal{O}(N)O(N) to keep the output.
+	 * 
+	 */
 	
 	 public int[][] insert(int[][] intervals, int[] newInterval) {
 	        int start = newInterval[0];

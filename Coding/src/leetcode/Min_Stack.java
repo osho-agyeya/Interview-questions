@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* over, 1, 1
  * 
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 

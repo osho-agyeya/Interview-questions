@@ -1,5 +1,3 @@
-package leetcode;
-
 /*completed
  * 
 Given a chemical formula (given as a string), return the count of each atom.
@@ -46,7 +44,7 @@ formula consists of English letters, digits, '(', and ')'.
 formula is always valid.
  */
 
-
+package leetcode;
 
 import java.util.*;
 import java.util.regex.Matcher;

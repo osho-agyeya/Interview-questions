@@ -1,6 +1,4 @@
-/*completed
- * //t=O(N)
-    //s=
+/* over, n, n
  * 
  * 
 There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
@@ -41,6 +39,33 @@ package leetcode;
 import java.util.Arrays;
 
 public class Candy {
+	
+	/*
+	 * Approach 3: Using one array
+Algorithm
+
+In the previous approach, we used two arrays to keep track of the left neighbor and the right neighbor relation individually and later on combined these two. Instead of this, we can make use of a single array candies to keep the count of the number of candies to be allocated to the current student. In order to do so, firstly we assign 1 candy to each student. Then, we traverse the array from left-to-right and distribute the candies following only the left neighbor relation i.e. whenever the current element's ratings is larger than the left neighbor and has less than or equal candies than its left neighbor, we update the current element's candies in the candies array as candies[i] = candies[i-1] + 1. While updating we need not compare candies[i] and candies[i - 1], since candies[i] <= candies[i - 1] before updating. After this, we traverse the array from right-to-left. Now, we need to update the i'th element's candies in order to satisfy both the left neighbor and the right neighbor relation. Now, during the backward traversal, if ratings[i] > ratings[i + 1], considering only the right neighbor criteria, we could've updated candies[i] as candies[i] = candies[i + 1] + 1. But, this time we need to update candies[i] only if candies[i] <= candies[i + 1]. This happens because this time we've already altered the candies array during the forward traversal and thus candies[i] isn't necessarily less than or equal to candies[i + 1]. Thus, if ratings[i] > ratings[i + 1], we can update candies[i] as candies[i] = max(candies[i], candies[i + 1] + 1), which makes candies[i] satisfy both the left neighbor and the right neighbor criteria.
+
+Again, we need to sum up all the elements of the candies array to obtain the required result.
+
+\text{minimum\_candies} = \sum_{i=0}^{n-1} candies[i], \\ \text{where } n = \text{length of the ratings array.}minimum_candies=∑ 
+i=0
+n−1
+​
+ candies[i],
+where n=length of the ratings array.
+
+
+Complexity Analysis
+
+Time complexity : O(n)O(n). The array candies of size nn is traversed thrice.
+
+Space complexity : O(n)O(n). An array candies of size nn is used.
+
+
+	 * 
+	 * 
+	 */
 	
 	public int candy(int[] ratings) {
     int candies[] = new int[ratings.length];        

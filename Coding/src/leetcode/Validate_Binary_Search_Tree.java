@@ -1,5 +1,4 @@
-//completed
-/*
+/* over, n, n
  *Given the root of a binary tree, determine if it is a valid binary search tree (BST).
 
 A valid BST is defined as follows:
@@ -31,20 +30,37 @@ package leetcode;
 import main_solution.TreeNode;
 
 public class Validate_Binary_Search_Tree {
+	
+	/*
+	 * 
+	 * Approach 1: Recursive Traversal with Valid Range
+The idea above could be implemented as a recursion. One compares the node value with its upper and lower limits if they are available. Then one repeats the same step recursively for left and right subtrees.
 
-	public boolean isValidBST(TreeNode root) {
-        return checkNode(root, Long.MIN_VALUE, Long.MAX_VALUE);
-    }
-    
-    private boolean checkNode(TreeNode node, long min, long max) {
-        if (node == null){
+Current
+1 / 4
+
+Complexity Analysis
+
+Time complexity : \mathcal{O}(N)O(N) since we visit each node exactly once.
+Space complexity : \mathcal{O}(N)O(N) since we keep up to the entire tree.
+	 * 
+	 */
+
+    public boolean validate(TreeNode root, Integer low, Integer high) {
+        // Empty trees are valid BSTs.
+        if (root == null) {
             return true;
         }
-        if(node.val > min && node.val < max){
-            return (checkNode(node.left, min, node.val) && checkNode(node.right, node.val, max));
-        } else {
+        // The current node's value must be between low and high.
+        if ((low != null && root.val <= low) || (high != null && root.val >= high)) {
             return false;
         }
+        // The left and right subtree must also be valid.
+        return validate(root.right, root.val, high) && validate(root.left, low, root.val);
+    }
+
+    public boolean isValidBST(TreeNode root) {
+        return validate(root, null, null);
     }
 	
 }

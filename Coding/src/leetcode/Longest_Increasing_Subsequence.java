@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* over, n ln n, n 
  * 
  * 
 Given an integer array nums, return the length of the longest strictly increasing subsequence.
@@ -42,6 +40,44 @@ package leetcode;
 import java.util.Arrays;
 
 public class Longest_Increasing_Subsequence {
+	
+	/*
+	 * 
+	 * Approach 3: Improve With Binary Search
+Intuition
+
+In the previous approach, when we have an element num that is not greater than all the elements in sub, we perform a linear scan to find the first element in sub that is greater than or equal to num. Since sub is in sorted order, we can use binary search instead to greatly improve the efficiency of our algorithm.
+
+Algorithm
+
+Initialize an array sub which contains the first element of nums.
+
+Iterate through the input, starting from the second element. For each element num:
+
+If num is greater than any element in sub, then add num to sub.
+Otherwise, perform a binary search in sub to find the smallest element that is greater than or equal to num. Replace that element with num.
+Return the length of sub.
+
+Implementation
+
+In Python, the bisect module provides super handy functions that does binary search for us.
+
+
+Complexity Analysis
+
+Given NN as the length of nums,
+
+Time complexity: O(N \cdot \log(N))O(N⋅log(N))
+
+Binary search uses \log(N)log(N) time as opposed to the O(N)O(N) time of a linear scan, which improves our time complexity from O(N^2)O(N 
+2
+ ) to O(N \cdot \log(N))O(N⋅log(N)).
+
+Space complexity: O(N)O(N)
+
+When the input is strictly increasing, the sub array will be the same size as the input.
+	 * 
+	 */
 	
 	public int lengthOfLIS(int[] nums) {
         int[] dp = new int[nums.length];

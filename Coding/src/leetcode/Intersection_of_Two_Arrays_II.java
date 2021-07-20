@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* over, n+m, min(n,m)
  * 
 Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
 
@@ -33,33 +31,26 @@ What if elements of nums2 are stored on disk, and the memory is limited such tha
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Intersection_of_Two_Arrays_II {
 	public int[] intersect(int[] nums1, int[] nums2) {
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-        ArrayList<Integer> result = new ArrayList<Integer>();
-        for(int i = 0; i < nums1.length; i++)
-        {
-            if(map.containsKey(nums1[i])) map.put(nums1[i], map.get(nums1[i])+1);
-            else map.put(nums1[i], 1);
-        }
-    
-        for(int i = 0; i < nums2.length; i++)
-        {
-            if(map.containsKey(nums2[i]) && map.get(nums2[i]) > 0)
-            {
-                result.add(nums2[i]);
-                map.put(nums2[i], map.get(nums2[i])-1);
-            }
-        }
-    
-       int[] r = new int[result.size()];
-       for(int i = 0; i < result.size(); i++)
-       {
-           r[i] = result.get(i);
-       }
-    
-       return r;
-    }
+	    if (nums1.length > nums2.length) {
+	        return intersect(nums2, nums1);
+	    }
+	    HashMap<Integer, Integer> m = new HashMap<>();
+	    for (int n : nums1) {
+	        m.put(n, m.getOrDefault(n, 0) + 1);
+	    }
+	    int k = 0;
+	    for (int n : nums2) {
+	        int cnt = m.getOrDefault(n, 0);
+	        if (cnt > 0) {
+	            nums1[k++] = n;
+	            m.put(n, cnt - 1);
+	        }
+	    }
+	    return Arrays.copyOfRange(nums1, 0, k);
+	}
 }

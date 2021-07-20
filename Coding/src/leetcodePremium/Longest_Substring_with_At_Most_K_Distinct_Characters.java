@@ -1,5 +1,4 @@
-//completed
-/*
+/* over, nk, k
  * 
  * this can be done for k=2(Question no. 159 leetcode premium)
  * 
@@ -15,6 +14,13 @@ package leetcodePremium;
 import java.util.HashMap;
 
 public class Longest_Substring_with_At_Most_K_Distinct_Characters {
+	
+	
+	/*
+	 * 
+	 * 
+	 */
+	
 	
 	public int lengthOfLongestSubstringKDistinct(String s, int k) {
 	    int result = 0;

@@ -1,9 +1,4 @@
-//completed
-
-//t=|PRICES|
-//s=
-
-/*
+/* over, n, 1
  * 
  * 
  * You are given an array prices where prices[i] is the price of a given stock on the ith day.
@@ -37,16 +32,40 @@ package leetcode;
 
 public class Best_Time_to_Buy_and_Sell_Stock {
 	
+	/*
+	 * 
+	 * Approach 2: One Pass
+Algorithm
+
+Say the given array is:
+
+[7, 1, 5, 3, 6, 4]
+
+If we plot the numbers of the given array on a graph, we get:
+
+Profit Graph
+
+The points of interest are the peaks and valleys in the given graph. We need to find the largest peak following the smallest valley. We can maintain two variables - minprice and maxprofit corresponding to the smallest valley and maximum profit (maximum difference between selling price and minprice) obtained so far respectively.
+
+
+Complexity Analysis
+
+Time complexity : O(n)O(n). Only a single pass is needed.
+
+Space complexity : O(1)O(1). Only two variables are used.
+	 * 
+	 */
+
 	public int maxProfit(int[] prices) {
-        int minprice = Integer.MAX_VALUE;
-int maxprofit = 0;
-for (int i = 0; i < prices.length; i++) {
-    if (prices[i] < minprice)
-        minprice = prices[i];
-    else if (prices[i] - minprice > maxprofit)
-        maxprofit = prices[i] - minprice;
-}
-return maxprofit;
-}
+		int minprice = Integer.MAX_VALUE;
+		int maxprofit = 0;
+		for (int i = 0; i < prices.length; i++) {
+			if (prices[i] < minprice)
+				minprice = prices[i];
+			else if (prices[i] - minprice > maxprofit)
+				maxprofit = prices[i] - minprice;
+		}
+		return maxprofit;
+	}
 
 }

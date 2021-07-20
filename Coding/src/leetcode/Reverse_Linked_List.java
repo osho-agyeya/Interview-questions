@@ -1,5 +1,4 @@
-//completed
-/*
+/* over, n, 1
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
  
@@ -36,15 +35,14 @@ import main_solution.ListNode;
 
 public class Reverse_Linked_List {
 	public ListNode reverseList(ListNode head) {
-        return putPreAfterNode(head, null);
-    }
-    
-    private ListNode putPreAfterNode(ListNode node, ListNode pre) {
-        if (node == null) {
-            return pre;
-        }
-        ListNode next = node.next;
-        node.next = pre;
-        return putPreAfterNode(next, node);
-    }
+	    ListNode prev = null;
+	    ListNode curr = head;
+	    while (curr != null) {
+	        ListNode nextTemp = curr.next;
+	        curr.next = prev;
+	        prev = curr;
+	        curr = nextTemp;
+	    }
+	    return prev;
+	}
 }

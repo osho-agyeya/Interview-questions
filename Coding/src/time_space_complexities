@@ -3,8 +3,8 @@
 TIME,SPACE
 
 topological sort=O(V+E)
-DFS=O(V+E),O(V)
-BFS=O(V+E),O(V)
+DFS=O(V+E)when list/O(V^2) if matrix,O(V)
+BFS=O(V+E)when list/O(V^2) if matrix,O(V)
 DIJKSTRA=O(E+VLOGV),
 BELLMAN FORD=O(VE),O(V) = Single Source Shortest Path (works with -ve weights & find -ve weight cycles)
 JARVIS MARCH(GIFT WRAPPING)=O(NXH) OR WORST IS O(N^2),O(N)
@@ -13,6 +13,7 @@ TRIE=O(LENGTH OF WORD),O(n*m)
 FORD FULKERSON:O(VE^2)
 Floyd–Warshall algorithm:O(N^3), O(N^2)(Network delay time)(all pair shortest path)
 kosaraju=O(V+E) strongly connected component in directed graph
+manacher=O(n) Longest palindromic substring
 
 access: array=1, trees=log n ; otherwise n
 search: trees=log n; else n
@@ -32,3 +33,56 @@ shell sort: n(logn)2, 1
 bucket:n2,n
 radix:nk,n+k
 counting:n+k,k
+
+
+---------------------------------------------------------------------------------------
+
+If input array is sorted then
+    - Binary search
+    - Two pointers
+
+If asked for all permutations/subsets then
+    - Backtracking
+
+If given a tree then
+    - DFS
+    - BFS
+
+If given a graph then
+    - DFS
+    - BFS
+
+If given a linked list then
+    - Two pointers
+
+If recursion is banned then
+    - Stack
+
+If must solve in-place then
+    - Swap corresponding values
+    - Store one or more different values in the same pointer
+
+If asked for maximum/minumum subarray/subset/options then
+    - Dynamic programming
+
+If asked for top/least K items then
+    - Heap
+
+If asked for common strings then
+    - Map
+    - Trie
+
+Else
+    - Map/Set for O(1) time & O(n) space
+    - Sort input for O(nlogn) time and O(1) space
+    
+-------------------------------------------------------
+
+
+you can return from a void function
+no need to have a catching variable for non-void functions. you can call them just like void functions
+String strPwd = String.join("", Collections.nCopies(n, "0"));
+Pair<Integer, String> p = new Pair<>(5 ,"Five");  //import javafx.util.Pair;  
+ Collections.sort(sorted, Comparator.comparing(i -> -i[0]));
+ 
+ 

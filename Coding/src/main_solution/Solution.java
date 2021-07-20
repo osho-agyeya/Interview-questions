@@ -5,6 +5,8 @@ import leetcode.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import javax.print.attribute.HashAttributeSet;
+
 public class Solution {
 
 	/**
@@ -20,9 +22,18 @@ public class Solution {
 		// o.longestPalindromeSubseq("cbbd");
 		// pp.ptn(garden(new int[] {1, 2, 1, 4, 2, 5}, 6));
 		//pp.ptn("1234".substring(1,1));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
-	
 	
 	
 	static int garden(int arr[], int N) {

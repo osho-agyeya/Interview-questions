@@ -1,5 +1,4 @@
-//completed
-/*
+/* over, nm, nm 
  *A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
@@ -40,6 +39,53 @@ It's guaranteed that the answer will be less than or equal to 2 * 109.
 package leetcode;
 
 public class Unique_Paths {
+
+	
+	/*
+	 * 
+	 * Overview
+Since robot can move either down or right, there is only one path to reach the cells in the first row: right->right->...->right.
+
+traversal
+
+The same is valid for the first column, though the path here is down->down-> ...->down.
+
+traversal
+
+What about the "inner" cells (m, n)? To such cell one could move either from the upper cell (m, n - 1), or from the cell on the right (m - 1, n). That means that the total number of paths to move into (m, n) cell is uniquePaths(m - 1, n) + uniquePaths(m, n - 1).
+
+traversal
+
+Now, one could transform these ideas into 3-liner recursive solution:
+
+
+This solution is not fast enough to pass all the testcases, though it could be used as a starting point for the DP solution.
+
+
+Approach 1: Dynamic Programming
+One could rewrite recursive approach into dynamic programming one.
+
+Algorithm
+
+Initiate 2D array d[m][n] = number of paths. To start, put number of paths equal to 1 for the first row and the first column. For the simplicity, one could initiate the whole 2D array by ones.
+
+Iterate over all "inner" cells: d[col][row] = d[col - 1][row] + d[col][row - 1].
+
+Return d[m - 1][n - 1].
+
+Implementation
+
+Current
+1 / 13
+
+Complexity Analysis
+
+Time complexity: \mathcal{O}(N \times M)O(N×M).
+
+Space complexity: \mathcal{O}(N \times M)O(N×M).
+	 * 
+	 */
+	
 	public int uniquePaths(int m, int n) {
         int[][] grid = new int[m][n];
     for(int i = 0; i<m; i++){

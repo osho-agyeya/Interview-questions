@@ -1,5 +1,4 @@
-//completed
-/*
+/* over, n, n
  * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -35,6 +34,19 @@ package leetcode;
 import java.util.*;
 
 public class Two_Sum {
+	
+	/*
+	 * Approach 3: One-pass Hash Table
+It turns out we can do it in one-pass. While we iterate and inserting elements into the table, we also look back to check if current element's complement already exists in the table. If it exists, we have found a solution and return immediately.
+
+
+Complexity Analysis:
+
+Time complexity : O(n)O(n). We traverse the list containing nn elements only once. Each look up in the table costs only O(1)O(1) time.
+
+Space complexity : O(n)O(n). The extra space required depends on the number of items stored in the hash table, which stores at most nn elements.
+	 * 
+	 */
 	
 	public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();

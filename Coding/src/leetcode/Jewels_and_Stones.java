@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* over, s+j, j 
  * 
 You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 
@@ -32,6 +30,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Jewels_and_Stones {
+	
+	
+	/*
+	 * Approach #2: Hash Set [Accepted]
+Intuition and Algorithm
+
+For each stone, check whether it matches any of the jewels. We can check efficiently with a Hash Set.
+
+
+Complexity Analysis
+
+Time Complexity: O(J\text{.length} + S\text{.length})O(J.length+S.length). The O(J\text{.length})O(J.length) part comes from creating J. The O(S\text{.length})O(S.length) part comes from searching S.
+
+Space Complexity: O(J\text{.length})O(J.length).
+	 * 
+	 * 
+	 * 
+	 */
 
 	public int numJewelsInStones(String J, String S) {
         Map<Character,Integer> map = new HashMap<>();

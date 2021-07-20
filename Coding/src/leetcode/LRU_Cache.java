@@ -1,7 +1,4 @@
-//completed
-
-
-/*
+/* over, 1, capacity
  * 
  * 
  * 
@@ -51,6 +48,35 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LRU_Cache {
+	
+	/*
+	 * 
+	 * Approach 2: Hashmap + DoubleLinkedList
+Intuition
+
+This Java solution is an extended version of the the article published on the Discuss forum.
+
+The problem can be solved with a hashmap that keeps track of the keys and its values in the double linked list. That results in \mathcal{O}(1)O(1) time for put and get operations and allows to remove the first added node in \mathcal{O}(1)O(1) time as well.
+
+compute
+
+One advantage of double linked list is that the node can remove itself without other reference. In addition, it takes constant time to add and remove nodes from the head or tail.
+
+One particularity about the double linked list implemented here is that there are pseudo head and pseudo tail to mark the boundary, so that we don't need to check the null node during the update.
+
+compute
+
+Implementation
+
+
+Complexity Analysis
+
+Time complexity : \mathcal{O}(1)O(1) both for put and get.
+
+Space complexity : \mathcal{O}(capacity)O(capacity) since the space is used only for a hashmap and double linked list with at most capacity + 1 elements.
+	 * 
+	 * 
+	 */
 	
 	final Node head = new Node(0, 0);
     final Node tail = new Node(0, 0);

@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* , , 
  Given an unsorted integer array nums, find the smallest missing positive integer.
 
  
