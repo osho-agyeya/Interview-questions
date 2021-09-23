@@ -1,4 +1,4 @@
-/* over, , 
+/* over, s+p, 1
 Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order.
 
  
@@ -32,6 +32,50 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Find_All_Anagrams_in_a_String {
+	
+	/*
+	 * Approach 2: Sliding Window with Array
+Algorithm
+
+Hashmap is quite complex structure, with known performance issues in Java. Let's implement approach 1 using 26-elements array instead of hashmap:
+
+Element number 0 contains count of letter a.
+
+Element number 1 contains count of letter b.
+
+...
+
+Element number 26 contains count of letter z.
+
+Algorithm
+
+Build reference array pCount for string p.
+
+Move sliding window along the string s:
+
+Recompute sliding window array sCount at each step by adding one letter on the right and removing one letter on the left.
+
+If sCount == pCount, update the output list.
+
+Return output list.
+
+Implementation
+
+
+Complexity Analysis
+
+Time complexity: \mathcal{O}(N_s + N_p)O(N 
+s
+​
+ +N 
+p
+​
+ ) since it's one pass along both strings.
+
+Space complexity: \mathcal{O}(1)O(1), because pCount and sCount contain 26 elements each.
+	 * 
+	 * 
+	 */
 	
 	public List<Integer> findAnagrams(String s, String p) {
         List<Integer> list = new ArrayList<>();

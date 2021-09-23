@@ -1,4 +1,4 @@
-/*completed
+/* over, rc, rc
  * You are given an m x n binary matrix grid. An island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.
 
 The area of an island is the number of cells with a value 1 in the island.
@@ -31,6 +31,24 @@ package leetcode;
 
 public class Max_Area_of_Island {
 	
+	/*
+	 * Approach #1: Depth-First Search (Recursive) [Accepted]
+Intuition and Algorithm
+
+We want to know the area of each connected shape in the grid, then take the maximum of these.
+
+If we are on a land square and explore every square connected to it 4-directionally (and recursively squares connected to those squares, and so on), then the total number of squares explored will be the area of that connected shape.
+
+To ensure we don't count squares in a shape more than once, let's use seen to keep track of squares we haven't visited before. It will also prevent us from counting the same shape more than once.
+
+
+Complexity Analysis
+
+Time Complexity: O(R*C)O(R∗C), where RR is the number of rows in the given grid, and CC is the number of columns. We visit every square once.
+
+Space complexity: O(R*C)O(R∗C), the space used by seen to keep track of visited squares, and the space used by the call stack during our recursion.
+	 * 
+	 */
 	
 	 public int maxAreaOfIsland(int[][] grid) {
 	        int max_area = 0;

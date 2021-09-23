@@ -1,4 +1,4 @@
-/*completed
+/* over, n, n
  * Given the root of a binary tree, return all duplicate subtrees.
 
 For each kind of duplicate subtrees, you only need to return the root node of any one of them.
@@ -33,6 +33,12 @@ The number of the nodes in the tree will be in the range [1, 10^4]
 package leetcode;
 
 public class Find_Duplicate_Subtrees {
+	
+	/*
+	 * 
+	 * serialisation and compare
+	 * 
+	 */
 
 	public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
         Map<String, Integer> set = new HashMap<>();

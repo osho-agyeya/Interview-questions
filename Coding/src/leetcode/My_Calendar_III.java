@@ -1,7 +1,4 @@
-//completed
-
-
-/*
+/* over, n2, n
  * 
  * 
  * A k-booking happens when k events have some non-empty intersection (i.e., there is some time that is common to all k events.)
@@ -41,6 +38,27 @@ package leetcode;
 
 public class My_Calendar_III {
 
+	/*
+	 * Approach #1: Boundary Count [Accepted]
+Intuition and Algorithm
+
+When booking a new event [start, end), count delta[start]++ and delta[end]--. When processing the values of delta in sorted order of their keys, the largest such value is the answer.
+
+In Python, we sort the set each time instead, as there is no analog to TreeMap available.
+
+
+Complexity Analysis
+
+Time Complexity: O(N^2)O(N 
+2
+ ), where NN is the number of events booked. For each new event, we traverse delta in O(N)O(N) time. In Python, this is O(N^2 \log N)O(N 
+2
+ logN) owing to the extra sort step.
+
+Space Complexity: O(N)O(N), the size of delta.
+	 * 
+	 */
+	
 	Map<Integer, Integer> map;
     public My_Calendar_III() {
         map = new TreeMap<>();

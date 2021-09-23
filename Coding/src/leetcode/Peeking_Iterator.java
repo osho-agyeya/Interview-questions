@@ -1,6 +1,4 @@
-//completed
-
-/*
+/* over, , 
  * 
  Design an iterator that supports the peek operation on a list in addition to the hasNext and the next operations.
 
